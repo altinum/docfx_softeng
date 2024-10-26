@@ -1,0 +1,17 @@
+C:\temp\InMemory\InMemory\bin\Debug\net6.0-windows\InMemory.exe
+C:\temp\InMemory\InMemory\bin\Debug\net6.0-windows\InMemory.deps.json
+C:\temp\InMemory\InMemory\bin\Debug\net6.0-windows\InMemory.runtimeconfig.json
+C:\temp\InMemory\InMemory\bin\Debug\net6.0-windows\InMemory.dll
+C:\temp\InMemory\InMemory\bin\Debug\net6.0-windows\InMemory.pdb
+C:\temp\InMemory\InMemory\obj\Debug\net6.0-windows\InMemory.csproj.AssemblyReference.cache
+C:\temp\InMemory\InMemory\obj\Debug\net6.0-windows\InMemory.Form1.resources
+C:\temp\InMemory\InMemory\obj\Debug\net6.0-windows\InMemory.csproj.GenerateResource.cache
+C:\temp\InMemory\InMemory\obj\Debug\net6.0-windows\InMemory.GeneratedMSBuildEditorConfig.editorconfig
+C:\temp\InMemory\InMemory\obj\Debug\net6.0-windows\InMemory.AssemblyInfoInputs.cache
+C:\temp\InMemory\InMemory\obj\Debug\net6.0-windows\InMemory.AssemblyInfo.cs
+C:\temp\InMemory\InMemory\obj\Debug\net6.0-windows\InMemory.csproj.CoreCompileInputs.cache
+C:\temp\InMemory\InMemory\obj\Debug\net6.0-windows\InMemory.dll
+C:\temp\InMemory\InMemory\obj\Debug\net6.0-windows\refint\InMemory.dll
+C:\temp\InMemory\InMemory\obj\Debug\net6.0-windows\InMemory.pdb
+C:\temp\InMemory\InMemory\obj\Debug\net6.0-windows\InMemory.genruntimeconfig.cache
+C:\temp\InMemory\InMemory\obj\Debug\net6.0-windows\ref\InMemory.dll

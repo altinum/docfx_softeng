@@ -16,6 +16,8 @@
   items:
     - name: 📝 TreeView szerkesztése
       href: ./ch02-winforms/ch02-03-product-category-treeview-part02.md
+    - name: 🎬 TreeView megoldás
+      href: ./ch02-winforms/ch03-03-treeview-video.md
 - name: 5. hét
   items:
     - name: 📖 XML prezentáció
@@ -24,18 +26,23 @@
       href: ./ch02-winforms/ch02-03-product-category-xml.md      
 - name: 6. hét
   items:
-    - name: 📖 RegEx össefoglaló
+    - name: 📖 RegEx összefoglaló
       href: ./ch02-winforms/ch02-04-01-regex.md
+    - name: 🎬 RegEx videók
+      href: ./regex/regex_video.md
     - name: 📝 Adatok validálása űrlapon
       href: ./ch02-winforms/ch02-04-02-validation.md
+      
 - name: 7. hét
   items:
     - name: 📝 Rendeléskezelés
       href: ./ch02-winforms/ch02-05-order-management.md
-- name: 9. hét
+- name: 8. hét (1. ZH)
   items:
     - name: 🎓 ZH segédlet
       href: ../ertekeles/zh1_checklist.md
     - name: 🎓 Validáció segédlet
       href: ./validacio/index.md
+    - name: 📝+🎬 In-memory adatbázis (ism.)
+      href: ./IN_MEMORY/in_memory_db.md
       

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RendelesApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f53aa42588f148ab443a7730df14678d8a0686f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dda6bd1b0434ff271fb6df141b9b31ffde789ad4")]
 [assembly: System.Reflection.AssemblyProductAttribute("RendelesApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RendelesApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
