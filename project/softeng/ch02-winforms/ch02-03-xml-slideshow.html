@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+
+      body {
+        font-family: 'Droid Serif';
+      }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      .remark-slide-content h1 { font-size: 3em; }
+      .remark-slide-content h2 { font-size: 2em; }
+      .remark-slide-content h3 { font-size: 1.6em; }
+      .footnote {
+        position: absolute;
+        bottom: 3em;
+      }
+      li p { line-height: 1.25em; }
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+      a, a > code {
+        color: rgb(249, 38, 114);
+        text-decoration: none;
+      }
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-code-line-highlighted     { background-color: #373832; }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-right ~ p {
+        clear: both;
+      }
+      #slideshow .slide .content code {
+        font-size: 0.8em;
+      }
+      #slideshow .slide .content pre code {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+
+      /* Slide-specific styling */
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      #slide-how .slides {
+        font-size: 0.9em;
+        position: absolute;
+        top:  151px;
+        right: 140px;
+      }
+      #slide-how .slides h3 {
+        margin-top: 0.2em;
+      }
+      #slide-how .slides .first, #slide-how .slides .second {
+        padding: 1px 20px;
+        height: 90px;
+        width: 120px;
+        -moz-box-shadow: 0 0 10px #777;
+        -webkit-box-shadow: 0 0 10px #777;
+        box-shadow: 0 0 10px #777;
+      }
+      #slide-how .slides .first {
+        background: #fff;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+      }
+      #slide-how .slides .second {
+        position: relative;
+        background: #fff;
+        z-index: 0;
+      }
+
+      /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle, inverse
+
+# XML
+
+---
+
+# Agenda
+
+1. XML
+2. XSLT
+2. XPATH
+3. JSON
+4. YAML
+5. C# példák
+
+---
+# Mi az a "Markup" nyelv?
+---
+class: center, middle, inverse
+# Az XML dokumentum elemei
+---
+
+# XML Declaration
+```XML
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+```
+The typical information in the XML declaration part includes:
+
+- Version of XML.
+- Encoding used for characters.
+- Standalone declaration (optional).
+
+---
+# Elements
+
+The building blocks of XML, which consist of start tags, content, and end **tags**.
+
+``` xml
+<element>Content</element>
+```
+# Attributes
+``` xml
+<element attribute="value">Content</element>
+```
+
+# Text Content
+The actual data or content between the XML tags.
+``` xml
+<element>This is text content</element>
+```
+---
+# Comments
+``` xml
+<!-- This is a comment -->
+```
+---
+# Entity References
+Used to represent special characters.
+Example: `& amp;` represents `&`.
+# CDATA Sections
+Character data that tells the parser not to interpret content as XML, allowing you to include special characters.
+``` xml
+<![CDATA[Some unparsed characters like < and >]]>
+```
+---
+# Processing Instructions
+Instructions directed to the XML processor, often used for including directives like XSLT stylesheets.
+``` xml
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+```
+---
+# Namespaces
+Allow for distinguishing between elements with the same name but different meanings by associating elements with a specific namespace.
+
+``` xml
+<element xmlns="http://example.com/schema">Content</element>
+```
+---
+# Miért van szükség XML névtérre (namespace)?
+
+Az XML-ben különböző alkalmazások használhatják ugyanazokat az elem- és attribútumneveket, de különböző célokra. Ahhoz, hogy ezeket megkülönböztessük, használunk névtereket. A névtér biztosítja, hogy ugyanaz az elemnév két különböző környezetben más jelentéssel bírhat anélkül, hogy összeütköznének.
+
+``` xml
+<book xmlns="http://example.com/books">
+    <title>XML Guide</title>
+    <author>John Doe</author>
+</book>
+```
+
+---
+
+# Példa névtér használatára különböző XML elemekben
+``` xml
+<document xmlns:h="http://www.w3.org/TR/html4/" xmlns:f="http://www.w3schools.com/furniture">
+    <h:table>
+        <h:tr>
+            <h:td>HTML Table Data</h:td>
+        </h:tr>
+    </h:table>
+    <f:table>
+        <f:name>Wooden Table</f:name>
+        <f:width>80cm</f:width>
+    </f:table>
+</document>
+```
+---
+# HTML és SVG Együttes Használata
+``` xml
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg">
+<head>
+    <title>SVG Example</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <svg:svg width="100" height="100">
+        <svg:circle cx="50" cy="50" r="40" fill="red" />
+    </svg:svg>
+</body>
+</html>
+```
+---
+# How to Define the Language
+- The `xml:lang` attribute is placed in the root element (or any element) of the document.
+- It follows the **IETF language tags** (such as en for English, fr for French, etc.).
+
+``` xml
+<?xml version="1.0" encoding="UTF-8"?>
+<note xml:lang="en">
+  <to>Tove</to>
+  <from>Jani</from>
+  <heading>Reminder</heading>
+  <body>Don't forget me this weekend!</body>
+</note>
+```
+---
+# Language Hierarchy
+If `xml:lang` is applied to a parent element, it applies to all its child elements unless explicitly overridden by another `xml:lang` attribute.
+``` xml
+<note xml:lang="en">
+    <to xml:lang="fr">Tove</to>
+    <from>Jani</from>
+    <heading>Reminder</heading>
+    <body>Don't forget me this weekend!</body>
+  </note>  
+```
+---
+# Importance of Defining Language
+
+- **Accessibility**: Helps screen readers or other accessibility tools adapt to the correct language.
+- **Search engines**: Useful for search engines to correctly index content in different languages.
+- **Localization**: Facilitates translation or localization of XML content for multilingual support.
+---
+class: center, middle, inverse
+
+# NAV Online Számla
+---
+# NAV Online Számla
+
+A NAV által elvárt XML számlák XSD sémáit a NAV Online Számla portálján találhatod meg. Ezek a sémák biztosítják, hogy az XML-ek megfeleljenek a NAV által meghatározott formátumnak, és sikeresen beküldhetők legyenek az Online Számla rendszerbe.
+
+NAV Online Számla portál: A NAV hivatalos weboldalán az Online Számla rendszerhez kapcsolódó technikai dokumentációban érhetők el a sémafájlok.
+
+URL: [https://onlineszamla.nav.gov.hu/](https://onlineszamla.nav.gov.hu/)
+Fejlesztői dokumentáció: Ezen belül a „Technikai dokumentáció” rész alatt találhatók a különböző XML verziókhoz tartozó XSD fájlok, például az 1.1-es, 2.0-ás és 3.0-ás verziók. A legfrissebb verzió a 3.0.
+
+Github repository: A NAV közzétett egy hivatalos Github repositoryt is, ahol a legfrissebb XML és XSD sémákat megtalálhatod.
+
+URL: [https://github.com/nav-gov-hu/](https://github.com/nav-gov-hu/)
+
+Számla minta: [Belfoldi devizas szamla.xml](https://github.com/nav-gov-hu/Online-Invoice/blob/master/sample/Data%20sample/Belfoldi%20devizas%20szamla.xml)
+
+---
+# NAV Online Számla
+
+[XSD állományok](https://github.com/nav-gov-hu/Online-Invoice/tree/master/src/schemas/nav/gov/hu/OSA)
+
+
+---
+class: center, middle, inverse
+
+# XSD:  XML Schema Definition
+---
+``` xml
+<books>
+    <book>
+      <title>1984</title>
+      <author>George Orwell</author>
+      <year>1949</year>
+    </book>
+</books>
+```
+``` xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Define the "book" element -->
+  <xs:element name="book">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="title" type="xs:string"/>
+        <xs:element name="author" type="xs:string"/>
+        <xs:element name="year" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  ...
+```
+---
+``` xml
+  <!-- Define the "books" root element -->
+  <xs:element name="books">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="book" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
+```
+---
+# DTD
+Supressed by xslt by now..
+
+``` xml
+<?xml version="1.0"?>
+<!DOCTYPE note [
+  <!ELEMENT note (to, from, heading, body)>
+  <!ELEMENT to (#PCDATA)>
+  <!ELEMENT from (#PCDATA)>
+  <!ELEMENT heading (#PCDATA)>
+  <!ELEMENT body (#PCDATA)>
+]>
+<note>
+  <to>Tove</to>
+  <from>Jani</from>
+  <heading>Reminder</heading>
+  <body>Don't forget me this weekend!</body>
+</note>
+```
+---
+class: center, middle, inverse
+
+# XPATH
+---
+
+ChatGPT query: Give me some examples for xpath queries
+
+[https://www.freeformatter.com/xpath-tester.html](https://www.freeformatter.com/xpath-tester.html)
+
+---
+class: center, middle, inverse
+
+# Binary data in XML & JSON
+---
+# Base16, 36 & 64
+Base16: 
+```
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+```
+Base32: 
+```
+0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K M N P Q R T V W X Y
+```
+Base64: 
+```
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+a b c d e f g h i j k l m n o p q r s t u v w x y z 
+0 1 2 3 4 5 6 7 8 9 
++ /
+```
+---
+# Base64
+
+Each character codes 6 bits:
+
+| Base64 Character | Binary Value   |
+|------------------|----------------|
+| A                | 000000         |
+| B                | 000001         |
+| C                | 000010         |
+| D                | 000011         |
+| E                | 000100         |
+| F                | 000101         |
+| G                | 000110         |
+| H                | 000111         |
+| I                | 001000         |
+| J                | 001001         |
+| ...              | ...            |
+
+---
+# Base64 URL
+1x1 px black dot GIF
+
+``` html
+<img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="1x1 black dot" />
+```
+---
+# XML in SQL databeses
+
+Breaking NF1 in practice, non atomic values
+
+| Id | Name  | Price   | CategoryKey | HardwareSpecs                                                |
+| ---------- | ---------- | ------- | ----------- | ------------------------------------------------------------ |
+| 1          | Laptop     | 1200.00 | 1           | `<Hardware><CPU>Intel i7</CPU><RAM>16GB</RAM><Storage>512GB SSD</Storage><Graphics>NVIDIA GTX 1650</Graphics></Hardware>` |
+| 2          | Smartphone | 700.00  | 1           | `<Hardware><CPU>Snapdragon 888</CPU><RAM>8GB</RAM><Storage>128GB</Storage><Camera>108MP</Camera></Hardware>` |
+| 3          | Tablet     | 250.00  | 1           | `<Hardware><CPU>Apple A14</CPU><RAM>4GB</RAM><Storage>64GB</Storage><Display>10.2 inch</Display></Hardware>` |
+| 4          | Headphones | 150.00  | 1           | `<Hardware><Type>Over-Ear</Type><Wireless>Yes</Wireless><BatteryLife>20 hours</BatteryLife><NoiseCancelling>Yes</NoiseCancelling></Hardware>` |
+
+---
+# MSSQL and XPATH
+MSQL can query into XML directly:
+``` SQL
+SELECT *
+FROM Products
+WHERE HardwareSpecs.exist('/Hardware/Wireless[text()="Yes"]') = 1;
+``` 
+---
+class: center, middle, inverse
+
+# XML and dates 
+---
+# XML pors & cons
+ISO 8601 standard
+#### 1. Basic Date (`YYYYMMDD`)
+
+Format: YYYYMMDD
+Example: 20230930 (for September 30, 2023)
+
+#### 2. Extended Date (YYYY-MM-DD)
+
+Format: YYYY-MM-DD
+Example: 2023-09-30 (for September 30, 2023)
+
+#### 3. Combined Date and Time (YYYY-MM-DDTHH:MM)
+
+Format: YYYY-MM-DDTHH:MM:SS
+
+#### 4. Date and Time with Timezone Offset (YYYY-MM-DDTHH:MM±HH)
+
+Example: 2023-09-30T15:30:00 (for September 30, 2023, at 3:30 PM)
+---
+class: center, middle, inverse
+
+# JSON
+---
+## XML (Extensible Markup Language)
+- **Release Date**: XML was first officially released by the W3C (World Wide Web Consortium) in 1998.
+- **Age**: As of 2024, XML is 26 years old.
+- **Background**: XML was designed to store and transport data with a focus on being both human- and machine-readable. It is a subset of SGML (Standard Generalized Markup Language), which has been around since the 1980s..
+## JSON (JavaScript Object Notation)
+- **Initial Proposal**: JSON was originally proposed in 2001 by Douglas Crockford.
+- **Standardization**: JSON became formally recognized as a standard with RFC 4627 in 2006.
+- **Age**: As of 2024, JSON is 23 years old (since the initial proposal) or 18 years old (since standardization).
+- **Background**: JSON was designed as a lightweight data interchange format that is easy to read and write for both humans and machines. It's based on JavaScript but is language-independent.
+---
+# Example of JSON Schema
+``` JSON
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "age": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "email": {
+        "type": "string",
+        "format": "email"
+      }
+    },
+    "required": ["name", "age"]
+  }
+```
+---
+class: center, middle, inverse
+
+# YAML
+---
+# YAML
+YAML stands for YAML Ain't Markup Language. It is a recursive acronym, emphasizing that YAML is primarily a data serialization format rather than a markup language like XML or HTML.
+
+Key Features of YAML:
+- **Human-Readable**: Designed to be easy to read and write for humans.
+- **Data Serialization**: Commonly used for configuration files, data exchange between languages with different data structures, and data storage.
+- **Support for Complex Data Structures**: YAML can represent scalars, lists, and associative arrays (or dictionaries).
+---
+``` YAML
+application:
+  name: Sample App
+  description: This is a sample application configuration.
+  environment: production
+
+settings:
+  logging:
+    level: info
+    format: json
+  database:
+    host: localhost
+    port: 5432
+    username: user
+    password: pass
+    name: sample_db
+```
+
+---
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+          var slideshow = remark.create({
+      ratio: '16:9'  // Set the aspect ratio to 16:9
+    });
+    </script>
+  </body>
+</html>

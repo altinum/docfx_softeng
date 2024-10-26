@@ -1,0 +1,1 @@
+https://medium.com/@fabiosalomao/creating-a-cli-part-4-automating-documentation-for-your-cli-with-docfx-and-github-pages-7ea57fabebc4
