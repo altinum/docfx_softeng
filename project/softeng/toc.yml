@@ -45,4 +45,7 @@
       href: ./validacio/index.md
     - name: 📝+🎬 In-memory adatbázis (ism.)
       href: ./IN_MEMORY/in_memory_db.md
+    - name: "📝 Gyakorló: receptes adatbázis"
+      href: ./6_receptes/index.md
+
       

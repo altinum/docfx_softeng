@@ -1,7 +1,7 @@
 # Hands-On Lab: In memory adatbázis 
 
-## Gyakorlat célja
-A _Software Engineering_ tárgy során a korábban megszokotthoz képest szignifikánsan nagyobb adathalmazokkal fogunk dolgozni. Az előző félévben felépítettünk egy kvízjátékot, aminek a tartalmait egy szöveges fájlból olvastuk ki egy-egy `UserControl`-ba. A feladat a memóriában végzett adatkezelés témakörét készítette elő.
+## A feladat célja
+A _Software Engineering_ tárgy során a korábban megszokotthoz képest szignifikánsan nagyobb adathalmazokkal dolgozunk. Az előző félévben felépítettünk egy kvízjátékot, aminek a tartalmait egy szöveges fájlból olvastuk ki egy-egy `UserControl`-ba. A feladat a memóriában végzett adatkezelés témakörét készítette elő.
 
 Ezen a gyakorlaton az adatainkat CSV (Comma Seperated Values) formátumú fájlokban tárolni. Ebben a fájltípusban az egyes sorokban vesszővel elválasztva szerepelnek az adatok. Néhány nyelv azonban (köztük a magyar is) a számokban tizedesvesszőt használ pont helyett, így nem ideális a vesszővel történő elválasztás. Emiatt a nyelvi beállításoktól függően érdemes meghatározni, hogy vesszőt vagy pontosvesszőt használunk a CSV fájljainkban. Az egyszerűség kedvéért mi minden esetben pontosvesszőt használunk majd.
 
@@ -135,13 +135,13 @@ public Form1()
 
 (+/-) Tervezd át az űrlapot  az alábbi ábrának megfelelően:
 
-![image-20220827150347600](../../images/image-20220827150347600.png)
+![image-20220827150347600](image-20220827150347600.png)
 
 >A "details" felirattal rendelkező elem egy `GroupBox`, ami megkönnyítheti a későbbiekben a benne lévő elemek együtt mozgatását
 
 #### 4.2 Új adatforrás felvétele
 
-![](../../images/add_data_source.gif)
+![](add_data_source.gif)
 
 (+/-) A `DataGridView` vezérlő "fülében" kattints a legördülőre, majd a megjelenő panelen választ az *Add Object Data Source* gombot!
 
@@ -176,7 +176,7 @@ studentBindingSource.DataSource = students;
 
 (+/-)  Állíts be egy adatkötést a Neptun kódhoz tartozó `TextBox` `Text` tulajdonságára  az animáció szerint:
 
-![](../../images/add_textbox_binding.gif)
+![](add_textbox_binding.gif)
 
 
 ### 5. Mentés funkció megvalósítása
