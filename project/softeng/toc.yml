@@ -47,5 +47,7 @@
       href: ./IN_MEMORY/in_memory_db.md
     - name: "📝 Gyakorló: receptes adatbázis"
       href: ./6_receptes/index.md
+    - name: "🎓 előadás jegyzet"
+      href: ./6_receptes/codesamples.md
 
       
