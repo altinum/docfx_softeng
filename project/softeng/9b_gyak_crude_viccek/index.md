@@ -1,8 +1,12 @@
-# CRUD műveletek
+# CRUDE műveletek
 
 A **CRUD(e)** (angolul nyers) a négy alapvető adatbázis művelet  (**C**reate, **R**ead, **U**pdate, **De**lete) kezdőbetűiből képzett akroníma. 
 
 A gyakorlaton egy olyan egyszerű példán megyünk végég, melyben adatbázisba lehet írni weboldalon kitöltött űrlap adatait. Az oldalon keresztül egy adatbázistáblába lehet vicceket felvinni, illetve listázni a vicceket.
+
+> [!tip]
+>
+> Folytasd az előző alkalamzást!
 
 Egy háromrétegű alkalmazásra nézünk egy egyszerű példát:
 - egy SQL adattábált érünk el
@@ -11,7 +15,7 @@ Egy háromrétegű alkalmazásra nézünk egy egyszerű példát:
 
 ## Új HTML oldal
 
-Hozz létre egy új HTML oldalt, mondjuk `jokes.html` néven a meglévő projektedben. Ezen a gyakorlaton nem csinálunk külön `.js` fájlt, hanem a HTML oldalban helyezzük el a `<script>` tag-et. Az oldalban legyen egy `<div>` a vicceknek, illetve egy `<input>` és egy `<button>` az új vicc felvitelére:
+❶ Hozz létre egy új HTML oldalt, mondjuk `jokes.html` néven a meglévő projektedben. Ezen a gyakorlaton nem csinálunk külön `.js` fájlt, hanem a HTML oldalban helyezzük el a `<script>` tag-et. Az oldalban legyen egy `<div>` a vicceknek, illetve egy `<input>` és egy `<button>` az új vicc felvitelére:
 
 ``` html
 <!DOCTYPE html>
@@ -34,15 +38,17 @@ Hozz létre egy új HTML oldalt, mondjuk `jokes.html` néven a meglévő projekt
 </html>
 ```
 
-(+/-) Készen van HTML váz.
+Ezzel készen van HTML váz.
 
 ## Adatbázis sémájának leképezése
 
-(+/-) Az adatbázis felfedezése
+❷ Fedezzétek fel az adatbázist!
 
 Központi adatbázisból dolgozunk, mert így szórakoztatóbb, másrészt többeteknek nincs már Azure kreditje. Az adatbázist érdemes *SQL Server Management Studio*-val felfedezni!
 
-**Az SQL adatbázis csak VPN alól érhető el. Ergo ha a projektet közzéteszed Azure-ba, az ott futó szerver oldali kód nem fogja látni. Ez most csak tesztelésre jó így.**
+> [!WARNING]
+>
+> Az SQL adatbázis csak VPN alól érhető el. Ergo ha a projektet közzéteszed Azure-ba, az ott futó szerver oldali kód nem fogja látni. **Ez most csak tesztelésre jó így.**
 
 |              | |
 |-             |-|
@@ -61,7 +67,11 @@ A *connectin string* megszerezhező a *Properties* panelből, csak a jelszót ke
 Data Source=bit.uni-corvinus.hu;Initial Catalog=FunnyDatabase;User ID=vendeg;Password=***********
 ```
 
-(+/-) Séma leképezése C# osztályokba
+> [!TIP]
+>
+> A Server exploreres rész ugorható, az alkalmazás működéséhez nincs szükség a Server explorerre. Viszont kiválóan alkalmas a connection string megszerzésére. 
+
+❸ Séma leképezése C# osztályokba
 
 Mint ahogy arról már szó volt egy korábbi gyakorlaton (*Csatlakozás SQL adatbázishoz*), .NET Core alatt nem áll rendelkezésre grafikus eszköz és varázsló az adatbázis sémája alapját leképező C# osztályok előállítására. Ezt is a *Packege Manager Console*-ból kell megoldani parancssorból. (Tools / NuGet Package Manager / Package Manager Console )
 
@@ -84,7 +94,7 @@ Ennek eredményeképp a *Solution Epolorer*-ben születik egy  `JokeModels` mapp
 
 ## API Controller létrehozása
 
-Hozz létre API Controller-t mondjuk `JokeController` néven, de most használd ki, hogy a CRUDE műveletek támogatására kész kódmintát kínál a Visual Studio!  `Controllers` mappán jobb egér, majd:
+❹ Hozz létre API Controller-t mondjuk `JokeController` néven, de most használd ki, hogy a CRUDE műveletek támogatására kész kódmintát kínál a Visual Studio!  `Controllers` mappán jobb egér, majd:
 
 ![1620852403730.png](1620852403730.png)
 
@@ -140,7 +150,7 @@ namespace EmptyBoat.Controllers
 }
 ```
 
-Ahhoz, hogy a mintakódot működésre bírjuk, a `[Route("api/[controller]")]` sorban a szögletes zárójel helyre kell beírni az elérési útvonalat.  Legyen ez most:
+❺ Ahhoz, hogy a mintakódot működésre bírjuk, a `[Route("api/[controller]")]` sorban a szögletes zárójel helyre kell beírni az elérési útvonalat.  Legyen ez most:
 
 ``` csharp
 namespace EmptyBoat.Controllers
@@ -152,7 +162,7 @@ namespace EmptyBoat.Controllers
     ...
 ```
 
-Ezután megkezdhetjük az API végpontok kifejtését a `program.cs`-ben: 
+❻ Ezután megkezdhetjük az API végpontok kifejtését a `program.cs`-ben: 
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);

@@ -24,13 +24,21 @@ A beállításokon nem kell sokat változtatni:
 
 ![image-20221114124311745](create_app.png)
 
+> [!Note]
+>
+> Használhattok .NET 7-et!
+
+Az "Enable OpenAPI support" tesztelési lehetőséget biztosít az API Contrtollerekez. Ez lesz a "Swagger", amivel később találkoztok.
+
+
+
 ## Az első futtatás
 
 Az elkészült webalkalmazást az alábbi gombbal lehet lokálisan futtatni. Az sablon alapján létrehozott projektünk is megjelenít tartalmat, ennek részleteíről később :)
 
 ![1610830238783.png](1610830238783.png)
 
-Első indításkor megkérdezi a Visual Studio, hogy akarjuk-e https alatt tesztelni a webalkalmazást http helyett. Ez azért nagyon fontos, mert egy http protokollal megnyitott oldalban a böngésző nem fog betölteni https-el hivatkozott tartalmakat. Ha külső tartalmakat is hivatkozunk, akkor https nélkül gyakorlatilag lehetetlenné válik a tesztelés. A https használatához egy hitelesítési tanúsítványt kell telepíteni a gépünkre, amit az IIS megbízhatóként fogad el. A https-ről és a hitelesítési tanúsítványokról később még lesz szó. Engedjük meg neki -- Yes, Yes:
+Első indításkor megkérdezi a Visual Studio, hogy akarjuk-e https alatt tesztelni a webalkalmazást http helyett. Ez azért nagyon fontos, mert egy http protokollal megnyitott oldalban a böngésző nem fog betölteni https-el hivatkozott tartalmakat. Ha külső tartalmakat is hivatkozunk, akkor https nélkül gyakorlatilag lehetetlenné válik a tesztelés. A https használatához egy hitelesítési tanúsítványt kell telepíteni a gépünkre, amit az IIS megbízhatóként fogad el. A https-ről és a hite lesítési tanúsítványokról később még lesz szó. Engedjük meg neki -- Yes, Yes:
 
 
 ![1610829694020.png](1610829694020.png)
@@ -122,6 +130,13 @@ Hozzatok létre egy WebApp erőforrást:
 
 
 ![](se_azure_webapp.png)
+
+Néhány gondolat:
+
+- .NET 7 nem választható. Válaszd a 6-ost, és majd ha elékészült az erőforrás, a beállítások között át lehet állítani 7-esre.
+- A telepítési lépések között engedélyezd a "basic authentication"-t. Ennélkül nem megy a következő lépésben taglalt, "PublishProfile"-en keresztül történő automatizált feltöltés, hiszen itt nincs lehetőség kétfaktoros aurntikációra. 
+
+
 
 ## Publish Proflie megszerzése
 
