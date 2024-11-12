@@ -49,5 +49,18 @@
       href: ./6_receptes/index.md
     - name: "🎓 előadás jegyzet"
       href: ./6_receptes/codesamples.md
+- name: "9. hét - WEB"
+  items:
+  - name: 🎓 "Böngészők fejlesztőknek"
+    href: ./9_elm_bongeszok_fejlesztoknek/index.md
+  - name: "📝 ASP .NET első lépések"
+    href: ./9a_gyak_asp_net_intro/asp_net_azure.md
+- name: 12. hét (2. ZH)
+- name: 13. hét (3. ZH)
+  items:
+    - name: 🎓 Cherry picking ZH
+      href: ./ZH3_cherry_picking/index.md
+    - name: 🎓 Pontozó lap
+      href: ./ZH3_cherry_picking/pontlap_minta.md
 
       

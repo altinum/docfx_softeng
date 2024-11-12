@@ -4,10 +4,12 @@
 
 Az utolsó ZH-ra mindenki magának állít össze feladatot a kurzus során tanult megoldásokból. A feladatot elő kell készíteni otthon, de adott, hogy milyen megoldás hány pontot ér. A feladat ASP. NET illetve Forms alkalmazás építése, mely valós vagy kitalált problémára -- vagy annak egy részére nyújt megoldást. A `Scaffold-DbContect` parancsot, illetve, ha lokális "Service Based Database" használata mellett döntötök, akkor az adatbázist létrehozó SQL scriptet hozhatjátok magatokkal, de a C# projektet az utolsó gyakorlat 90 perce alatt kell felépíteni. 
 
-A feladathoz készíthettek saját adatbázist, de felhasználhatjátok a kurzus során használt adatbázisokat is. Összesen 50 pontot lehet összeszedni, de csak a működő megoldásokra kapható pont, részpontok nincsenek. A saját adatbázis 5 pontot ér, de ha egyforma hozott adatbázisokat találunk, egyikre sem adunk pontot. 
+A feladathoz készíthettek saját adatbázist, de felhasználhatjátok a kurzus során használt adatbázisokat is. Összesen 30 pontot lehet összeszedni, de csak a működő megoldásokra kapható pont, részpontok nincsenek. A saját adatbázis 5 pontot ér, de ha egyforma hozott adatbázisokat találunk, egyikre sem adunk pontot. 
 
 Mindenki maga döntheti el, hogy mire helyezi a hangsúlyt.
 
+> [!WARNING]
+>
 > Javasoljuk, hogy tervezéssel kezdjétek a munkát! Egy lapra rajzoljátok le, hogy mit szeretnétek megvalósítani, és az [Árlap](#Árlap) alapján kiszámolni a pontértéket. Összehasonlításul: az 1b ZH az árlap alapján 
 
 A vizsga előkészítése önálló feladat, nem szeretnénk egyforma megoldásokat látni. Legyetek kreatívak.
@@ -149,7 +151,7 @@ Itt csak azok az elemek számíthatóak be, amelyeknek meg van a ZH alatt felép
 
 ## A pontozás menete 
 
-**A ZH után**, otthon, mindenkinek fel kell töltenie egy Markdown állományt a projekt mappájában létrehozott `doc/` mappába, amely képernyőfelvételeken mutatja be, hogy milyen megoldásokat alkalmazott. A megoldások és a hozzájuk tartozó pontszámok listája letölthető innét. A nem releváns tételek törlendők, a többi alá elhelyezendő a screenshot.
+**A ZH után**, otthon, mindenkinek fel kell töltenie egy Markdown állományt a projekt mappájában létrehozott `doc/` mappába, amely képernyőfelvételeken mutatja be, hogy milyen megoldásokat alkalmazott. A megoldások és a hozzájuk tartozó pontszámok listája letölthető [innét](pontlap_minta.md). A nem releváns tételek törlendők, a többi alá elhelyezendő a screenshot.
 
 Lelkes kollégáknak javasolt a https://www.screentogif.com/, melynek segítségével animált gif-be készíthető képernyőfelvétel. 
 

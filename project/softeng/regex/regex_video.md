@@ -17,7 +17,3 @@
 > [!Video https://kzgzdiag426.blob.core.windows.net/szoft2/RegEx_8.mp4]
 
 > [!Video https://kzgzdiag426.blob.core.windows.net/szoft2/RegEx_9.mp4]
-
-
-
-
