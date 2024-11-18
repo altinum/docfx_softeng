@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "qNmS7TRFHvyVO4pIIyZb8HaDg2SYFVBtm2OrhN8weU4=",
+  "Source": "WebApplicationJokes",
+  "BasePath": "_content/WebApplicationJokes",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApplicationJokes\\wwwroot",
+      "Source": "WebApplicationJokes",
+      "ContentRoot": "C:\\work\\SOFTENG\\project\\softeng\\10_JokesProject\\WebApplicationJokes\\WebApplicationJokes\\wwwroot\\",
+      "BasePath": "_content/WebApplicationJokes",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\work\\SOFTENG\\project\\softeng\\10_JokesProject\\WebApplicationJokes\\WebApplicationJokes\\wwwroot\\index.html",
+      "SourceId": "WebApplicationJokes",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\work\\SOFTENG\\project\\softeng\\10_JokesProject\\WebApplicationJokes\\WebApplicationJokes\\wwwroot\\",
+      "BasePath": "_content/WebApplicationJokes",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

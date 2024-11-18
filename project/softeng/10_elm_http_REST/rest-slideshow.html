@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+
+      body {
+        font-family: 'Droid Serif';
+      }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      .remark-slide-content h1 { font-size: 3em; }
+      .remark-slide-content h2 { font-size: 2em; }
+      .remark-slide-content h3 { font-size: 1.6em; }
+      .footnote {
+        position: absolute;
+        bottom: 3em;
+      }
+      li p { line-height: 1.25em; }
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+      a, a > code {
+        color: rgb(249, 38, 114);
+        text-decoration: none;
+      }
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-code-line-highlighted     { background-color: #373832; }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-right ~ p {
+        clear: both;
+      }
+      #slideshow .slide .content code {
+        font-size: 0.8em;
+      }
+      #slideshow .slide .content pre code {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+
+      /* Slide-specific styling */
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      #slide-how .slides {
+        font-size: 0.9em;
+        position: absolute;
+        top:  151px;
+        right: 140px;
+      }
+      #slide-how .slides h3 {
+        margin-top: 0.2em;
+      }
+      #slide-how .slides .first, #slide-how .slides .second {
+        padding: 1px 20px;
+        height: 90px;
+        width: 120px;
+        -moz-box-shadow: 0 0 10px #777;
+        -webkit-box-shadow: 0 0 10px #777;
+        box-shadow: 0 0 10px #777;
+      }
+      #slide-how .slides .first {
+        background: #fff;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+      }
+      #slide-how .slides .second {
+        position: relative;
+        background: #fff;
+        z-index: 0;
+      }
+
+      /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
+
+    </style>
+  </head>
+  <body>
+      <textarea id="source">
+
+class: center, middle, inverse
+
+# HTTP és REST API
+
+---
+
+# Agenda
+
+1. A HTTP protokollról röviden
+2. REST API
+2. REST szerver oldali technológiák
+3. REST kliens oldali technológiák
+
+---
+class: center, middle
+# Mi az a HTTP?
+---
+# HTTP
+
+A HTTP (Hypertext Transfer Protocol) egy szabványos protokoll, amelyet az interneten használnak az adatok átvitelére. Leggyakrabban a weboldalak böngészésénél találkozunk vele, mert ez az alapja a világháló működésének.
+
+- **Kliens-szerver modell**: A HTTP egy olyan protokoll, amelyben a kliens (pl. a böngésződ) kérést küld egy szervernek, amely válaszként adatokat (pl. weboldal tartalmát) küld vissza.
+- **Stateless (állapotmentes)**: Minden kérés független a korábbiaktól, azaz a szerver nem tartja nyilván a korábbi kéréseket.
+- **Kérések és válaszok:**
+    - A kliens HTTP-kérést küld (pl. egy adott weboldal letöltésére).
+    - A szerver válaszol, általában HTML, JSON, vagy más formátumban.
+---
+# A HTTP protokoll
+Egy **HTTP kérés (HTTP request)** a következő három elemből tevődik össze:
+
+1. parancs `GET`, `POST`, `HEAD`, `OPTIONS`, `PUT`, `DELETE`, `TRACE` valamint `CONNECT`, 
+2. kérés fejléc (request header) és az 
+3. üzenet test (message body) -- opcionális, lehet üres is 
+
+Egy **HTTP válasz (HTTP response)** a következő elemekből áll:
+
+- Állapotsor (Status Line): Ez tartalmazza a protokoll verzióját (pl. HTTP/1.1), az állapotkódot (pl. 200, 404) és egy állapotüzenetet (pl. OK, Not Found)
+- Válaszfejlécek (Response Headers): Ezek metaadatokat tartalmaznak a válaszról, például a szerver nevét, a válasz formátumát, a tartalom hosszát stb. 
+- Üzenet törzs (Message Body): Ez opcionális, és maga a válasz tartalma. Például egy HTML dokumentum, JSON adat, kép vagy bármilyen más tartalom. Ez lehet üres is, például 204 No Content esetén.
+
+---
+# A HTTP parancs 
+
+| Ige       | jelentés                                                     |
+| --------- | ------------------------------------------------------------ |
+| `GET`     | A megadott erőforrás letöltését kezdeményezi. Ez messze a leggyakrabban használt metódus. |
+| `HEAD`    | Ugyanazt adja vissza, mint a GET, csak magát az üzenettestet hagyja ki a válaszból. Segítségével például megtudható, hogy egy erőforrás utolsó letöltése óta változott-e. |
+| `POST`    | Feldolgozandó adatot küld fel a szerverre. Például  HTML űrlap tartalmát. Az adatot a message body tartalmazza. |
+| `PUT`     | Feltölti a megadott erőforrást.                              |
+| `DELETE`  | Törli a megadott erőforrást.                                 |
+| `TRACE`   | Visszaküldi a kapott kérést. Ez akkor hasznos, ha a kliens oldal arra kíváncsi, hogy a köztes hálózati eszközök változtatnak-e, illetve mit változtatnak a kérésen. |
+| `OPTIONS` | Visszaadja a szerver által támogatott HTTP metódusok listáját. |
+| `CONNECT` | Átalakítja a kérést transzparens TCP/IP tunnellé. Ezt a metódust jellemzően  SSL  kommunikáció megvalósításához használják. |
+---
+# Példa `GET` kérésre
+
+A **HTTP fejléc (header)** rész a kérés paraméterezhetőségéért felel, itt különböző kulcs érték párok állíthatók be melyekkel pontosítható, hogy mit is vár el a kérést küldő fél. Az Wikipédián van egy jó összefoglaló a [HTTP fejléc kulcsairól](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields) érdekességként. A fejlécben az `user-agent string` kulcsban közli a böngésző a szerverrel a saját azonosítóját. Sajnos történelmi okokból ezt meglehetősen nehéz értelmezi, egy vicces leírást [itt](https://webaim.org/blog/user-agent-string-history/) olvashattok. 
+
+HTTP request:
+
+```
+GET /api/viccek HTTP/1.1
+Host: viccszerver.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept: */*
+Connection: keep-alive
+```
+---
+# Válasz a `GET` kérésre
+
+HTTP response:
+
+``` 
+HTTP/1.1 200 OK
+Date: Sat, 18 Nov 2024 12:00:00 GMT
+Content-Type: text/plain; charset=utf-8
+Content-Length: 13
+Connection: keep-alive
+
+Hello, world!
+```
+---
+class: center, middle
+# Breakdown
+
+---
+# A HTTP válasz státusz kódjai
+
+A protokoll fontos részét képezik az információs részében található státuszkódok. Minden válasz pontosan egy darab ilyen kóddal rendelkezik attól függően, hogy milyen eredményt ért el a kérés feldolgozása. Ezek a kódok 5 különböző csoportba rendezhetők: 
+
+- `1xx` - a szerver fogadta a kérést, információs kódok
+- `2xx` - a szerver sikeresen fogadta, feldolgozta a kérést
+- `3xx` - a szerver fogadta a kérést, de további műveletek szükségesek a végrehajtásához
+- `4xx` - kliens hiba, a kérés valamilyen okból kifolyólag nem megfelelő
+- `5xx` - szerver hiba, a szerver nem volt képes végrehajtani a kérést
+
+Minden csoportban találhatóak a protokoll által előre definiált kódok, melyeket használni kell, de adott a lehetőség újak meghatározására is. Ilyen gyakran előforduló kód például a 200, mely sikeres kérés teljesítést jelent, 404 amit abban az esetben kap a kliens ha a keresett erőforrás nem található és az 500-as kód, mely belső szerver hibáról ad tájékoztatást.
+
+Aki kíváncsi a teljes listára aranyos, kutyás tálalásban az [itt](https://httpstatusdogs.com) megnézheti.
+
+---
+# User Angnt String
+
+```
+GET /api/viccek HTTP/1.1
+Host: viccszerver.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept: */*
+Connection: keep-alive
+```
+
+Breakdown:
+
+- `Mozilla/5.0`: Historical compatibility string used to indicate that the browser is based on modern web standards.
+- `Windows NT 10.0; Win64; x64`: Specifies the operating system (Windows 10, 64-bit architecture in this case).
+- `AppleWebKit/537.36`: Identifies the browser's rendering engine (WebKit version 537.36).
+- `(KHTML, like Gecko)`: Shows compatibility with the KHTML engine and Gecko (Firefox's engine).
+- `Chrome/119.0.0.0`: Indicates the browser is Chrome, version 119.0.0.0.
+- `Safari/537.36`: Includes a Safari version for compatibility purposes.
+---
+# MIME Types
+
+**Szöveges tartalmak:**
+
+- `text/plain` – Egyszerű szöveg.
+- `text/html` – HTML dokumentumok.
+- `text/css` – CSS stíluslapok.
+- `text/javascript` vagy application/javascript – JavaScript fájlok.
+
+**Képformátumok:**
+- `image/jpeg` – JPEG képek.
+- `image/png` – PNG képek.
+- `image/gif` – GIF képek.
+- `image/webp` – WebP képek.
+- `image/svg+xml` – SVG vektorgrafikák.
+- `image/x-icon` – Faviconok (ICO formátum).
+
+---
+# MIME Types
+
+**Dokumentumformátumok:**
+- `application/pdf` – PDF dokumentumok.
+- `application/msword` – Microsoft Word dokumentumok (.doc).
+- `application/vnd.openxmlformats-officedocument.wordprocessingml.document` – Microsoft Word dokumentumok (.docx).
+- `application/vnd.ms-excel` – Microsoft Excel táblázatok (.xls).
+- `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet` – Microsoft Excel táblázatok (.xlsx).
+- `application/vnd.ms-powerpoint` – Microsoft PowerPoint prezentációk (.ppt).
+- `application/vnd.openxmlformats-officedocument.presentationml.presentation` – Microsoft PowerPoint prezentációk (.pptx).
+
+---
+# MIME Types
+
+**Csomagolt és tömörített fájlok:**
+- `application/zip` – ZIP archívumok.
+- `application/x-rar-compressed` – RAR archívumok.
+- `application/gzip` – GZIP fájlok.
+- `application/x-7z-compressed` – 7-Zip archívumok.
+
+
+
+
+---
+class: center, middle
+# REST 
+---
+# A REST eredete
+
+A REST név Roy Fielding doktori disszertációjából származik, amelyet 2000-ben írt. A REST (**Representational State Transfer**) kifejezés azt a koncepciót írja le, hogyan lehet hatékonyan kezelni az állapotok és az erőforrások reprezentációinak továbbítását egy elosztott rendszeren belül, például a weben. A név tehát az alábbi kulcselemekre utal:
+
+### Reprezentáció (Representational)
+
+A REST erőforrásokat definiál, amelyek különböző formátumokban (pl. JSON, XML, HTML) reprezentálhatók. Az ügyfél nem magát az erőforrást kapja meg, hanem annak egy reprezentációját.
+
+### Állapot (State)
+
+Az állapotkezelés a kliens és a szerver interakcióira utal. Minden REST-kérés önálló és állapotmentes; az aktuális állapotot a kliens határozza meg a kapott adatok alapján. Ez az állapotkezelés teszi a REST-et könnyen skálázhatóvá és megbízhatóvá.
+
+### Átvitel (Transfer)
+
+Az állapot és az erőforrások reprezentációi az ügyfél és a szerver között HTTP protokollon keresztül kerülnek átvitelre.
+
+---
+# REST
+A REST (Representational State Transfer) egy architekturális stílus vagy koncepció, amelyet webszolgáltatások tervezéséhez használnak. A REST alapelvek betartásával készült API-kat hívják gyakran RESTful API-knak, de van egy kis árnyalatnyi különbség a két fogalom között.
+
+REST:
+- Egy elméleti koncepció, amely meghatároz bizonyos irányelveket egy webszolgáltatás tervezéséhez.
+- Az alapelvek közé tartozik:
+    - Erőforrások URL-ekkel történő azonosítása.
+    - HTTP-metódusok használata (GET, POST, PUT, DELETE, stb.) az erőforrásokkal való műveletek végrehajtására.
+    - Állapotmentesség (stateless) – minden kérés önmagában hordozza a szükséges információt.
+    - Cache-elhetőség, azaz az erőforrások válaszai gyorsítótárazhatók, ha megfelelő fejlécekkel vannak ellátva.
+    - Egységes interfész, amely az egész API-ban következetesen alkalmazandó.
+**A REST tehát egy absztrakt szabvány vagy filozófia.**
+---
+# RESTful API
+
+RESTful:
+- Egy API akkor nevezhető **RESTful API-nak, ha gyakorlati szinten megfelel a REST irányelveinek**.
+- A RESTful API egy olyan implementáció, amely az előző pontoknak megfelelően működik:
+
+Például egy RESTful API lehet egy olyan alkalmazás, amely az URL-eket a megfelelő HTTP-módszerekkel kezeli (pl. egy /users végpont GET metódussal lekér egy felhasználót, POST pedig létrehoz egy újat).
+Ha az API eltér a REST elveitől (pl. nem használ HTTP-módszereket megfelelően), az már nem igazán tekinthető RESTful-nak.
+
+Egyszerű analógia:
+- A REST az elmélet, egy szabályrendszer vagy design minta.
+- A RESTful az, amikor ezt a szabályrendszert valaki helyesen alkalmazza egy működő API létrehozásához.
+---
+
+class: center, middle, inverse
+
+# Binary data in XML & JSON
+---
+# Base16, 36 & 64
+Base16: 
+```
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+```
+Base32: 
+```
+0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K M N P Q R T V W X Y
+```
+Base64: 
+```
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+a b c d e f g h i j k l m n o p q r s t u v w x y z 
+0 1 2 3 4 5 6 7 8 9 
++ /
+```
+---
+# Base64
+
+Each character codes 6 bits:
+
+| Base64 Character | Binary Value   |
+|------------------|----------------|
+| A                | 000000         |
+| B                | 000001         |
+| C                | 000010         |
+| D                | 000011         |
+| E                | 000100         |
+| F                | 000101         |
+| G                | 000110         |
+| H                | 000111         |
+| I                | 001000         |
+| J                | 001001         |
+| ...              | ...            |
+
+---
+# Base64 URL
+1x1 px black dot GIF
+
+``` html
+<img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="1x1 black dot" />
+```
+---
+# Websocket API
+
+
+A WebSocket egy olyan kommunikációs protokoll, amely kétirányú, teljes duplex kommunikációt tesz lehetővé egyetlen TCP-kapcsolaton keresztül. A WebSocket protokollt általában webalkalmazások használják, hogy valós idejű kommunikációt biztosítsanak a szerver és a kliens között.
+
+**Hogyan működik a WebSocket?**
+- **Kézfogás (Handshake)**: A WebSocket kapcsolat létrejöttéhez először egy HTTP-kézfogás szükséges. Ez egy normál HTTP-kérés, amelyben a kliens jelzi a szervernek, hogy WebSocket kapcsolatra váltana. Ha a szerver elfogadja, a kapcsolat átvált WebSocket protokollra.
+
+- **Kapcsolat**: Az egyszer létrehozott kapcsolat nyitott marad, és mind a kliens, mind a szerver bármikor küldhet adatokat a másiknak.
+
+- **Kétirányú kommunikáció**: A kapcsolat teljes duplex, vagyis a szerver és a kliens egyszerre tud üzeneteket küldeni és fogadni, anélkül, hogy külön kérés-válasz mechanizmusra lenne szükség.
+
+---
+class: center, middle, inverse
+
+# REST szerver oldali technológiák
+
+---
+# Az API Controller váza
+``` csharp
+[Route("api/jokes")]
+[ApiController]
+public class JokeController : ControllerBase
+{
+    ...
+}
+```
+---
+# Egyszerű GET kérés
+``` csharp
+[Route("api/jokes")]
+[ApiController]
+public class JokeController : ControllerBase
+{
+    // GET: api/<JokeController>
+    [HttpGet]
+    public IActionResult Get()
+    {
+        FunnyDatabaseContext context = new FunnyDatabaseContext();
+        return Ok(context.Jokes.ToList());
+    }
+    ...   
+}
+```
+---
+# GET kérés paraméterrel I.
+``` csharp
+[HttpGet("{id}")]
+public IActionResult Get(int id)
+{
+    FunnyDatabaseContext context = new FunnyDatabaseContext();
+    var keresettVicc = (from x in context.Jokes
+                        where x.JokeSk == id
+                        select x).FirstOrDefault();
+    return Ok(keresettVicc);   
+}
+```
+---
+# GET kérés paraméterrel II.
+``` csharp
+[HttpGet("{id}")]
+public IActionResult Get(int id)
+{
+    FunnyDatabaseContext context = new FunnyDatabaseContext();
+    var keresettVicc = (from x in context.Jokes
+                        where x.JokeSk == id
+                        select x).FirstOrDefault();
+    if (keresettVicc == null)
+    {
+        return NotFound($"Nincs #{id} azonosítóval vicc");
+    }
+    else
+    {
+        return Ok(keresettVicc);
+    }
+}
+```
+---
+# `IActionResult` status codes
+
+**4xx Client Errors**
+
+
+| **Method**                     | **HTTP Status Code** | **Description**                                         |
+|---------------------------------|----------------------|---------------------------------------------------------|
+| `BadRequest(object? error)`     | 400                  | Returns *Bad Request* with optional error details.      |
+| `Unauthorized()`                | 401                  | Returns *Unauthorized*.                                |
+| `Forbidden()`                   | 403                  | Returns *Forbidden*.                                   |
+| `NotFound(object? value)`       | 404                  | Returns *Not Found* with optional details.             |
+| `UnprocessableEntity(object? value)` | 422             | Returns *Unprocessable Entity* with optional details.  |
+
+---
+# GET kérés paraméterrel III.
+
+``` csharp
+[HttpDelete("{id}")]
+public void Delete(int id)
+{
+    FunnyDatabaseContext context = new FunnyDatabaseContext();
+    var törlendőVicc = (from x in context.Jokes
+                        where x.JokeSk == id
+                        select x).FirstOrDefault();
+    context.Remove(törlendőVicc);
+    context.SaveChanges();
+}
+```
+---
+# Egyszerű POST kérés
+
+``` csharp
+[HttpPost]
+public void Post([FromBody] Joke újVicc)
+{
+    FunnyDatabaseContext context = new FunnyDatabaseContext();
+    context.Jokes.Add(újVicc);
+    context.SaveChanges();
+}
+```
+
+
+
+</JokeController></textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+          var slideshow = remark.create({
+      ratio: '16:9'  // Set the aspect ratio to 16:9
+    });
+    </script>
+  </body>
+</html>

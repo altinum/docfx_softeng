@@ -57,6 +57,12 @@
     href: ./9a_gyak_asp_net_intro/asp_net_azure.md
   - name: "📝 ASP .NET API Controller"
     href: ./9b_gyak_crude_viccek/index.md
+- name: "10. hét - WEB"
+  items: 
+  - name: "🎓 HTTP & REST"
+    href: ./10_elm_http_REST/rest-slideshow.html
+  - name: "📝 ASP .NET API Controller"
+    href: ./9b_gyak_crude_viccek/index.md
 - name: 12. hét (2. ZH)
 - name: 13. hét (3. ZH)
   items:

@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\work\\SOFTENG\\project\\softeng\\10_JokesProject\\WebApplicationJokes\\WebApplicationJokes\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebApplicationJokes.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.WebApplicationJokes.props",
+      "PackagePath": "build\\WebApplicationJokes.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApplicationJokes.props",
+      "PackagePath": "buildMultiTargeting\\WebApplicationJokes.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.WebApplicationJokes.props",
+      "PackagePath": "buildTransitive\\WebApplicationJokes.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
