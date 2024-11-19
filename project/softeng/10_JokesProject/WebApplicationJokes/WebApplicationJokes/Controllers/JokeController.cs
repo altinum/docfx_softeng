@@ -36,13 +36,13 @@ namespace WebApplicationJokes.Controllers
         }
 
         // POST api/<JokeController>
-        [HttpPost]
-        public void Post([FromBody] Joke újVicc)
-        {
-            FunnyDatabaseContext context = new FunnyDatabaseContext();
-            context.Jokes.Add(újVicc);
-            context.SaveChanges();
-        }
+[HttpPost]
+public void Post([FromBody] Joke újVicc)
+{
+    FunnyDatabaseContext context = new FunnyDatabaseContext();
+    context.Jokes.Add(újVicc);
+    context.SaveChanges();
+}
 
         // PUT api/<JokeController>/5
         //[HttpPut("{id}")]
@@ -51,15 +51,15 @@ namespace WebApplicationJokes.Controllers
         //}
 
         // DELETE api/<JokeController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-            FunnyDatabaseContext context = new FunnyDatabaseContext();
-            var törlendőVicc = (from x in context.Jokes
-                                where x.JokeSk == id
-                                select x).FirstOrDefault();
-            context.Remove(törlendőVicc);
-            context.SaveChanges();
-        }
+[HttpDelete("{id}")]
+public void Delete(int id)
+{
+    FunnyDatabaseContext context = new FunnyDatabaseContext();
+    var törlendőVicc = (from x in context.Jokes
+                        where x.JokeSk == id
+                        select x).FirstOrDefault();
+    context.Remove(törlendőVicc);
+    context.SaveChanges();
+}
     }
 }
