@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "uv8++Mp3YaCuKIDtVGqF021t7K0E7UCPKqysq7dM9AI=",
+  "Source": "Pasacal",
+  "BasePath": "_content/Pasacal",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Pasacal\\wwwroot",
+      "Source": "Pasacal",
+      "ContentRoot": "C:\\REPO\\szamtud\\softeng\\10_elm\\Project\\Pasacal\\Pasacal\\wwwroot\\",
+      "BasePath": "_content/Pasacal",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\REPO\\szamtud\\softeng\\10_elm\\Project\\Pasacal\\Pasacal\\wwwroot\\index.html",
+      "SourceId": "Pasacal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\REPO\\szamtud\\softeng\\10_elm\\Project\\Pasacal\\Pasacal\\wwwroot\\",
+      "BasePath": "_content/Pasacal",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\REPO\\szamtud\\softeng\\10_elm\\Project\\Pasacal\\Pasacal\\wwwroot\\kerdesek.js",
+      "SourceId": "Pasacal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\REPO\\szamtud\\softeng\\10_elm\\Project\\Pasacal\\Pasacal\\wwwroot\\",
+      "BasePath": "_content/Pasacal",
+      "RelativePath": "kerdesek.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\kerdesek.js"
+    },
+    {
+      "Identity": "C:\\REPO\\szamtud\\softeng\\10_elm\\Project\\Pasacal\\Pasacal\\wwwroot\\questions.json",
+      "SourceId": "Pasacal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\REPO\\szamtud\\softeng\\10_elm\\Project\\Pasacal\\Pasacal\\wwwroot\\",
+      "BasePath": "_content/Pasacal",
+      "RelativePath": "questions.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\questions.json"
+    }
+  ]
+}

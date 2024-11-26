@@ -64,6 +64,20 @@
   - name: "📝 ASP .NET API Controller"
     href: ./9b_gyak_crude_viccek/index.md
 - name: 12. hét (2. ZH)
+- name: "11. hét - WEB"
+  items: 
+  - name: "🎓 Kriptográfia"
+    href: https://kzgzdiag426.blob.core.windows.net/szoft2/Kriptografia_v4.pptx
+  - name: "📝 Gyakorló feladatsor"
+    href: ./11_ZH2_GYAK/zh2_gyak.md
+  - name: "CSS-JS összefoglaló"
+    items: 
+    - name: 🎓 CSS alapok
+      href: ./10_elm_js_basics/css_alapok.md
+    - name: 🎓 JS objektumok és tömbök
+      href: ./10_elm_js_basics/js_objekutmok_tombok.md
+    - name: 📝 JS DOM manipuláció
+      href: ./10_elm_js_basics/js_pascal_haromszog.md
 - name: 13. hét (3. ZH)
   items:
     - name: 🎓 Cherry picking ZH
