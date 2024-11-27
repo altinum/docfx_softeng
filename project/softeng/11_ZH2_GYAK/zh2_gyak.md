@@ -32,18 +32,19 @@ A projekt neve a zh-ban adott lesz, most tetszőleges.
 ❹ Készítsd el az ORM állományokat a következő adatbázishoz:
 
 ```powershell
-Scaffold-DbContext "Data Source=bit.uni-corvinus.hu;Initial Catalog=FunnyDatabase;User ID=vendeg;Password=12345;Encrypt=False" Microsoft.EntityFrameworkCore.SqlServer -OutputDir JokeModels
+Scaffold-DbContext "Data Source=bit.uni-corvinus.hu;Initial Catalog=FunnyDatabase;User ID=vendeg;Password=12345;Encrypt=False" Microsoft.EntityFrameworkCore.SqlServer -OutputDir BookModels
 ```
 
-**Táblák és Adatmodell:**
+**Adatmodell:**
 
-**Books (Könyvek)**:
+**Book tábla**:
+
    - **id**: Egyedi azonosító (szám, automatikusan generált).
-   - **title**: A könyv címe (string).
-   - **author**: A szerző neve (string).
-   - **year**: A kiadás éve (szám).
-   - **genre**: Műfaj (string).
-   - **isAvailable**: Elérhetőség (boolean).
+   - **title**: A könyv címe (string, NOT NULL).
+   - **author**: A szerző neve (string, NOT NULL).
+   - **year**: A kiadás éve (szám, NOT NULL).
+   - **genre**: Műfaj (string, NOT NULL).
+   - **isAvailable**: Elérhetőség (boolean, NOT NULL).
 
 > [!IMPORTANT]
 >
@@ -90,7 +91,7 @@ Fejtsd ki a  `POST`  metódut, mely új rekordot szúr be a táblába!
 
 > [!WARNING]
 >
-> Ha az adatbázis táblában az elsődleges kulcs automatikusan számozódik (IDENTITY), nem szabad értéket adni neki új rekord beszúrásakor, mert az az SQL szerver felől hibaüzenethez vezet.
+> Ha az adatbázis táblában az elsődleges kulcs automatikusan számozódik (IDENTITY), nem szabad értéket adni neki új rekord beszúrásakor, mert az az SQL szerver felől hibaüzenethez vezet. A NOT null mezőknek mindenképpen értéket kell adni!
 
 **POST /api/books**
 

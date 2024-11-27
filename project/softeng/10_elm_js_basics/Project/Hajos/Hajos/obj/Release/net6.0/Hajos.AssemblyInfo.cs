@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hajos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a31aa1a7597da6fe98d1a54901484ad1314cb69f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hajos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hajos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
