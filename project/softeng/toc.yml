@@ -63,7 +63,6 @@
     href: ./10_elm_http_REST/rest-slideshow.html
   - name: "📝 ASP .NET API Controller"
     href: ./9b_gyak_crude_viccek/index.md
-- name: 12. hét (2. ZH)
 - name: "11. hét - WEB"
   items: 
   - name: "🎓 Kriptográfia"
@@ -78,6 +77,10 @@
       href: ./10_elm_js_basics/js_objekutmok_tombok.md
     - name: 📝 JS DOM manipuláció
       href: ./10_elm_js_basics/js_pascal_haromszog.md
+- name: 12. hét (2. ZH)
+  items: 
+  - name: "🎓 Feladatmegoldás videón"
+    href: ./11_ZH2_GYAK/zh2_gyak_video.md
 - name: 13. hét (3. ZH)
   items:
     - name: 🎓 Cherry picking ZH
