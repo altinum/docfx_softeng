@@ -37,7 +37,7 @@ A mindenkit érintő kérdéseket az előadás  Teams csoportjában tegyétek fe
 
 ## Osztályzás és ponthatárok
 
-- A tantárgy gyakorlati jeggyel zárul. A félév során **Három géptermi zárthelyi** formájában kerül számonkérésre a tananyag, melyeken rendre 35, 35 és 30  pont szerezhető. 
+- A tantárgy gyakorlati jeggyel zárul. A félév során **Három géptermi zárthelyi** formájában kerül számonkérésre a tananyag, melyeken rendre **35**, **35** és **30**  pont szerezhető. 
 
 - A vizsgaidőszak első hetén --  ha a terembeosztás lehetővé teszi, pénteken délelőtt 10:00-kor --  egy zárthelyi  pótlására **vagy** javítására van lehetőség. Több ZH javítására nincs mód.
 

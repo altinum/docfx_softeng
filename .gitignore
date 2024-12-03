@@ -1,4 +1,18 @@
 .cache
 /**/_site/
 # Visual Studio 2015/2017 cache/options directory
+
+
+# Build Artifacts
+bin/
+obj/
+out/
+**/bin/
+**/obj/
+
+# Visual Studio Specific
 .vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates

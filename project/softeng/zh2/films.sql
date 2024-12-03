@@ -1,0 +1,65 @@
+-- Create the Films table
+CREATE TABLE Films (
+    FilmID INT IDENTITY(1,1) PRIMARY KEY,
+    Title VARCHAR(100) NOT NULL,
+    ReleaseYear INT NOT NULL,
+    Genre VARCHAR(50) NOT NULL,
+    IsAvailable BIT NOT NULL
+);
+
+-- Insert 50 sample rows
+INSERT INTO Films (Title, ReleaseYear, Genre, IsAvailable)
+VALUES
+('Inception', 2010, 'Sci-Fi', 1),
+('The Dark Knight', 2008, 'Action', 1),
+('Interstellar', 2014, 'Sci-Fi', 1),
+('The Matrix', 1999, 'Sci-Fi', 1),
+('Pulp Fiction', 1994, 'Crime', 0),
+('The Godfather', 1972, 'Crime', 1),
+('The Shawshank Redemption', 1994, 'Drama', 1),
+('Forrest Gump', 1994, 'Drama', 1),
+('Gladiator', 2000, 'Action', 0),
+('Avatar', 2009, 'Sci-Fi', 1),
+('Titanic', 1997, 'Romance', 1),
+('The Avengers', 2012, 'Action', 1),
+('Black Panther', 2018, 'Action', 1),
+('Parasite', 2019, 'Thriller', 1),
+('Joker', 2019, 'Drama', 0),
+('Toy Story', 1995, 'Animation', 1),
+('Finding Nemo', 2003, 'Animation', 1),
+('Up', 2009, 'Animation', 1),
+('Coco', 2017, 'Animation', 0),
+('Frozen', 2013, 'Animation', 1),
+('Shrek', 2001, 'Animation', 1),
+('Spider-Man: No Way Home', 2021, 'Action', 1),
+('Doctor Strange', 2016, 'Action', 1),
+('Iron Man', 2008, 'Action', 1),
+('Thor', 2011, 'Action', 0),
+('Captain Marvel', 2019, 'Action', 1),
+('Guardians of the Galaxy', 2014, 'Sci-Fi', 1),
+('The Lion King', 1994, 'Animation', 1),
+('Aladdin', 1992, 'Animation', 1),
+('Beauty and the Beast', 1991, 'Animation', 0),
+('The Incredibles', 2004, 'Animation', 1),
+('Monsters, Inc.', 2001, 'Animation', 1),
+('Ratatouille', 2007, 'Animation', 0),
+('WALL-E', 2008, 'Animation', 1),
+('Inside Out', 2015, 'Animation', 1),
+('Brave', 2012, 'Animation', 1),
+('Soul', 2020, 'Animation', 1),
+('Dune', 2021, 'Sci-Fi', 0),
+('The Batman', 2022, 'Action', 1),
+('No Time to Die', 2021, 'Action', 1),
+('Skyfall', 2012, 'Action', 1),
+('Casino Royale', 2006, 'Action', 1),
+('Spectre', 2015, 'Action', 0),
+('The Bourne Identity', 2002, 'Action', 1),
+('The Bourne Ultimatum', 2007, 'Action', 1),
+('Mad Max: Fury Road', 2015, 'Action', 1),
+('The Hunger Games', 2012, 'Sci-Fi', 1),
+('Catching Fire', 2013, 'Sci-Fi', 1),
+('The Revenant', 2015, 'Drama', 1),
+('Whiplash', 2014, 'Drama', 0);
+
+-- Verify the inserted data
+SELECT * FROM Films;
