@@ -1,6 +1,4 @@
-﻿- name: Tananyagok
+﻿- name: Gazdaságinformatika
   href: softeng/
-- name: Software Engineering - Data Science
+- name: Data Science
   href: softeng2/
-- name: ZK-k és értékelés
-  href: ertekeles/

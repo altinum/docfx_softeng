@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+
+      body {
+        font-family: 'Droid Serif';
+      }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      .remark-slide-content h1 { font-size: 3em; }
+      .remark-slide-content h2 { font-size: 2em; }
+      .remark-slide-content h3 { font-size: 1.6em; }
+      .footnote {
+        position: absolute;
+        bottom: 3em;
+      }
+      li p { line-height: 1.25em; }
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+      a, a > code {
+        color: rgb(249, 38, 114);
+        text-decoration: none;
+      }
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-code-line-highlighted     { background-color: #373832; }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-right ~ p {
+        clear: both;
+      }
+      #slideshow .slide .content code {
+        font-size: 0.8em;
+      }
+      #slideshow .slide .content pre code {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+
+      /* Slide-specific styling */
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      #slide-how .slides {
+        font-size: 0.9em;
+        position: absolute;
+        top:  151px;
+        right: 140px;
+      }
+      #slide-how .slides h3 {
+        margin-top: 0.2em;
+      }
+      #slide-how .slides .first, #slide-how .slides .second {
+        padding: 1px 20px;
+        height: 90px;
+        width: 120px;
+        -moz-box-shadow: 0 0 10px #777;
+        -webkit-box-shadow: 0 0 10px #777;
+        box-shadow: 0 0 10px #777;
+      }
+      #slide-how .slides .first {
+        background: #fff;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+      }
+      #slide-how .slides .second {
+        position: relative;
+        background: #fff;
+        z-index: 0;
+      }
+
+      /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
+
+    </style>
+  </head>
+  <body>
+      <textarea id="source">
+
+class: center, middle, inverse
+
+# Implicit and Explicit Type Conversion in CSharp
+
+---
+# Implicit and Explicit Type Conversion
+
+In C#, type conversion (or type casting) is the process of converting one data type to another. 
+
+C# provides two main types of conversion:
+
+1. **Implicit Conversion (Safe Conversion)**
+2. **Explicit Conversion (Type Casting)**
+
+Understanding these concepts is crucial for writing efficient and error-free code.
+
+---
+class: center, middle
+# Implicit Type Conversion
+
+---
+# Implicit Type Conversion
+
+**Definition**
+
+Implicit conversion happens **automatically** when:
+
+- There is no risk of data loss.
+- The destination type can accommodate all possible values of the source type.
+
+Implicit conversions occur in **widening** conversions, such as from a smaller to a larger numeric type.
+
+---
+# **Example 1**: 
+# Converting `int` to `long`
+
+```c#
+int smallNumber = 100;
+
+long bigNumber = smallNumber; // Implicit conversion
+
+
+Console.WriteLine(bigNumber);
+```
+
+Here, `int` (4 bytes) is converted to `long` (8 bytes) without explicit casting since `long` can hold any `int` value.
+
+---
+# **Example 2**: 
+# Converting `byte` to `int`
+
+```c#
+byte smallNumber = 100;
+
+int bigNumber = smallNumber; // Implicit conversion
+
+
+Console.WriteLine(bigNumber);
+```
+
+Here, `byte` (1 byte, 0..255) is converted to `int` (4 bytes) without explicit casting since `int` can hold any `byte` value.
+
+---
+class: center, middle
+# Explicit Type Conversion
+
+---
+# Explicit Type Conversion
+
+**Definition**
+
+Implicit conversion happens when:
+
+- There is risk of data loss.
+- The destination type can not accommodate all possible values of the source type.
+
+Expicit conversions occur in **norrowing** conversions, such as from a larger to a smaller numeric type. Or from numeric types to string.
+---
+# **Example 2**: 
+# Converting `int` to `byte` (Possible Overflow)
+
+
+```c#
+int number = 256;
+
+byte smallByte = (byte)number; // Explicit conversion
+
+Console.WriteLine(smallByte); // Output: 0 (due to overflow)
+```
+
+`byte` can only store values from `0` to `255`. Since `256` exceeds this, the value wraps around.
+
+---
+
+# **Example 3:** 
+# Converting `long` to `int`
+
+```c#
+long bigNumber = 5000000000000;
+
+int smallNumber = (int)bigNumber; // Explicit conversion
+
+Console.WriteLine(smallNumber);
+```
+
+If `bigNumber` exceeds `int.MaxValue`, data loss will occur.
+
+---
+# **Key Points**
+
+- Explicit conversions require a cast `(type)`.
+- Data loss or runtime exceptions can occur.
+- Necessary for narrowing conversions.
+
+---
+
+# Using `Convert` Class
+
+The `Convert` class safely converts types while handling exceptions.
+
+```c#
+double price = 99.99;
+int roundedPrice = Convert.ToInt32(price);
+Console.WriteLine(roundedPrice); // Outputs: 100 (Rounded)
+```
+
+The result is rounded. The cast truncates the decimals:
+
+```c#
+double price = 99.99;
+int castedPrice = (int)price;
+Console.WriteLine(castedPrice); // Outputs: 99 
+```
+
+---
+
+# Using `ToString()` for String Conversion
+
+```c#
+int number = 50;
+string text = number.ToString(); // Convert int to string
+Console.WriteLine(text);
+```
+
+```c#
+decimal number = 12345.6789m;
+string text = number.ToString("N1"); // Convert int to string
+Console.WriteLine(text);
+```
+---
+# Using `Parse()` for String to Number Conversion
+
+```c#
+string numberText = "123";
+int numberValue = int.Parse(numberText);
+Console.WriteLine(numberValue);
+```
+
+---
+# Using `TryParse()` for String to Number Conversion
+
+```c#
+string invalidText = "abc";
+bool success = int.TryParse(invalidText, out int result);
+Console.WriteLine(success); // Outputs: False
+```
+
+`TryParse()` prevents runtime exceptions.
+
+---
+# **Conclusion**
+
+| Conversion Type | Implicit     | Explicit (Casting)  |
+| --------------- | ------------ | ------------------- |
+| Safety          | Safe         | May cause data loss |
+| Requires Cast?  | No           | Yes  -- `(type)`    |
+| Example         | `int → long` | `double → int`      |
+| Numeric Types   | Widening     | Narrowing           |
+
+Understanding implicit and explicit conversions in C# is crucial for writing robust applications. Implicit conversions simplify type handling, while explicit conversions provide flexibility but require careful handling to prevent errors.
+
+
+</JokeController></textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+          var slideshow = remark.create({
+      ratio: '16:9'  // Set the aspect ratio to 16:9
+    });
+    </script>
+  </body>
+</html>

@@ -22,13 +22,13 @@
 
 
 
-## The etimology of the word “integer”? 
+## The etimology of the word “integer”
 
 The word **"integer"** in programming comes from **Latin**, where *integer* means **"whole" or "untouched"** (*in-* meaning "not" and *tangere* meaning "to touch"). It was used in mathematics long before programming to refer to **whole numbers** (both positive and negative, including zero) without fractional or decimal parts. 
 
 When programming languages were developed, they adopted **integer** as a data type name to represent whole numbers, distinguishing them from floating-point numbers, which can have decimals. The choice was a natural extension of mathematical terminology into computing. 
 
-## Etimology of the word “bool” in programing? 
+## Etimology of the “bool”
 
 The term **"bool"** in programming comes from **"Boolean"**, which is named after **George Boole** (1815–1864), an English **mathematician** and logician. Boole developed Boolean algebra, a system of logic that deals with true/false (or 1/0) values, which became fundamental to computer science and digital logic. 
 
@@ -36,7 +36,7 @@ Many programming languages use "bool" as a shorthand for the Boolean data type, 
 
 
 
-## **0.1 in binary (base 2):**
+## 0.1 in binary (base 2)
 
 0.0001100110011001100110011001100...
 

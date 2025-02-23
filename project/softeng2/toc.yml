@@ -10,6 +10,8 @@
       href: ./ds_week2_lec_classes/working_with_classes.md
     - name: "🎓 Numeric Data Types in C#"
       href: ./ds_week2_lec_classes/beahaviour_of_numeric_data_types.md
+    - name: "🎬 Implicit and Explicit Type Conversion in C#"
+      href: ./ds_week2_lec_classes/conversion_between_types-slideshow.html
     - name: "🎓 Implicit and Explicit Type Conversion in C#"
       href: ./ds_week2_lec_classes/conversion_between_types.md
     - name: "📝 Fibonacci squence"
