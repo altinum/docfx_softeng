@@ -20,7 +20,8 @@
       href: ./ds_week2_lab/multiplication_table.md
     - name: "📝 Chessboard"
       href: ./ds_week2_lab/chessboard.md
-      
+    - name: "📝 Pascal's Triangle of Buttons"
+      href: ./ds_week2_lab/pascal_triangle.md
 #- name: 3. hét
 #  items:
 #    - name: 📝 TreeView feltöltése
