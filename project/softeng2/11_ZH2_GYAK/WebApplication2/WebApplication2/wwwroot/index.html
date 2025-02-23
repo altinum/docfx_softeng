@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="main.css" rel="stylesheet" />
+</head>
+<body>
+    Hello Wrold!
+    <p><input id="cim" type="text" placeholder="Add meg itt a könyv címét..." /></p>
+    <p><input id="szerzo" type="text" placeholder="Add meg itt a könyv szerzőjét..." /></p>
+    <p><input id="ev" type="text" placeholder="Add meg itt a könyv kiadásának dátuma..." /></p>
+    <p><input id="mufaj" type="text" placeholder="Add meg itt a könyv műfaját..." /></p>
+    <p><input id="elerheto" type="checkbox" placeholder="Add meg itt a könyv elérhetőségét..." /></p>
+    <p><button id="ujKonyvRogzito">Rögzítés!</button></p>
+
+    <p><button id="megjelenitoGomb">Összes könyv megjelenítése</button></p>
+
+    <h1>Könyvek</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Cím</th>
+                <th>Szerző</th>
+                <th>Kiadás Éve</th>
+                <th>Műfaj</th>
+                <th>Elérhetőség</th>
+            </tr>
+        </thead>
+        <tbody id="tb_konyvek">
+        </tbody>
+    </table>
+
+    <script>
+
+        document.getElementById("ujKonyvRogzito").addEventListener("click", _ => {
+
+            var bookData = {
+                "title": document.getElementById("cim").value,
+                "author": document.getElementById("szerzo").value,
+                "year": document.getElementById("ev").value,
+                "genre": document.getElementById("mufaj").value,
+                "isAvailable": document.getElementById("elerheto").checked == "Ok"
+            }
+
+            fetch("api/book", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(bookData)
+            }).then(v => {
+                if (v.ok) {
+                    alert("Siker")
+                }
+                else {
+                    alert("Hiba")
+                }
+            })
+
+
+
+        });
+
+        document.getElementById("megjelenitoGomb").addEventListener("click", _ => {
+            fetch("api/book").then(v => v.json()).then(o => {
+
+                let tbody = document.getElementById("tb_konyvek");
+                tbody.innerHTML = "";
+
+                console.log("GET:", o);
+
+                var tábla = document.getElementById("tb_konyvek");
+                for (var i = 0; i < o.length; i++) {
+
+                    var sor = document.createElement("tr");
+                    sor.innerHTML = `
+                                        <td>${o[i].id}</td>
+                                        <td>${o[i].title}</td>
+                                        <td>${o[i].author}</td>
+                                        <td>${o[i].year}</td>
+                                        <td>${o[i].genre}</td>
+                                        <td>${o[i].isAvailable}</td>
+                                    `;
+
+                    tábla.appendChild(sor);
+                }
+            })
+
+
+
+        })
+
+
+
+
+    </script>
+</body>
+</html>

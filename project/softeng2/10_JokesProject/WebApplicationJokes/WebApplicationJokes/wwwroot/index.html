@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <div id="jokeList"></div>
+        <div>
+            <input id="jokeText" type="text" placeholder="Csak PC vicc" />
+        </div>
+        <button id="addButton">Új vicc felvétele</button>
+    </div>
+    <script>
+        fetch('/api/jokes')
+            .then(response => response.json())
+            .then(jokes => {
+                const jokeList = document.getElementById('jokeList');
+                jokes.forEach(joke => {
+                    const jokeElement = document.createElement('div');
+                    jokeElement.innerHTML = joke.jokeText;
+                    jokeList.appendChild(jokeElement);
+                });
+            });
+
+        document.getElementById("addButton").addEventListener("click", () => {
+
+            //Ezt az objektumot fogjuk átküldeni
+            let data = {
+                jokeText: document.getElementById("jokeText").value
+            }
+
+
+            fetch("api/jokes",
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                }
+            ).then();
+        });
+    </script>
+</body>
+</html>

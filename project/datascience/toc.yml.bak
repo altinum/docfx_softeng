@@ -1,0 +1,10 @@
+- name: Knowledge base
+  items:
+    - name: VS 2022 install
+      href: /softeng_datascience/vs_install/index.md
+- name: 1. hét
+  items:
+    - name: 🎓 Links for the lecture
+      href: /softeng_datascience/week_1/lecture.md
+    - name: 📝 Lab exercises
+      href: /softeng_datascience/week_1/loan_calculator.md

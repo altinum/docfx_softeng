@@ -1,0 +1,102 @@
+﻿- name: Week 1
+  items:
+    - name: "🎓 Variables"
+      href: ./ds_week1_lec_variables/variables.md
+    - name: "📝 Loan calculator"
+      href: ./ds_week1_lab_loan_calculator/loan_calculator.md
+- name: Week 2
+  items:
+    - name: "🎓 Work with classes"
+      href: ./ds_week2_lec_classes/working_with_classes.md
+    - name: "🎓 Numeric Data Types in C#"
+      href: ./ds_week2_lec_classes/beahaviour_of_numeric_data_types.md
+    - name: "🎓 Implicit and Explicit Type Conversion in C#"
+      href: ./ds_week2_lec_classes/conversion_between_types.md
+    - name: "📝 Fibonacci squence"
+      href: ./ds_week2_lab/fibonacci_sequence.md
+    - name: "📝 Multiplication table"
+      href: ./ds_week2_lab/multiplication_table.md
+    - name: "📝 Chessboard"
+      href: ./ds_week2_lab/chessboard.md
+      
+#- name: 3. hét
+#  items:
+#    - name: 📝 TreeView feltöltése
+#      href: ./ch02-winforms/ch02-03-product-category-treeview-part01.md
+#- name: 4. hét
+#  items:
+#    - name: 📝 TreeView szerkesztése
+#      href: ./ch02-winforms/ch02-03-product-category-treeview-part02.md
+#    - name: 🎬 TreeView megoldás
+#      href: ./ch02-winforms/ch03-03-treeview-video.md
+#- name: 5. hét
+#  items:
+#    - name: 📖 XML prezentáció
+#      href: ./ch02-winforms/ch02-03-xml-slideshow.html
+#    - name: 📝 XML mentése
+#      href: ./ch02-winforms/ch02-03-product-category-xml.md      
+#- name: 6. hét
+#  items:
+#    - name: 📖 RegEx összefoglaló
+#      href: ./ch02-winforms/ch02-04-01-regex.md
+#    - name: 🎬 RegEx videók
+#      href: ./regex/regex_video.md
+#    - name: 📝 Adatok validálása űrlapon
+#      href: ./ch02-winforms/ch02-04-02-validation.md
+#      
+#- name: 7. hét
+#  items:
+#    - name: 📝 Rendeléskezelés
+#      href: ./ch02-winforms/ch02-05-order-management.md
+#- name: 8. hét (1. ZH)
+#  items:
+#    - name: 🎓 ZH segédlet
+#      href: ../ertekeles/zh1_checklist.md
+#    - name: 🎓 Validáció segédlet
+#      href: ./validacio/index.md
+#    - name: 📝+🎬 In-memory adatbázis (ism.)
+#      href: ./IN_MEMORY/in_memory_db.md
+#    - name: "📝 Gyakorló: receptes adatbázis"
+#      href: ./6_receptes/index.md
+#    - name: "🎓 előadás jegyzet"
+#      href: ./6_receptes/codesamples.md
+#- name: "9. hét - WEB"
+#  items:
+#  - name: 🎓 "Böngészők fejlesztőknek"
+#    href: ./9_elm_bongeszok_fejlesztoknek/index.md
+#  - name: "📝 ASP .NET első lépések"
+#    href: ./9a_gyak_asp_net_intro/asp_net_azure.md
+#  - name: "📝 ASP .NET API Controller"
+#    href: ./9b_gyak_crude_viccek/index.md
+#- name: "10. hét - WEB"
+#  items: 
+#  - name: "🎓 HTTP & REST"
+#    href: ./10_elm_http_REST/rest-slideshow.html
+#  - name: "📝 ASP .NET API Controller"
+#    href: ./9b_gyak_crude_viccek/index.md
+#- name: "11. hét - WEB"
+#  items: 
+#  - name: "🎓 Kriptográfia"
+#    href: https://kzgzdiag426.blob.core.windows.net/szoft2/Kriptografia_v4.pptx
+#  - name: "📝 Gyakorló feladatsor"
+#    href: ./11_ZH2_GYAK/zh2_gyak.md
+#  - name: "CSS-JS összefoglaló"
+#    items: 
+#    - name: 🎓 CSS alapok
+#      href: ./10_elm_js_basics/css_alapok.md
+#    - name: 🎓 JS objektumok és tömbök
+#      href: ./10_elm_js_basics/js_objekutmok_tombok.md
+#    - name: 📝 JS DOM manipuláció
+#      href: ./10_elm_js_basics/js_pascal_haromszog.md
+#- name: 12. hét (2. ZH)
+#  items: 
+#  - name: "🎓 Feladatmegoldás videón"
+#    href: ./11_ZH2_GYAK/zh2_gyak_video.md
+#- name: 13. hét (3. ZH)
+#  items:
+#    - name: 🎓 Cherry picking ZH
+#      href: ./ZH3_cherry_picking/index.md
+#    - name: 🎓 Pontozó lap
+#      href: ./ZH3_cherry_picking/pontlap_minta.md
+
+      
