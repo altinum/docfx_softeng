@@ -1,4 +1,7 @@
-﻿- name: Gazdaságinformatika
+﻿- name: GI Szoftvertechnológia
+  href: softtech/
+  homepage: softtech/index.md
+- name: GI Sofware engineering
   href: softeng/
-- name: Data Science
+- name: Data Science 
   href: softeng2/

@@ -1,27 +1,28 @@
 ﻿- name: Week 1
   items:
-    - name: "🎓 Variables"
+    - name: "💡 Variables"
       href: ./ds_week1_lec_variables/variables.md
-    - name: "📝 Loan calculator"
+    - name: "🛠 Loan calculator"
       href: ./ds_week1_lab_loan_calculator/loan_calculator.md
 - name: Week 2
   items:
-    - name: "🎓 Work with classes"
+    - name: "💡 Work with classes"
       href: ./ds_week2_lec_classes/working_with_classes.md
-    - name: "🎓 Numeric Data Types in C#"
+- name: Week 3
+  items:
+    - name: "💡 Numeric Data Types in C#"
       href: ./ds_week2_lec_classes/beahaviour_of_numeric_data_types.md
     - name: "🎬 Implicit and Explicit Type Conversion in C#"
       href: ./ds_week2_lec_classes/conversion_between_types-slideshow.html
-    - name: "🎓 Implicit and Explicit Type Conversion in C#"
+    - name: "💡 Implicit and Explicit Type Conversion in C#"
       href: ./ds_week2_lec_classes/conversion_between_types.md
-    - name: "📝 Fibonacci squence"
-      href: ./ds_week2_lab/fibonacci_sequence.md
-    - name: "📝 Multiplication table"
+    - name: "🛠 Multiplication table"
       href: ./ds_week2_lab/multiplication_table.md
-    - name: "📝 Chessboard"
+    - name: "🛠 Chessboard"
       href: ./ds_week2_lab/chessboard.md
-    - name: "📝 Pascal's Triangle of Buttons"
+    - name: "🛠 Pascal's Triangle of Buttons"
       href: ./ds_week2_lab/pascal_triangle.md
+
 #- name: 3. hét
 #  items:
 #    - name: 📝 TreeView feltöltése

@@ -1,0 +1,155 @@
+﻿---
+- name: 📖 A tárgy célja, követelmények
+  href: kovetelmenyek\index.md
+# - name: ZH eredmények 
+#   href: eredmenyek\index.md
+- name: Tudásbázis
+  items:
+    - name: 📖 Visual Studió telepítése
+      href: vsinstall\index.md
+ #   - name: Útmutató projektek feltöltéséhez
+ #     href: projektfeltoltes\index.md
+- name: 1. hét
+  items:
+    - name: 💡 Linkek az előadáshoz
+      href: 1_bevezeto\eloadas_linkek.md
+    - name: 🛠 Kamtszámítás mintafeladat
+      href: 1_bevezeto\kamatszamitas.md
+- name: 2. hét
+  items:
+ #   - name: Linkek az előadáshoz
+ #     href: git\ea_linkek.md
+    - name: 💡 Working with classes
+      href: 2_osztalyok/working_with_classes.md             
+    - name: 🛠 Fibonacci sor
+      href: 2_osztalyok\fibonacci_sor.md
+- name: 3. hét
+  items:
+    - name: 🎬 Változók viselkedése
+      href: 2_osztalyok\valtozok_viselkedese.md
+    - name: "💡 Time to learn"
+      href: 3_osztalyok_2\time_to_learn.md
+    - name: "🎬 Feladatok & videók"
+      href: 3_osztalyok_2\video.md
+    - name: 🎬 Szorzótábla (videók)
+      href: 2_osztalyok\szorzotabla.md
+    - name: "Gyakorló feladatok"
+      items: 
+        - name: 🛠 Feladatok         
+          href: 3_osztalyok_2\index.md
+        - name: 🛠 Sakktábla
+          href: 2_osztalyok\sakktabla.md
+        - name: 🛠 Pascal háromszög
+          href: 2_osztalyok\pascal_haromszog.md
+- name: 4. hét - 1. Géptermi ZH
+  items:
+    - name: 📖 ZH Checklist
+      href: zh_checklists\zh1_checklist.md
+    - name: 📖 ZH leadás és értékelés szabályai
+      href: zh_checklists\zh_ertekeles_leadas.md
+# - name: 5. hét
+#   items:
+#     - name: "Ea: fájlkezelés"
+#       href: 4_file\feleletvalasztos\index.md
+#     - name: "Gyak: hajós teszt"
+#       href: 4_file\hajos_gyak.md
+# - name: 6. hét
+#   items:
+#   - name: Kígyós játék
+#     href: kigyos\index.md
+# - name: 7. hét
+#   items:
+#   - name: Adatkötés
+#     href: csv_databinding\index.md
+# - name: 8. hét
+#   items:
+#   - name: ZH mintafeladat
+#     href: hajos_bindnig\index.md
+#   - name: Minta ZH
+#     href: databinding_mintazh\index.md
+# - name: 9. hét
+#   items:
+#   - name: SQL adatbázis elérése, ORM
+#     href: 9a_gyak_tavoli_adatbazis_visual_studioban\index.md
+#   - name: IFS fraktál
+#     href: grafika_ifs_reszletes\index.md
+# - name: 10. hét
+#   items:
+#   - name: LINQ összefoglaló
+#     href: starmap\linq_osszefoglalo.md
+#   - name: GDI grafika összefoglaló
+#     href: starmap\gdi.md
+#   - name: Csillagtérkép rajzolás
+#     href: starmap\index.md
+# 
+# - name: 11. hét
+#   items:
+#   - name: Studies adatbázis UI_
+#     href: 11_gyak_linq_lekerdezesek_-_studies_adatb\index.md
+
+
+#    - name: Teknős és Koch görbe
+#      href: grafika_ifs_reszletes\koch_gorbe.md
+#    - name: Emory game
+#      href: emory\index.md
+#- name: 9. hét - 2. Géptermi ZH
+#  items:
+#    - name: Checklist az második ZH-hoz
+#      href: zh2checklist\index.md
+#- name: 10. hét
+#  items:
+#    - name: Puzzle
+#      href: slide_puzzle\slide_puzzle.md
+#- name: 11. hét
+#  items:
+#    - name: Third Party Packages
+#      href: SeleniumDemo\index2.md
+#- name: 12. hét - 3. Géptermi ZH
+#  items:
+#    - name: Gyakorló feladatok ZH-ra
+#      items:
+#        - name: Villámkérdések
+#          href: villamkerdesek\index.md
+#        - name: Szópároztatós játék
+#          href: szoparoztatos\index.md
+#        - name: Fájlok előasára
+#          href: zh3_gyakorlas\index.md
+##        - name: PixelArt
+##          href: pixelart\index.md
+#- name: 13. hét - Projektfeladat ZH
+#  items:
+#  - name: Értékelés módja
+#    href: beadando/projekt_zh_ertekeles.md
+- name: Projektfeladatok
+  items:
+    - name: A beadandó feladatok értékelése
+      href: beadando\ertekeles\
+#    - name: A beszámolók menete
+#      href: teamsbeszamolok\index.md
+    - name: "Projektfeladat: Életjáték"
+      href: beadandok\beadando_game_of_life\index.md
+#    - name: IFS fraktál    - name: "Projektfeladat: Hajós oktató"
+#      href: grafika_ifs_reszletes\index.md      href: beadando_hajos\index.md
+    - name: "Projektfeladat: Memóriajáték folytatása"
+      href: beadandok\beadando_quiz_numerikus\index.md
+    - name: "Projektfeladat: Szótanító játék"
+      href: beadandok\beadando_szotanito\index.md
+    - name: "Projektfeladat: Akasztófa játék"
+      href: beadandok\beadando_hangman\index.md
+    - name: "Projektfeladat: Labirintus játék"
+      href: beadandok\beadando_maze\index.md
+    - name: "Projektfeladat: Kígyós játék almákkal"
+      href: beadando_snake\index.md
+    - name: "Projektfeladat: Keresd a különbséget játék"
+      href: beadandok\beadando_spot_the_difference\index.md
+- name: Mintakódok projekthez
+  items:    
+    - name: "Memóriajáték"
+      href: mintakodok\emory\index.md
+    - name: "Labirintus játék"
+      href: mintakodok\labirintus\index.md
+    - name: "Akasztófa játék"
+      href: mintakodok\hangman\index.md
+    - name: Puzzle
+      href: slide_puzzle\slide_puzzle.md
+    
