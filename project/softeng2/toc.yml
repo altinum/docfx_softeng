@@ -16,12 +16,22 @@
       href: ./ds_week2_lec_classes/conversion_between_types-slideshow.html
     - name: "💡 Implicit and Explicit Type Conversion in C#"
       href: ./ds_week2_lec_classes/conversion_between_types.md
-    - name: "🛠 Multiplication table"
-      href: ./ds_week2_lab/multiplication_table.md
-    - name: "🛠 Chessboard"
-      href: ./ds_week2_lab/chessboard.md
-    - name: "🛠 Pascal's Triangle of Buttons"
-      href: ./ds_week2_lab/pascal_triangle.md
+    - name: "Practice"
+      items:
+        - name: "🛠 Multiplication table"
+          href: ./ds_week2_lab/multiplication_table.md
+        - name: "🛠 Chessboard"
+          href: ./ds_week2_lab/chessboard.md
+        - name: "🛠 Pascal's Triangle of Buttons"
+          href: ./ds_week2_lab/pascal_triangle.md
+    - name: "🛠 Snake game"
+      href: ./ds_week3_lab/snake.md
+- name: Week 4
+  items:
+    - name: "💡 Microsimulation"
+      href: ./ds_week4_lec/microsim_theory.md
+    - name: "🛠 Files and links"
+      href: ./ds_week4_lec/files_and_links.md
 
 #- name: 3. hét
 #  items:
