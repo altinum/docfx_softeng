@@ -32,6 +32,10 @@
       href: ./ds_week4_lec/microsim_theory.md
     - name: "🛠 Files and links"
       href: ./ds_week4_lec/files_and_links.md
+    - name: "🛠 Code samples"
+      href: ./ds_week4_lab/code_samples.md
+    - name: "🛠 Home assignment"
+      href: ./ds_week3_lab/assignment.md
 
 #- name: 3. hét
 #  items:
