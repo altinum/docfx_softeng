@@ -4,13 +4,13 @@
 
 
 
-| File                                                     | Description                            |
-| -------------------------------------------------------- | -------------------------------------- |
-| 📄 [census.csv](..\ds_week4_lab\census.csv)               | Snapshot of the population             |
-| 📄 [census_test.csv](..\ds_week4_lab\census_test.csv)     | A shortended version of the file above |
-| 📄 [census_sample.csv](..\ds_week4_lab\census_sample.csv) | A sample of the census data            |
-| 📄 [mortality.csv](..\ds_week4_lab\mortality.csv)         | Mortality probability table            |
-| 📄 [fertality.csv](..\ds_week4_lab\fertality.csv)         | Fertality probability table            |
+| File                                     | Description                            |
+| ---------------------------------------- | -------------------------------------- |
+| 📄 [census.csv](census.csv)               | Snapshot of the population             |
+| 📄 [census_test.csv](census_test.csv)     | A shortended version of the file above |
+| 📄 [census_sample.csv](census_sample.csv) | A sample of the census data            |
+| 📄 [mortality.csv](mortality.csv)         | Mortality probability table            |
+| 📄 [fertality.csv](fertality.csv)         | Fertality probability table            |
 
 
 

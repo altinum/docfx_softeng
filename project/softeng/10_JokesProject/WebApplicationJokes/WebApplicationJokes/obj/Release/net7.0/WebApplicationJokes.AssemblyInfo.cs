@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebApplicationJokes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87893a93d11f8ad98cb6364ffbfb81236eee476a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0520d014f60a0d5df19888443e81965352723186")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebApplicationJokes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebApplicationJokes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
