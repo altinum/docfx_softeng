@@ -36,7 +36,16 @@
       href: ./ds_week4_lab/code_samples.md
     - name: "🛠 Home assignment"
       href: ./ds_week3_lab/assignment.md
-
+- name: Week 5
+  items:
+    - name: "💡 LINQ by examples"
+      href: ./ds_week5_lec/linq_demographic.md
+    - name: "🛠 Microsimulation II"
+      href: ./ds_week5_lab/microsim.md
+- name: Week 6
+  items:
+    - name: "💡 Midterm exam checklist"
+      href: ./ds_week5_lec/midterm_1_checklist.md
 #- name: 3. hét
 #  items:
 #    - name: 📝 TreeView feltöltése
