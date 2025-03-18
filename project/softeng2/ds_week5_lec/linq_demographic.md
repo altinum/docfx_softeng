@@ -1,6 +1,6 @@
 
 
-# # LINQ Examples
+# LINQ Examples
 
 ## Preparations
 

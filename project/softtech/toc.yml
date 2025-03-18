@@ -47,10 +47,10 @@
       href: zh_checklists\zh1_checklist.md
     - name: 📖 ZH leadás és értékelés szabályai
       href: zh_checklists\zh_ertekeles_leadas.md
-# - name: 5. hét
-#   items:
-#     - name: "Ea: fájlkezelés"
-#       href: 4_file\feleletvalasztos\index.md
+- name: 5. hét
+  items:
+    - name: "🛠 Quiz játék"
+      href: 4_file\feleletvalasztos\index.md
 #     - name: "Gyak: hajós teszt"
 #       href: 4_file\hajos_gyak.md
 # - name: 6. hét
