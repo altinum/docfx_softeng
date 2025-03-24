@@ -48,6 +48,8 @@
       href: ./ds_week5_lec/midterm_1_checklist.md
     - name: "🛠 Mock test"
       href: ./ds_week_6/mock_test.md
+    - name: "💡 Simple e-commerce DB"
+      href: ./ds_week_6/db_in_mermaid.md
 #- name: 3. hét
 #  items:
 #    - name: 📝 TreeView feltöltése

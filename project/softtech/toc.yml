@@ -1,8 +1,8 @@
 ﻿---
 - name: 📖 A tárgy célja, követelmények
   href: kovetelmenyek\index.md
-# - name: ZH eredmények 
-#   href: eredmenyek\index.md
+- name: ZH eredmények 
+  href: eredmenyek\index.md
 - name: Tudásbázis
   items:
     - name: 📖 Visual Studió telepítése
@@ -53,10 +53,10 @@
       href: 4_file\feleletvalasztos\index.md
 #     - name: "Gyak: hajós teszt"
 #       href: 4_file\hajos_gyak.md
-# - name: 6. hét
-#   items:
-#   - name: Kígyós játék
-#     href: kigyos\index.md
+- name: 6. hét
+  items:
+  - name: Kígyós játék
+    href: kigyos\index.md
 # - name: 7. hét
 #   items:
 #   - name: Adatkötés
