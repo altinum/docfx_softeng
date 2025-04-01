@@ -27,10 +27,9 @@ A tárgy oktatói:
 | 2024-03-31     | 7. hét                  |                   |
 | 2024-04-07     | 8. hét                  |                   |
 | 2024-04-14     | Tavaszi szünet          |                   |
-| 2024-04-21     | 9. hét                  |                   |
-| 2024-04-28     | 10. hét                 |                   |
-| 2024-05-05     | 11. hét                 |                   |
-| 2024-04-12     | 12. hét                 | 2. ZH             |
-| 2024-04-19     | 13. hét                 | Projekt ZH        |
-| 2024-05-26     | Intenzív hét            |                   |
-| 2024-06-02     | Vizsgaidőszak első hete | Pótlási lehetőség |
+| 2024-04-21     | Intenzív hét            |                   |
+| 2024-04-28     | 9. hét                  | 2. ZH             |
+| 2024-05-05     | 10. hét                 |                   |
+| 2024-05-12     | 11. hét                 | 3. ZH             |
+| 2024-05-19     | 12. hét                 | Projekt ZH        |
+| 2024-05-26     | Vizsgaidőszak első hete | Pótlási lehetőség |

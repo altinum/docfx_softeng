@@ -57,16 +57,16 @@
   items:
   - name: Kígyós játék
     href: kigyos\index.md
-# - name: 7. hét
-#   items:
-#   - name: Adatkötés
-#     href: csv_databinding\index.md
-# - name: 8. hét
-#   items:
-#   - name: ZH mintafeladat
-#     href: hajos_bindnig\index.md
-#   - name: Minta ZH
-#     href: databinding_mintazh\index.md
+- name: 7. hét
+  items:
+  - name: Adatkötés
+    href: csv_databinding\index.md
+- name: 10. hét
+  items:
+  - name: ZH mintafeladat
+    href: hajos_bindnig\index.md
+  - name: Minta ZH
+    href: databinding_mintazh\index.md
 # - name: 9. hét
 #   items:
 #   - name: SQL adatbázis elérése, ORM
@@ -116,10 +116,10 @@
 #          href: zh3_gyakorlas\index.md
 ##        - name: PixelArt
 ##          href: pixelart\index.md
-#- name: 13. hét - Projektfeladat ZH
-#  items:
-#  - name: Értékelés módja
-#    href: beadando/projekt_zh_ertekeles.md
+- name: 13. hét - Projektfeladat ZH
+  items:
+  - name: Értékelés módja
+    href: beadando/projekt_zh_ertekeles.md
 - name: Projektfeladatok
   items:
     - name: A beadandó feladatok értékelése

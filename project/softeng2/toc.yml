@@ -1,4 +1,8 @@
-﻿- name: Week 1
+﻿- name: 📝 Syllabus
+  href: ./syllabus/index.md
+- name: 📝 Results
+  href: ./results/results.md
+- name: Week 1
   items:
     - name: "💡 Variables"
       href: ./ds_week1_lec_variables/variables.md
@@ -50,6 +54,10 @@
       href: ./ds_week_6/mock_test.md
     - name: "💡 Simple e-commerce DB"
       href: ./ds_week_6/db_in_mermaid.md
+- name: Week 7
+  items:
+    - name: "🛠 Object Relational Mapping (ORM)"
+      href: ./ds_week7/orm_studentdb/index.md
 #- name: 3. hét
 #  items:
 #    - name: 📝 TreeView feltöltése
