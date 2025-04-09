@@ -61,18 +61,18 @@
   items:
   - name: Adatkötés
     href: csv_databinding\index.md
+- name: 8. hét
+  items:
+  - name: SQL adatbázis elérése, ORM
+    href: 9a_gyak_tavoli_adatbazis_visual_studioban\index.md
+  - name: IFS fraktál
+    href: grafika_ifs_reszletes\index.md
 - name: 10. hét
   items:
   - name: ZH mintafeladat
     href: hajos_bindnig\index.md
   - name: Minta ZH
     href: databinding_mintazh\index.md
-# - name: 9. hét
-#   items:
-#   - name: SQL adatbázis elérése, ORM
-#     href: 9a_gyak_tavoli_adatbazis_visual_studioban\index.md
-#   - name: IFS fraktál
-#     href: grafika_ifs_reszletes\index.md
 # - name: 10. hét
 #   items:
 #   - name: LINQ összefoglaló
