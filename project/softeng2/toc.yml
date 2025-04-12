@@ -58,6 +58,13 @@
   items:
     - name: "🛠 Object Relational Mapping (ORM)"
       href: ./ds_week7/orm_studentdb/index.md
+- name: Week 9
+  items:
+    - name: "💡 Midterm exam checklist"
+      href: ./ds_zh2_checklist/index.md
+
+
+
 #- name: 3. hét
 #  items:
 #    - name: 📝 TreeView feltöltése
