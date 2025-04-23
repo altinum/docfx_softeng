@@ -69,10 +69,19 @@
     href: grafika_ifs_reszletes\index.md
 - name: 10. hét
   items:
+  - name: "Kriptográfia"
+    href: https://kzgzdiag426.blob.core.windows.net/szoft2/Kriptografia_v4.pptx
   - name: ZH mintafeladat
     href: hajos_bindnig\index.md
   - name: Minta ZH
     href: databinding_mintazh\index.md
+#- name: "11. hét - WEB"
+#  items: 
+#  - name: "🎓 Kriptográfia"
+#    href: https://kzgzdiag426.blob.core.windows.net/szoft2/Kriptografia_v4.pptx
+#  - name: "📝 Gyakorló feladatsor"
+#    href: ./11_ZH2_GYAK/zh2_gyak.md
+#  - name: "CSS-JS összefoglaló"
 # - name: 10. hét
 #   items:
 #   - name: LINQ összefoglaló

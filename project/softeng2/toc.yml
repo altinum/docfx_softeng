@@ -63,7 +63,13 @@
     - name: "💡 Midterm exam checklist"
       href: ./ds_zh2_checklist/index.md
 
+- name: Week 11 Project midterm
+  items:
+    - name: "💡 Project Description & Price List"
+      href: ./ds_week11_cherry_picking/pricelist.md
 
+- name: Week 12 Project presentations
+  items:
 
 #- name: 3. hét
 #  items:
