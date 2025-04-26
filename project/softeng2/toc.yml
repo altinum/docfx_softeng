@@ -58,6 +58,10 @@
   items:
     - name: "🛠 Object Relational Mapping (ORM)"
       href: ./ds_week7/orm_studentdb/index.md
+- name: Week 8
+  items:
+    - name: "🛠 Code samples"
+      href: ./ds_week8/index.md
 - name: Week 9
   items:
     - name: "💡 Midterm exam checklist"
