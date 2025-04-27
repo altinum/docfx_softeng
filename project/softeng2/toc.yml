@@ -60,18 +60,18 @@
       href: ./ds_week7/orm_studentdb/index.md
 - name: Week 8
   items:
-    - name: "🛠 Code samples"
+    - name: "🛠 Code Samples - Studies DB"
       href: ./ds_week8/index.md
 - name: Week 9
   items:
+    - name: "🛠 Code Samples - Chinook DB"
+      href: ./ds_week9_lab/index.md   
     - name: "💡 Midterm exam checklist"
       href: ./ds_zh2_checklist/index.md
-
 - name: Week 11 Project midterm
   items:
     - name: "💡 Project Description & Price List"
       href: ./ds_week11_cherry_picking/pricelist.md
-
 - name: Week 12 Project presentations
   items:
 

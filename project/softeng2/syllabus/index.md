@@ -1,26 +1,28 @@
 # Syllabus
 
-
+> [!IMPORTANT]
+>
+> Dear colleguages! The second midterm on week #9 will be on the second lab of the double labs. The first lab will be a regular lab width some ideas for the final project.
 
 ## Weekly breakdown
 
-| First day of the week |                           |                                        |
-| --------------------- | ------------------------- | -------------------------------------- |
-| 2024-02-17            | 1. week                   |                                        |
-| 2024-02-24            | 2. week                   |                                        |
-| 2024-03-03            | 3. week                   |                                        |
-| 2024-03-10            | 4. week                   |                                        |
-| 2024-03-17            | 5. week                   |                                        |
-| 2024-03-24            | 6. week                   | Midterm #1 (35 points)                 |
-| 2024-03-31            | 7. week                   |                                        |
-| 2024-04-07            | 8. week                   |                                        |
-| 2024-04-14            | Spring break, Easter      |                                        |
-| 2024-04-21            | Project week              |                                        |
-| 2024-04-28            | 9. week                   | Midterm #2 (35 points)                 |
-| 2024-05-05            | 10. week                  |                                        |
-| 2024-05-12            | 11. week                  | Project exam (30 points)               |
-| 2024-05-19            | 12. week                  | Project presentetions                  |
-| 2024-05-26            | First week of exam period | Make-up opportunity for a written exam |
+| First day of the week |                           |                                                              |
+| --------------------- | ------------------------- | ------------------------------------------------------------ |
+| 2024-02-17            | 1. week                   |                                                              |
+| 2024-02-24            | 2. week                   |                                                              |
+| 2024-03-03            | 3. week                   |                                                              |
+| 2024-03-10            | 4. week                   |                                                              |
+| 2024-03-17            | 5. week                   |                                                              |
+| 2024-03-24            | 6. week                   | Midterm #1 (35 points)                                       |
+| 2024-03-31            | 7. week                   |                                                              |
+| 2024-04-07            | 8. week                   |                                                              |
+| 2024-04-14            | Spring break, Easter      |                                                              |
+| 2024-04-21            | Project week              |                                                              |
+| 2024-04-28            | 9. week                   | Lab #1: Regular lab <br />Lab #2: <span style="color:red">Midterm #2 </span>(35 points - 80 min) |
+| 2024-05-05            | 10. week                  |                                                              |
+| 2024-05-12            | 11. week                  | Project exam (30 points - 180 min)                           |
+| 2024-05-19            | 12. week                  | Project presentetions                                        |
+| 2024-05-26            | First week of exam period | Make-up opportunity for a written exam                       |
 
 > [!NOTE]
 >
