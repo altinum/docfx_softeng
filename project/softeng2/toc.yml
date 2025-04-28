@@ -68,6 +68,8 @@
       href: ./ds_week9_lab/index.md   
     - name: "💡 Midterm exam checklist"
       href: ./ds_zh2_checklist/index.md
+    - name: "💡 DB link"
+      href: ./ds_week9_midterm/index.md
 - name: Week 11 Project midterm
   items:
     - name: "💡 Project Description & Price List"
