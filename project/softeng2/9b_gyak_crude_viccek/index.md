@@ -1,24 +1,24 @@
-# CRUDE műveletek
+# CRUD Operations
 
-A **CRUD(e)** (angolul nyers) a négy alapvető adatbázis művelet  (**C**reate, **R**ead, **U**pdate, **De**lete) kezdőbetűiből képzett akroníma. 
+The **CRUD(e)** acronym stands for the four basic database operations: **C**reate, **R**ead, **U**pdate, and **D**elete.
 
-A gyakorlaton egy olyan egyszerű példán megyünk végég, melyben adatbázisba lehet írni weboldalon kitöltött űrlap adatait. Az oldalon keresztül egy adatbázistáblába lehet vicceket felvinni, illetve listázni a vicceket.
+In this lab, we'll go through a simple example where data entered into a form on a web page can be written to a database. You’ll be able to insert jokes into a database table and list them via a web interface.
 
-> [!tip]
->
-> Folytasd az előző alkalamzást!
+> [!TIP]
+>  Continue from the previous application!
 
-Egy háromrétegű alkalmazásra nézünk egy egyszerű példát:
-- egy SQL adattábált érünk el
-- ASP .NET Core köztes réteg által biztosított API végpontokon keresztül
-- böngészőben futó JavaScript kódból
+We’ll look at a simple example of a three-layer application:
 
-## Új HTML oldal
+- accessing an SQL data table,
+- through API endpoints provided by ASP .NET Core as a middle layer,
+- from JavaScript code running in a browser.
 
-❶ Hozz létre egy új HTML oldalt, mondjuk `jokes.html` néven a meglévő projektedben. Ezen a gyakorlaton nem csinálunk külön `.js` fájlt, hanem a HTML oldalban helyezzük el a `<script>` tag-et. Az oldalban legyen egy `<div>` a vicceknek, illetve egy `<input>` és egy `<button>` az új vicc felvitelére:
+## New HTML Page
 
-``` html
-<!DOCTYPE html>
+❶ Create a new HTML page, for example named `jokes.html`, in your existing project. In this lab, we won’t use a separate `.js` file; instead, place the `<script>` tag directly in the HTML. The page should include a `<div>` for the jokes and an `<input>` with a `<button>` to add new jokes:
+
+```html
+htmlCopyEdit<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -28,9 +28,9 @@ Egy háromrétegű alkalmazásra nézünk egy egyszerű példát:
     <div>
         <div id="jokeList"></div>
         <div>
-            <input id="jokeText" type="text" placeholder="Csak PC vicc" />
+            <input id="jokeText" type="text" placeholder="PC jokes only" />
         </div>
-        <button id="addButton">Új vicc felvétele</button>
+        <button id="addButton">Add New Joke</button>
     </div>
     <script>
     </script>
@@ -38,76 +38,75 @@ Egy háromrétegű alkalmazásra nézünk egy egyszerű példát:
 </html>
 ```
 
-Ezzel készen van HTML váz.
+This completes the HTML skeleton.
 
-## Adatbázis sémájának leképezése
+## Mapping the Database Schema
 
-❷ Fedezzétek fel az adatbázist!
+❷ Explore the database!
 
-Központi adatbázisból dolgozunk, mert így szórakoztatóbb, másrészt többeteknek nincs már Azure kreditje. Az adatbázist érdemes *SQL Server Management Studio*-val felfedezni!
+We are using a centralized database for fun and because many of you no longer have Azure credits. It’s recommended to explore the database using *SQL Server Management Studio*.
 
 > [!WARNING]
->
-> Az SQL adatbázis csak VPN alól érhető el. Ergo ha a projektet közzéteszed Azure-ba, az ott futó szerver oldali kód nem fogja látni. **Ez most csak tesztelésre jó így.**
+>  The SQL database is only accessible via VPN. Therefore, if you deploy the project to Azure, the server-side code running there won’t be able to see it. **This setup is only for testing.**
 
-|              | |
-|-             |-|
-|Szerver       |bit.uni-corvinus.hu 
-|Felhasználónév|vendeg
-|Jelszó        |12345
-|Adatbázis     |FunnyDatabase
+|          |                     |
+| -------- | ------------------- |
+| Server   | bit.uni-corvinus.hu |
+| Username | vendeg              |
+| Password | 12345               |
+| Database | FunnyDatabase       |
+
+
 
 ![1620886395203.png](1620886395203.png)
 
-A *connectin string* megszerezhező a *Properties* panelből, csak a jelszót kell majd behelyettesíteni.
+You can get the *connection string* from the *Properties* panel; just insert the password manually.
 
 ![1620886508182.png](1620886508182.png)
 
 ```
+pgsql
 Data Source=bit.uni-corvinus.hu;Initial Catalog=FunnyDatabase;User ID=vendeg;Password=***********
 ```
 
 > [!TIP]
 >
-> A Server exploreres rész ugorható, az alkalmazás működéséhez nincs szükség a Server explorerre. Viszont kiválóan alkalmas a connection string megszerzésére. 
+> You can skip using Server Explorer; it's not needed for the application to work, but it's useful for retrieving the connection string.
 
-❸ Séma leképezése C# osztályokba
+❸ Map the schema into C# classes
 
-Mint ahogy arról már szó volt egy korábbi gyakorlaton (*Csatlakozás SQL adatbázishoz*), .NET Core alatt nem áll rendelkezésre grafikus eszköz és varázsló az adatbázis sémája alapját leképező C# osztályok előállítására. Ezt is a *Packege Manager Console*-ból kell megoldani parancssorból. (Tools / NuGet Package Manager / Package Manager Console )
+As discussed in an earlier lab (*Connecting to an SQL database*), .NET Core doesn’t provide a graphical tool or wizard for generating C# classes from the database schema. You have to do this via the *Package Manager Console* (Tools / NuGet Package Manager / Package Manager Console).
 
-```powershell
-Install-Package Microsoft.EntityFrameworkCore.SqlServer
+```
+Microsoft.EntityFrameworkCore.SqlServer
 Install-Package Microsoft.EntityFrameworkCore.Tools
 ```
 
-Általánosan:
-``` powershell
-Scaffold-DbContext "[Connection String]" Microsoft.EntityFrameworkCore.SqlServer -OutputDir [Mappa]
+In general:
+
+```
+Scaffold-DbContext "[Connection String]" Microsoft.EntityFrameworkCore.SqlServer -OutputDir [Folder]
 ```
 
-Esetünkben:
-``` powershell
+In our case:
+
+```powershell
 Scaffold-DbContext "Data Source=bit.uni-corvinus.hu;Initial Catalog=FunnyDatabase;User ID=vendeg;Password=12345;Encrypt=False" Microsoft.EntityFrameworkCore.SqlServer -OutputDir JokeModels
 ```
 
-Ennek eredményeképp a *Solution Epolorer*-ben születik egy  `JokeModels` mappa, benne az egy viccet leíró `Joke` osztállyal, valamint az adatbázis elérésére szolgáló `FunnyDatabaseContext` osztállyal.
+As a result, a `JokeModels` folder will be created in *Solution Explorer*, containing a `Joke` class describing a joke and a `FunnyDatabaseContext` class for database access.
 
-## API Controller létrehozása
+## Creating the API Controller
 
-❹ Hozz létre API Controller-t mondjuk `JokeController` néven, de most használd ki, hogy a CRUDE műveletek támogatására kész kódmintát kínál a Visual Studio!  `Controllers` mappán jobb egér, majd:
+❹ Create an API Controller named `JokeController`. This time, take advantage of Visual Studio's built-in template for CRUD operations! Right-click the `Controllers` folder:
 
 ![1620852403730.png](1620852403730.png)
 
-Érdemes megnézni a kapott kódot, miden CRUDE műveletnek készült egy-egy metódus:
+It's worth reviewing the generated code. There’s a method for each CRUD operation:
 
-``` csharp
+```c#
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace EmptyBoat.Controllers
 {
@@ -115,44 +114,33 @@ namespace EmptyBoat.Controllers
     [ApiController]
     public class JokeController : ControllerBase
     {
-        // GET: api/<JokeController>
         [HttpGet]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/<JokeController>/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value";f
+            return "value";
         }
 
-        // POST api/<JokeController>
         [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
+        public void Post([FromBody] string value) { }
 
-        // PUT api/<JokeController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
- 
-        // DELETE api/<JokeController>/5
+        public void Put(int id, [FromBody] string value) { }
+
         [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        public void Delete(int id) { }
     }
 }
 ```
 
-❺ Ahhoz, hogy a mintakódot működésre bírjuk, a `[Route("api/[controller]")]` sorban a szögletes zárójel helyre kell beírni az elérési útvonalat.  Legyen ez most:
+❺ To make the sample code functional, replace the `[controller]` placeholder in the route with the actual route:
 
-``` csharp
+```c#
 namespace EmptyBoat.Controllers
 {
     [Route("api/jokes")]
@@ -162,244 +150,187 @@ namespace EmptyBoat.Controllers
     ...
 ```
 
-❻ Ezután megkezdhetjük az API végpontok kifejtését a `program.cs`-ben: 
+❻ Then begin implementing the API endpoints in `program.cs`:
 
-```csharp
+```c#
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddControllers();  //Az API Controllerekhez kell 
-builder.Services.AddEndpointsApiExplorer();   //A Swaggerhez kell
-builder.Services.AddSwaggerGen();             //A Swaggerhez kell
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment()) //A Swagger éles környezetben nem indul
+if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();   //Ha http-vel nyitják az oldalt, átirányít https-re
-
-app.UseDefaultFiles();       //Ha nincs semmi a domain tuán, akkor az index.html-t tölti
-app.MapControllers();        //Az API Controllereket elérhetővé teszi
-app.UseStaticFiles();        //A wwwroot mappa tartalmát elérhetővé teszi
+app.UseHttpsRedirection();
+app.UseDefaultFiles();
+app.MapControllers();
+app.UseStaticFiles();
 
 app.Run();
 ```
 
+### Querying All Jokes
 
+Instantiate `FunnyDatabaseContext` as usual.
 
-### Összes vicc lekérdezése
+Before:
 
-A `FunnyDatabaseContext`-et a szokásos módon példályosítsd!
-
-Ilyen volt:
-``` csharp
-        // GET: api/<JokeController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {        
-            return new string[] { "value1", "value2" };
-        }
+```c#
+[HttpGet]
+public IEnumerable<string> Get()
+{
+    return new string[] { "value1", "value2" };
+}
 ```
 
-Ilyen lett:
-``` csharp
-        // GET: api/jokes
-        [HttpGet]
-        public IActionResult Get()
-        {
-            FunnyDatabaseContext context = new FunnyDatabaseContext();
-            return Ok(context.Jokes.ToList());
-        }
+After:
+
+```c#
+[HttpGet]
+public IActionResult Get()
+{
+    FunnyDatabaseContext context = new FunnyDatabaseContext();
+    return Ok(context.Jokes.ToList());
+}
 ```
-A `GET` HTTP metódust ki lehet próbálni  a böngésző címsorából, Swaggerből vagy PostMan-ból:
 
-![image-20221114195423971](browser_get.png)
+You can test the `GET` endpoint using a browser, Swagger, or PostMan.
 
+(+/-) The endpoint for retrieving all jokes works.
 
+### Querying a Specific Joke
 
-![image-20221114195100509](swagger.png)
+- Be sure to clearly comment the endpoint (e.g., `// GET api/jokes/5`)
+- The return type is `Joke`—ASP.NET Core will handle the JSON conversion.
+- The method name (e.g., `Get`) doesn’t matter.
+- Query the database using standard LINQ.
 
+Before:
 
-
-![1620888173761.png](1620888173761.png)
-
-(+/-) Működik az összes vicc lekérdezésére szolgáló API végpont. 
-
-### Egy adott vicc lekérdezése
-
-- Be szoktam rendesen írni a comment-be, hogy mi a végpont címe,  a `//GET api/<JokeController>/5
-` helyett
-- A metódus visszatérési típusa `Joke` -- az eredmény JSON objektummá konvertálást majd megoldja az ASP .NET Core a háttérben, ezzel nincs dolgunk. 
-- A metódus nevének (most épp `Get`) nincs jelentősége.
-- A vicc kikeresése az adatbázisból a szokásos LINQ-val megy. 
-
-Ilyen volt:
-
-```cs
-// GET api/<JokeController>/5
+```c#
 [HttpGet("{id}")]
 public string Get(int id)
 {
-return "value";
+    return "value";
 }
 ```
 
-Ilyen lett:
+After:
 
-``` csharp
-// GET api/jokes/5
+```c#
 [HttpGet("{id}")]
 public IActionResult Get(int id)
 {
     FunnyDatabaseContext context = new FunnyDatabaseContext();
-    var keresettVicc = (from x in context.Jokes
-                        where x.JokeSk == id
-                        select x).FirstOrDefault();
-    return Ok(keresettVicc);
+    var result = (from x in context.Jokes where x.JokeSk == id select x).FirstOrDefault();
+    return Ok(result);
 }
 ```
 
-Vagy sokkal szebben:
+Or more elegantly:
 
-```csharp
-// GET api/jokes/5
+```c#
 [HttpGet("{id}")]
 public IActionResult Get(int id)
 {
     FunnyDatabaseContext context = new FunnyDatabaseContext();
-    var keresettVicc = (from x in context.Jokes
-                        where x.JokeSk == id
-                        select x).FirstOrDefault();
-    if (keresettVicc==null)
+    var result = context.Jokes.FirstOrDefault(x => x.JokeSk == id);
+    if (result == null)
     {
-        return NotFound($"Nincs #{id} azonosítóval vicc");
+        return NotFound($"No joke found with ID #{id}");
     }
-    else
-    {
-        return Ok(keresettVicc);
-    }            
+    return Ok(result);
 }
 ```
 
+(+/-) The endpoint for retrieving a specific joke works.
 
+### Adding a New Joke
 
-A `GET` HTTP metódust ki lehet próbálni PostMan-ból vagy a böngésző címsorából.
+Here, JavaScript sends a JSON object to the C# backend. To process it, there must be a matching C# class—in this case, we’ll use the `Joke` class generated earlier.
 
-(+/-) Működik az adott vicc lekérdezésére szolgáló API végpont. 
-
-### Új vicc rögzítése
-
-Ez egy érdekes dolog: most a JavaScript küld egy JSON formátumban leírt objektumot a C# kódnak. Ahhoz, hogy a szerver oldali C# fel tudja dolgozni a kapott JSON objektumot, kell, hogy a projektben létezzen egy olyan osztály, ami megfeleltethető a JS-ből küldött objektumnak. Használhatjuk azt a `Joke` osztályt is, mely az adatbázis `Joke` táblája alapján lett legenerálva.
-
-``` csharp
-        // POST api/jokes
-        [HttpPost]
-        public void Post([FromBody] Joke újVicc)
-        {
-            FunnyDatabaseContext context = new FunnyDatabaseContext();
-            context.Jokes.Add(újVicc);
-            context.SaveChanges();
-        }
+```c#
+[HttpPost]
+public void Post([FromBody] Joke newJoke)
+{
+    FunnyDatabaseContext context = new FunnyDatabaseContext();
+    context.Jokes.Add(newJoke);
+    context.SaveChanges();
+}
 ```
 
-(+/-) Kész a `POST` API végpont!
+(+/-) The `POST` API endpoint is ready!
 
-A `POST` HTTP metódust csak Swaggerből, PostMan-ból vagy JS-ből tudod kipróbálni, a böngésző címsorból csak a `GET` tesztelhető.
+You can test `POST` from Swagger, PostMan, or JavaScript—**not** from the browser address bar.
 
 **Swagger:**
 
-A dolog viszonylag egyszerű, arra érdemes figyelni, hogy az automatikusan számozott `jokeSk`-t töröljük, neki nem adhatunk értéket! A JSON objektumban elég a `jokeText` értékét közölni. 
+Make sure to remove the `jokeSk` field from the request—it’s auto-incremented. Only `jokeText` is required.
 
-![image-20221114210319038](swagger_post.png)
+**PostMan:**
 
+- Set the method to `POST`
+- Use the appropriate endpoint URL
+- Set header `Content-Type` to `application/json`
+- Provide a JSON string in the body, using lowercase property names if coming from JavaScript (conversion is handled automatically)
 
+(+/-) `POST` API endpoint is tested!
 
-**PostMan**
+### Deleting a Joke
 
-Ha PostMant használsz, még meg kell adni pár dolgot:
-
-- A HTTP metódus legyen `POST`
-- Az API végpont címét is be kell állítani, ahogy szoktuk
-- Ahhoz, hogy a szerver oldal felismerje a HTTP kérés body-jában érkező tartalmat, közölni kell, hogy JSON formátumban küldjük az adatokat. Erre való a fejlécben a `Content-Type` kulcs, melynek értéként `application/json`-t adunk meg. 
-- A *body* egy JSON formátumú string. Fontos, hogy olyan változók legyenek benne, mint az adatbázis alapján generált `Joke` osztályban. Egy különbség azonban van: a JavaScript-ben konvencionálisan kisbetűkkel kezdődnek a változók nevei, míg C#-ban a tulajdonságok neveit nagy kezdőbetűkkel szokás írni. A konverziót a háttérben az ASP. NET Core elvégzi!
-- A válasz `200`-as státuszkódja jelzi a sikert.
-
-
-
-![1620889526847.png](1620889526847.png)
-
-(+/-) Le van tesztelve a `POST` API végpont!
-
-### Vicc törlése 
-
-``` csharp
-        // DELETE api/jokes/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-            FunnyDatabaseContext context = new FunnyDatabaseContext();
-            var törlendőVicc = (from x in context.Jokes
-                                where x.JokeSk == id
-                                select x).FirstOrDefault();
-            context.Remove(törlendőVicc);
-            context.SaveChanges();
-        }
+```c#
+[HttpDelete("{id}")]
+public void Delete(int id)
+{
+    FunnyDatabaseContext context = new FunnyDatabaseContext();
+    var jokeToDelete = context.Jokes.FirstOrDefault(x => x.JokeSk == id);
+    context.Remove(jokeToDelete);
+    context.SaveChanges();
+}
 ```
 
+The `DELETE` method can also only be tested via Swagger, PostMan, or JavaScript. Try this once you’ve added some of your own jokes to the database.
 
-A `DELETE` HTTP metódust szintén csak Swaggerből, PostMan-ból vagy JS-ből tudod kipróbálni. Ezt majd akkor próbálgassátok, ha már vannak saját vicceitek az adatbázisban, addig a hibás bejegyzéseken gyakoroljatok :)
+## Adding a Joke via Browser
 
+You can specify the HTTP method with `fetch`. To let the server know the request body contains JSON, set the `Content-Type` header.
 
-## Új vicc felvitele az adatbázisba böngészőn keresztül
-
-A `fetch` esetén megadható a HTTP metódus is. Ahhoz, hogy a szerver oldal felismerje a HTTP kérés body-jában érkező tartalmat, meg kell határozni, hogy JSON formátumban küldjük az adatokat. Erre való a fejlécben a `Content-Type` kulcs. Bővebben az [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)-t érdemes megnézni. 
-
-``` js
+```js
 document.getElementById("addButton").addEventListener("click", () => {
-	
-	//Ezt az objektumot fogjuk átküldeni
     let data = {
         jokeText: document.getElementById("jokeText").value
     }
 
-
-    fetch("api/jokes",
-        {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        }
-    ).then();
-   
-});
-```
-
-A `then()`-ben meg lehet vizsgálni, hogy sikeres volt-e a művelet:
-
-``` js
-fetch("api/jokes",
-    {
+    fetch("api/jokes", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
-    }).then(x => {
-	    if (x.ok) {
-	        alert("Siker");
-	
-	    }
-	    else {
-	        alert("Kudarc");
-        }
-	 });	    
+    }).then();
+});
 ```
-## Viccek listázása
 
-Oldd meg a korábban tanultak alapján!
+Check the result in the `.then()` block:
 
-(+/-) Kész :)
+```js
+fetch("api/jokes", {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+}).then(x => {
+    if (x.ok) {
+        alert("Success");
+    } else {
+        alert("Failure");
+    }
+});
+```
+

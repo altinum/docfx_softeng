@@ -1,80 +1,77 @@
-# ASP .NET projekt létrehozása és hibakeresése; deployment Azure felhőbe
+# Creating and Debugging an ASP .NET Project; Deployment to Azure Cloud
 
+This guide covers the following topics:
 
+- How to create an ASP .NET application
+- How to run and test the web application on a local server
+- How to configure the project to display static HTML content
+- How to publish the web application on Azure
+- How to commit changes made to the code in Git
 
-Ebben az útmutatóban a következőkről lesz szó:
+------
 
-- Hogyan kell ASP .NET alkalmazást létrehozni
-- Hogyan kell lokális szerveren futtatni és tesztelni a webalkalmazásunkat
-- Miként lehet rávenni a projektet, hogy statikus HTML tartalmat jelenítsen meg
-- Hogyan lehet a webalkalmazást közzétenni Azure-ban
-- Hogyan kell a kódon végrehajtott módosításokat rögzíteni Git-ben
+## Creating a New ASP .NET Project
 
-
-
-## Új ASP .NET projekt létrehozása 
-
-(+/-) Hozd létre az új projektet. Fontos a megfelelő sablon használata, több hasonló nevű van. 
-
-
+(+/-) Create a new project. It's important to use the correct template, as there are several with similar names.
 
 ![image-20221114124043389](se_vs_projecttype.png)
 
-A beállításokon nem kell sokat változtatni:
+You don't need to change much in the settings:
 
 ![image-20221114124311745](create_app.png)
 
-> [!Note]
+> [!NOTE]
 >
-> Használhattok .NET 7-et!
+> You can use .NET 7!
 
-Az "Enable OpenAPI support" tesztelési lehetőséget biztosít az API Contrtollerekez. Ez lesz a "Swagger", amivel később találkoztok.
+Enabling "OpenAPI support" provides a way to test API Controllers. This is the "Swagger" that you will encounter later.
 
+------
 
+## First Run
 
-## Az első futtatás
-
-Az elkészült webalkalmazást az alábbi gombbal lehet lokálisan futtatni. Az sablon alapján létrehozott projektünk is megjelenít tartalmat, ennek részleteíről később :)
+You can run the newly created web application locally using the button below. Even the default template displays some content, which we’ll go into later :)
 
 ![1610830238783.png](1610830238783.png)
 
-Első indításkor megkérdezi a Visual Studio, hogy akarjuk-e https alatt tesztelni a webalkalmazást http helyett. Ez azért nagyon fontos, mert egy http protokollal megnyitott oldalban a böngésző nem fog betölteni https-el hivatkozott tartalmakat. Ha külső tartalmakat is hivatkozunk, akkor https nélkül gyakorlatilag lehetetlenné válik a tesztelés. A https használatához egy hitelesítési tanúsítványt kell telepíteni a gépünkre, amit az IIS megbízhatóként fogad el. A https-ről és a hite lesítési tanúsítványokról később még lesz szó. Engedjük meg neki -- Yes, Yes:
-
+The first time you run it, Visual Studio will ask if you want to test the web application over HTTPS instead of HTTP. This is important because a page opened over HTTP won't load HTTPS-referenced content in the browser. If you include external content, testing without HTTPS becomes virtually impossible. To use HTTPS, a security certificate must be installed on your machine, which IIS will accept as trusted. We’ll cover HTTPS and certificates more later. Allow it – Yes, Yes:
 
 ![1610829694020.png](1610829694020.png)
 
 ![1610829729552.png](1610829729552.png)
 
-Ha minden jól megy, fut a webalkalmazás, és  elérhető böngészőből -- igaz, nem pont az, amire számítunk: 
+If all goes well, your web application will run and be accessible from the browser — although not exactly what you might expect:
 
 ![image-20221114124649594](swagger.png)
 
-Érdemes megjegyezni, hogy amikor futtatjuk a webalkalmazásunkat, a Visual Sutdio a háttérben elindítja az IIS Express-t ami a saját, tesztelési célú webszervere. Ez időnként be tud akadni (tényleg ritkán), de ilyenkor a tálcáról jobb egérrel ki lehet lépni belőle. Újabb futtatásnál újraindul. 
+It's worth noting that when you run the web application, Visual Studio starts IIS Express in the background — its own local web server for testing purposes. Occasionally it may get stuck (though rarely), but you can exit it by right-clicking the taskbar icon. It will restart on the next run.
 
-> Az IIS Internet Information Services a Microsoft által a készített bővíthető webszerver, mely a Server és a Professional változatokkal is elérhető. Az IIS Express a Visual Studio-val kerül telepítésre, és csak tesztelési célokat szolgál.
+> IIS (Internet Information Services) is Microsoft’s extensible web server available with Server and Professional editions. IIS Express is installed with Visual Studio and is meant for testing purposes only.
 
 ![1610832833765.png](1610832833765.png)
 
-Az alapértelmezett böngészőt érdemes átállítani Chrome-ra, mert az összes képernyőkép ezzel készült. A VS **nem** a Windows beállítások között  megadott alapértelmezett böngészőt nyitja meg, hanem a debug gomb melletti legördülőben megadott böngészőt használja.  
+It’s a good idea to switch the default browser to Chrome, as all screenshots were made with it. Note that VS **does not** use the Windows default browser but the one selected in the dropdown next to the debug button.
 
-## Saját statikus tartalom létrehozása
+------
 
-### Az `index.html` létrehozása
+## Creating Your Own Static Content
 
-A sablon alapján létrehozott projektünk még nem tud fájlokat megosztani.
+### Creating `index.html`
 
-A statikus tartalmak megjelenítéséhez célszerű  egy `wwwroot` nevű mappát létrehozni a projektben. A pontos mappanév fontos, más ikont is kap:
+The project created from the template cannot share files yet.
+
+To display static content, it’s advisable to create a folder named `wwwroot` in the project. The exact folder name is important — it even gets a special icon:
 
 ![1610830591242.png](1610830591242.png)
 
-A `wwwroot` mappán jobb egérgomb után megjelenő helyimenüben `Add` / `Add New Item` menüben hozz létre egy `index.html` nevű HTML oldalt! Érdemes használni a keresőt, mert sokféle elem közül lehet itt választani.
+Right-click on the `wwwroot` folder, then use `Add` > `Add New Item` to create a new HTML page named `index.html`. It’s helpful to use the search bar here as there are many item types.
 
 ![1610830815954.png](1610830815954.png)
 
-Ezután alkossunk meg a HTML fájlt, valahogy így:
+Now create the HTML file like this:
 
-``` html
-<!DOCTYPE html>
+```html
+htmlCopyEdit<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -86,12 +83,12 @@ Ezután alkossunk meg a HTML fájlt, valahogy így:
 </html>
 ```
 
-### A `program.cs` módosítása, statikus fájlok kiszolgálásának engedélyezése
+### Modifying `program.cs` to Enable Static File Serving
 
-`program.cs` tartalma, minden más törölhető:
+Here is the content of `program.cs`. You can remove everything else:
 
-```csharp
-var builder = WebApplication.CreateBuilder(args);
+```c#
+csharpCopyEditvar builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 
@@ -103,53 +100,51 @@ app.UseStaticFiles();
 app.Run();
 ```
 
+- `app.UseHttpsRedirection();` — automatically redirects users from `http://` to the secure `https://`. As mentioned earlier, a page loaded over HTTP cannot load HTTPS content in the browser.
+- `app.UseDefaultFiles();` — allows serving `https://site.com/index.html` directly as `https://site.com/`.
+- `app.UseStaticFiles();` — enables serving static files placed in the `wwwroot` folder.
 
-
-- `app.UseHttpsRedirection();`  -- ha valaki `http://` URL-t ad meg, automatikusan átirányít a biztonságos `https://`-re. Mint arról már volt szó, egy http protokollal megnyitott oldalban a böngésző nem fog betölteni https-el hivatkozott tartalmakat. 
-- `app.UseDefaultFiles();`  -- innentől pl. a https://cim.hu/ alatt a https://cim.hu/index.html oldalt szolgáltatja. 
-- `app.UseStaticFiles();` -- elérhetővé teszi a `wwwroot` mappába helyezett statikus fájlokat. 
-
-**A sorrend fontos!** 
-
-
+**The order is important!**
 
 ![1610830238783.png](1610830238783.png)
 
-> Tipp: nem érdemes a HTML, CSS és JS fájlok minden módosítása után leállítani és újraindítani a projektet. Elég `Ctrl-S`-el menteni a megváltozott fájlt, majd `F5`-el frissíteni az oldalt a böngészőben. A böngészőben pedig az `F12` megnyomása után (Developer tools) érdemes kikapcsolni a gyorsítótárat. Ez a beállítás csak akkor érvényes, ha meg vannak nyitva a böngésző fejlesztőeszközei. 
+> [!TIP]
+>
+> Don’t stop and restart the project every time you modify HTML, CSS, or JS files. Just press `Ctrl+S` to save the file, then refresh the page in the browser with `F5`. In the browser, press `F12` (Developer tools) and disable the cache — this setting is only effective while DevTools are open.
 
-![1610832230354.png](C:\REPO\szamtud\netcore\new_netcoreapp\1610832230354.png)
+![1610832230354.png]()
 
+------
 
+## Publishing the Web Application to Azure
 
-## Webalkalmazás közzététele Azure-ban
+### Creating an Azure WebApp
 
-### Azure WebApp létrehozása
+Create a WebApp resource:
 
-Hozzatok létre egy WebApp erőforrást:
+![img](se_azure_webapp.png)
 
+A few notes:
 
+- .NET 7 is not selectable. Choose 6 for now — you can change it to 7 in the settings after the resource is created.
+- During the setup steps, enable "basic authentication". Without it, the automated upload via "Publish Profile" (discussed next) won’t work, as there’s no way to use two-factor authentication here.
 
-![](se_azure_webapp.png)
+------
 
-Néhány gondolat:
+## Obtaining the Publish Profile
 
-- .NET 7 nem választható. Válaszd a 6-ost, és majd ha elékészült az erőforrás, a beállítások között át lehet állítani 7-esre.
-- A telepítési lépések között engedélyezd a "basic authentication"-t. Ennélkül nem megy a következő lépésben taglalt, "PublishProfile"-en keresztül történő automatizált feltöltés, hiszen itt nincs lehetőség kétfaktoros aurntikációra. 
+The Publish Profile is an XML document containing all the necessary information to upload (publish) the web application.
 
-
-
-## Publish Proflie megszerzése
-
-A Publish Profile egy XML dokumentum, mely tartalmaz minden információt, ami a webalkalmazás feltöltéséhez -- közzétételéhez -- szükséges. 
-
-Keressétek meg az Azure-os Web App létrehozása után lementett  Publish Proflie-t (`corvinus-neptun.PublishSettings` nevű fájl), vagy nyissátok meg a [portal.azure.com](https://portal.azure.com)-ot, és töltsétek le újra! Amíg fut a Web App, nem engedi letölteni. Letöltés után indítsátok újra!
+Locate the Publish Profile (`corvinus-neptun.PublishSettings`) that you downloaded after creating the Azure Web App, or open [portal.azure.com](https://portal.azure.com) and download it again! You can’t download it while the Web App is running, so stop it first. After downloading, restart it.
 
 ![1610915896805.png](1610915896805.png)
 
-Miután Visual Studio-ban megnyitottuk a közzétételre (publish) szánt alkalmazást, válasszuk a `Build` / `Publish` menüpontot, majd a kis kék `New`  gombot. Ezután lehet kiválasztani az `Import Profile` lehetőséget, mely után ki lehet tallózni az előző lépésben lementett Publish Profile-t. 
+After opening the application you want to publish in Visual Studio, go to `Build` > `Publish`, then click the small blue `New` button. You can then choose `Import Profile`, and browse for the previously saved Publish Profile.
 
-A gyakorlatban több közzétételi opció is szokott lenni egy projekthez: mielőtt kitennénk "élesbe" vagy "production" környezetbe, egy "staging" vagy teszt környezetben szokás kipróbálni. 
+In practice, you usually have multiple publish profiles per project: before deploying to the "live" or "production" environment, it’s common to test in a "staging" or "testing" environment.
 
-## Publish Proflie importálása
+------
 
-A Visual Studio `Build`/`Publish` menüpontja alatt importáld a Publish Profile-t, majd a `Publish` gombra kattintva tedd közzé Azure-ban a webalkalmazásod.
+## Importing the Publish Profile
+
+Under the Visual Studio `Build` / `Publish` menu, import the Publish Profile, then click `Publish` to deploy your web application to Azure.

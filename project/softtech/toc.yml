@@ -75,6 +75,12 @@
     href: hajos_bindnig\index.md
   - name: Minta ZH
     href: databinding_mintazh\index.md
+- name: 11. hét - Minta ZH-k
+  items:
+  - name: "Minta ZH: CSV & adatkötés"
+    href: databinding_mintazh\index.md
+  - name: "Minta ZH: SQL & adatkötés"
+    href: bikestore_mintazh\index.md
 #- name: "11. hét - WEB"
 #  items: 
 #  - name: "🎓 Kriptográfia"
@@ -127,12 +133,12 @@
 ##          href: pixelart\index.md
 - name: 13. hét - Projektfeladat ZH
   items:
-  - name: Értékelés módja
-    href: beadando/projekt_zh_ertekeles.md
+  - name: A beadandó feladatok értékelése
+    href: beadandok\ertekeles\index.md
 - name: Projektfeladatok
   items:
-    - name: A beadandó feladatok értékelése
-      href: beadando\ertekeles\
+    # - name: A beadandó feladatok értékelése
+    #   href: beadandok\ertekeles\index.md
 #    - name: A beszámolók menete
 #      href: teamsbeszamolok\index.md
     - name: "Projektfeladat: Életjáték"
@@ -148,7 +154,7 @@
     - name: "Projektfeladat: Labirintus játék"
       href: beadandok\beadando_maze\index.md
     - name: "Projektfeladat: Kígyós játék almákkal"
-      href: beadando_snake\index.md
+      href: beadandok\beadando_snake\index.md
     - name: "Projektfeladat: Keresd a különbséget játék"
       href: beadandok\beadando_spot_the_difference\index.md
 - name: Mintakódok projekthez

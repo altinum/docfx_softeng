@@ -70,11 +70,19 @@
       href: ./ds_zh2_checklist/index.md
     - name: "💡 DB link"
       href: ./ds_week9_midterm/index.md
+- name: Week 10
+  items:
+    - name: "🛠 Code Samples - Value at Risk"
+      href: ./ds_week_10/var.md   
 - name: Week 11 Project midterm
   items:
+    - name: "💡 WEB API #1"
+      href: ./9a_gyak_asp_net_intro/asp_net_azure.md
+    - name: "💡 WEB API #2"
+      href: ./9b_gyak_crude_viccek/index.md
     - name: "💡 Project Description & Price List"
-      href: ./ds_week11_cherry_picking/pricelist.md
-- name: Week 12 Project presentations
+      href: ./ds_week11_cherry_p
+- name: Week 12 Project presentationsicking/pricelist.md
   items:
 
 #- name: 3. hét
