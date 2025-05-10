@@ -43,3 +43,33 @@ Scaffold-DbContext "Data Source=bit.uni-corvinus.hu;Initial Catalog=se_bikestore
 ​	Ⓐ File location can be picked from an SaveFileDialog
 
 ​	Ⓑ Save data to file
+
+## Megoldások 
+
+(!Vid) 1. videó
+
+> [!Video https://storage.altinum.hu/bike/bike_1.m4v]
+
+(!Vid) 2. videó
+
+> [!Video https://storage.altinum.hu/bike/bike_2.m4v]
+
+(!Vid) 3. videó
+
+> [!Video https://storage.altinum.hu/bike/bike_3.m4v]
+
+(!Vid) 4. videó
+
+> [!Video https://storage.altinum.hu/bike/bike_4.m4v]
+
+(!Vid) 5. videó
+
+> [!Video https://storage.altinum.hu/bike/bike_5.m4v]
+
+(!Vid) 6. videó
+
+> [!Video https://storage.altinum.hu/bike/bike_6.m4v]
+
+(!Vid) 7. videó
+
+> [!Video https://storage.altinum.hu/bike/bike_7.m4v]
