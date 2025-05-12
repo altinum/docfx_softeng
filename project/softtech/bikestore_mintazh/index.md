@@ -1,5 +1,14 @@
 ## Bikestore minta ZH
 
+A `Microsoft.EntityFrameworkCore.Tools` és a `Microsoft.EntityFrameworkCore.SqlServer` a NuGet konzolán keresztül ezzel a két paranccsal is hozzáadható a projekthez:
+
+```powershell
+Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 7.0.20
+Install-Package Microsoft.EntityFrameworkCore.Tools -Version 7.0.20
+```
+
+
+
 A Scaffold parancsot a ZH-n is készen kapjátok:
 
 ```powershell
