@@ -82,3 +82,11 @@ Scaffold-DbContext "Data Source=bit.uni-corvinus.hu;Initial Catalog=se_bikestore
 (!Vid) 7. videó
 
 > [!Video https://storage.altinum.hu/bike/bike_7.m4v]
+
+(!Vid) 7. videó
+
+> [!Video https://storage.altinum.hu/bike/bike_8.m4v]
+
+(!Vid) 7. videó
+
+> [!Video https://storage.altinum.hu/bike/bike_9.m4v]

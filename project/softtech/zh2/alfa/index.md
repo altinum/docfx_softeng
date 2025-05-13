@@ -1,60 +1,62 @@
 # 2. ZH - alfa
 
-A [autok.txt](autok.txt) fájlban található adatok alapján kell egy alkalmazást felépíteni. 
+
+
+## 🅐 UI keret létrehozása 
+
+❶ Hozz létre egy Forms alapú alkalmazást. Az induláskor megjelenő űrlap bal oldalán helyezz el három gombot, és egy panelt! 
+
+❷ A Panel kerete legyen vékony vonal. 
+
+❸ A Panel az űrlap átméretezésekor kövesse az űrlap méretét! 
+
+❹ Adj négy `UserControl`-t is a projekthez, elnevezésük tetszőleges! A következő feladat blokkokat ezekre a vezérlőkre kell majd megvalósítani. 
+
+❺ A gombok megnyomására ürítsd a panel tartalmát, és helyezd el a gombhoz tartozó `UserControl`-t úgy, hogy kitöltse a panel teljes területét átméretezéskor is. 
+
+
+
+## 🅑 UserControl1 : CSV állomány beolvasása
+
+A [autok.txt](autok.txt) fájlban található adatokat kell egy `DataGridView`-ben megjeleníteni. 
 
 A fájl felépítése:
 
 |                   |                                        |      |
 | ----------------- | -------------------------------------- | ---- |
-| `autok.txt`       | az autó azonosítója                    |      |
+| `AutoID`          | az autó azonosítója                    |      |
 | `Modell`          | az autó modellje, pl: X7               |      |
 | `Gyarto `         | az autót gyártó cég, pl: BMW           |      |
 | `Evjarat `        | az autó gyártási éve                   |      |
 | `Uzemanyag  `     | milyen típusú üzemanyag való az autóba |      |
 | `TeljesitmenyHP ` | az autó teljesítménye lóerőben         |      |
 
-> [!NOTE]
->
-> Az alkalmazás felépítésekor célszerű követni a feladat mellé rakott képernyőképeket, melyek segítségül és kiindulási alapként szolgálnak!
+❶ A csv állományt tedd be a projektbe, és másoltasd a futtatható állomány mellé **-=VAGY=-** a fálj legyen `OpenFileDialog` segítségével kitallózható!
 
-Készíts alkalmazást, amely:
+❷ Adj a projekthez egy osztályt, amely leképezi az állomány egy sorát!
 
-(+/-) A csv állományt tedd be a projektbe, és másoltasd a futtatható állomány mellé!
-
-(+/-) Adj a projekthez egy osztályt, amely leképezi az állomány egy sorát!
-
-(+/-) A program legyen képes megnyitni az állományt, és a sorait felolvasni egy `BindingList` típusú, `Form1` osztály szintjén létrehozott listába, majd ezeket megjeleníteni `BindingSource`-on keresztül egy `DataGridView`-ban. A lehetséges hibákat kezeld! A betöltés művelet történjen gombnyomásra!
+❸ A program legyen képes megnyitni az állományt, és a sorait felolvasni egy `BindingList` típusú, `UserControl1` osztály szintjén létrehozott listába, majd ezeket megjeleníteni `BindingSource`-on keresztül egy `DataGridView`-ban. A lehetséges hibákat kezeld! 
 
 ![image1](image1.png)
 
-(+/-) Az alkalmzás legyen képes menteni a `Form1` osztályban lévő listát. A mentés helye SaveFileDialog-ban legyen kiválasztható
-
-Mentés közben kezeld a hibákat (try-catch)! 
-
-![image3](image3.png)
-
-(+/-) Hozz létre egy gombot, melynek segítségével a rácsban az éppen kiválasztott sor törölhető. A törlés csak megerősítő kérdés után történjen meg.
-Ellenőrizd, hogy van-e kiválasztott sor!
-
-![image4](image4.png)
 
 
+## 🅒 UserControl1 : új rekord rögzítése
 
-![image5](image5.png)
-
-
-
-(+/-) Felugró ablakon keresztül legyen lehetőség új sor rögzítésére!
+❶ Felugró ablakon keresztül legyen lehetőség új sor rögzítésére!
 
 
 
 ![image6](image6.png)
 
+## 🅓 UserControl1 : LINQ lekérdezések
 
+Hozz létre egy 'Érekességek' gombot, amelyre felugrik egy MessageBox, ami a következő kérdésekre ad nekünk választ:
 
-(+/-) Hozz létre egy gombot, amelyre felugrik egy MessageBox, ami a következő kérdésekre ad nekünk választ:
+- A felsorolt autók közül ❶ **melyik gyártónak van a legerősebb autója** lóerők szempontjából, és ❷ **hány lóerős** az adott autó?
 
-1) A felsorolt autók közül melyik gyártónak van a legerősebb autója lóerők szempontjából, és hány lóerős az adott autó?
-2.	A listában több BMW típusú jármű is található. Hány darab van és átlagosan milyen erősek (lóerő) a listában szereplő BMW autók?
+- A listában több BMW típusú jármű is található.  ❸ **Hány darab** van és ❹**átlagosan milyen erősek** (lóerő) a listában szereplő BMW autók?
 
 ![image7](image7.png)
+
+## Ⓔ UserControl2 : LINQ lekérdezések
