@@ -1,16 +1,16 @@
-# 2. ZH - foxtrot
+# 2. ZH - bravo
 
-A [konyv.txt](konyv.txt) fájlban található adatok alapján kell egy alkalmazást felépíteni. 
+A [bolygo.txt ](bolygo.txt) fájlban található adatok alapján kell egy alkalmazást felépíteni. 
 
 A fájl felépítése:
 
-|                |                                 |      |
-| -------------- | ------------------------------- | ---- |
-| `KonyvID `     | a könyv azonosítója             |      |
-| `Szerzo    `   | a köny szerzője                 |      |
-| `Cim `         | a könyv címe                    |      |
-| `KiadasEve `   | az év, amikor kiadták a könyvet |      |
-| `Oldalszam   ` | az oldalak száma a könyvben     |      |
+|                    |                                             |      |
+| ------------------ | ------------------------------------------- | ---- |
+| `BolygoID`         | a bolygó azonosítója                        |      |
+| `Nev `             | a bolygó neve                               |      |
+| `TavolsagNaptolAU` | a bolygó távolsága a taptól fényévben mérve |      |
+| `AtmeroKM`         | a bolygó átmérője                           |      |
+| `VanElet `         | boolean típus, 1-van élet 0-nincs élet      |      |
 
 > [!NOTE]
 >
@@ -53,7 +53,7 @@ Ellenőrizd, hogy van-e kiválasztott sor!
 
 (+/-) Hozz létre egy gombot, amelyre felugrik egy MessageBox, ami a következő kérdésekre ad nekünk választ:
 
-1) Melyik évben lett kiadva a leghosszabb könyv?
-2) Átlagosan milyen hosszúak a 2000 után kiadott könyvek?
+1) Melyik bolygó átmérője a legkisebb? Van rajta élet?
+2) Összesen hány bolygón van élet?
 
 ![image7](image7.png)
