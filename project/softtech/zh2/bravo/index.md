@@ -77,7 +77,7 @@ Segíségül az adatbázis sémája:
 
 ![image-20250428082736892](image-20250428082736892.png)
 
-## 🅕 UserControl2 : `Cocktail` tábla tartalmának megjelenítése
+## 🅕 UserControl2 : `Material` tábla tartalmának megjelenítése
 
 ❶ Jelenítsd meg a tábla tartalmát DataGridView-ban úgy, hogy az idegen kulcsok helyén (`TypeFK` és `UnitFK`) a vonatkozó típus illetve mennyiségi egység neve jelenjen meg. 
 
