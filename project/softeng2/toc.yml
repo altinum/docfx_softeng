@@ -82,8 +82,10 @@
       href: ./9b_gyak_crude_viccek/index.md
     - name: "💡 Project Description & Price List"
       href: ./ds_week11_cherry_picking/pricelist.md
-- name: Week 12 Project presentationsicking/pricelist.md
+- name: Week 12 Project presentations
   items:
+    - name: "💡 Timetable"
+      href: ./ds_week12_presentations/
 
 #- name: 3. hét
 #  items:
