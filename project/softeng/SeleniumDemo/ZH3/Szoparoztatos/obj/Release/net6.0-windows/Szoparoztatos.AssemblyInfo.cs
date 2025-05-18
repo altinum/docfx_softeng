@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Szoparoztatos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0520d014f60a0d5df19888443e81965352723186")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86a5d2090c4c038e6124abd6479c00745a7f4334")]
 [assembly: System.Reflection.AssemblyProductAttribute("Szoparoztatos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Szoparoztatos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
