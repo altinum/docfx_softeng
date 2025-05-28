@@ -4,7 +4,120 @@ Kedves Kollégák!
 
 **A pontok összesítésénél** az extra pontokat a második és a harmadik ZH eredményéhez is hozzá lehet adni, de meg is lehet osztani. Az egyes ZH-kra legfeljebb 30 pont számítható be. A projekt ZH megírása **nem kötelező**, hiányzás esetén 0 ponttal kerül beszámításra. Ennek ellenére mindenkinek erősen javaslom, **mivel a C# programozási ismeretekre még két tárgy épít**. A vizsgaidőszak első péntekén, a javító alkalommal, **tetszőleges két lévő ZH** javítható. A kezdőidőpontok a jelentkezők száma és a teremkapacitás függvényében kerülnek beosztásra.
 
-A pót alkalomra Teams Froms jelentkezési felületet teszünk közzé szerdáig. 
+> [!IMPORTANT] 
+>
+> A projekt pontok ismeretében a csütörtöki nap folyamán még lehet jelentkezni pótlásra, illetve le lehet mondnai a jelentkezést. Részteleket küldünk Teams-en.
+
+Projekt pontok:
+
+| Neptunkód | Porjekt név                                 | Projekt pont                      |                                                              |
+| --------- | ------------------------------------------- | --------------------------------- | ------------------------------------------------------------ |
+| A2WX42    |                                             |                                   | Nincs feltöltés                                              |
+| A64MWU    | Kígyó                                       | 6                                 |                                                              |
+| ABXLXL    | Két kígyó almákkal                          | 10                                |                                                              |
+| AUGBR7    | Kígyó almákkal, mérgekkel                   | 10                                | Fal ütközés vizsgálat hiba                                   |
+| BAZ7HM    |                                             |                                   | Nincs feltöltés                                              |
+| BI59KF    |                                             |                                   | Nincs feltöltés                                              |
+| BIV92L    | Labirintus                                  | 9                                 |                                                              |
+| BK3C9F    | Szópároztatós                               | 10                                |                                                              |
+| BV9E0X    |                                             |                                   | Nincs feltöltés                                              |
+| BXHYBS    |                                             |                                   | Nincs feltöltés                                              |
+| BZ5462    | Akasztófa                                   | 10                                |                                                              |
+| C8X302    | Labirintus                                  |                                   |                                                              |
+| C9VSLT    | Kígyó almákkal, mérgekkel                   | 10                                |                                                              |
+| CAAU73    | Kígyó                                       | 10                                |                                                              |
+| CDQX3M    | Akasztófa                                   | 8                                 | Nincsenek gombok, csak TB                                    |
+| CEUF61    | Két kígyó almákkal                          | 10                                |                                                              |
+| COPMQY    | Kígyós almákkal, mérgekkel                  | 10                                |                                                              |
+| CUE7OX    | Aksztófa                                    | 10                                |                                                              |
+| CYY6TU    | Akasztófa                                   | 9                                 | Nincs videó                                                  |
+| CZNUFN    | Két kígyó                                   | 10                                | Nice colors                                                  |
+| D41BVR    | Akasztófa                                   | 10                                | Ne lehessen indítani szóbetöltés nélkül                      |
+| DBKR7M    | Kígyó almákkal mérgekkel                    | 10                                |                                                              |
+| DEP39C    | Egyéni                                      | 5                                 |                                                              |
+| DNNDFT    |                                             |                                   | Nincs feltöltés                                              |
+| DQ4QVH    | Akasztófa                                   | 8                                 | Képeknél abs. path, nem fut                                  |
+| DSZ978    | Akasztófa                                   | 8                                 | Abs. path, null reference                                    |
+| DTHH7J    | Szótanító                                   | 10                                |                                                              |
+| E2KN7D    | Akasztófa                                   | 9                                 |                                                              |
+| ECZI7B    | Kígyó                                       | 8                                 | Nincs videó                                                  |
+| EF5U80    | Kígyó                                       | 10                                |                                                              |
+| ER51EW    | Életjáték                                   | ?                                 | Első lépés után leállt                                       |
+| F64N3I    |                                             |                                   | Nincs feltöltés                                              |
+| F74YRC    | Akasztófa                                   | 10                                | Feltételesen, nem tudom futtatni, azonnal kilép, kód jónak tűnik |
+| F7GYL9    | Kígyó                                       | 9                                 |                                                              |
+| FBHJP7    | Kígyó almákkal falakkal                     | 10                                |                                                              |
+| FD0RM8    | Kígyó                                       | 10                                |                                                              |
+| FJU9QR    |                                             | 7                                 | Nincs videó és rajz                                          |
+| FOD7WG    |                                             |                                   | Nincs feltöltés                                              |
+| FXFACS    | Két kígyó almákkal                          | 10                                |                                                              |
+| G1A0FW    | Szópárosító                                 | 10                                |                                                              |
+| G8M3AQ    | Kígyó almák nélkül                          | 4                                 |                                                              |
+| GANYQK    |                                             |                                   | Nincs feltöltés                                              |
+| GR5U27    | Kígyós almákkal, mérgekkel                  | 9                                 | Farokbaharapás nincs jól kezelve                             |
+| GTHT0A    | Kígyó almákkal mérgekkel                    | 10                                |                                                              |
+| GXZMV8    | Labirintus                                  | 10                                | Maze file missing                                            |
+| H2OIN0    | Kígyós almákkal, mérgekkel                  | 10                                |                                                              |
+| HA1C6B    | Kígyós almákkal, mérgekkel                  | 10                                |                                                              |
+| HBB8BO    | Kígyós almákkal, mérgekkel                  | 5                                 | Nem megy az ütközés. A leadotton sem.                        |
+| HHJJF4    |                                             |                                   | Nincs feltöltés                                              |
+| HPPLBL    | Akasztófa                                   | 10                                |                                                              |
+| I86RIQ    | Szópárosító                                 | 10                                | Minta fájl hiányzik                                          |
+| I99MRN    | Akasztófa                                   | 10                                |                                                              |
+| IMN7DS    | Szópárosító                                 | 10                                | Minta fájl hiányzik                                          |
+| IO18O1    |                                             |                                   | Nincs feltöltés                                              |
+| ISJEXD    | Akasztófa                                   | 10                                |                                                              |
+| IVDE6F    | Akasztófa                                   | 6                                 | Nincs rajz, Nincs videó                                      |
+| IW10UI    |                                             |                                   | Nincs feltöltés                                              |
+| JC5KSV    |                                             |                                   | Nincs feltöltés                                              |
+| JF3ZG3    | Kígyó almákkal, mérgekkel, fallal           |                                   |                                                              |
+| JG1IHN    | Kígyó                                       | 8                                 | Nincs videó                                                  |
+| JGRVIF    |                                             |                                   | Nincs feltöltés                                              |
+| JK5NX9    | Akasztófa - szép                            | 10                                |                                                              |
+| JPLJST    | Szópároztatós, videóban japán (kínai?)      | 10                                |                                                              |
+| K8J4NW    |                                             |                                   | Nincs feltöltés                                              |
+| LNXALE    |                                             |                                   | Nincs feltöltés                                              |
+| LS7B4H    |                                             |                                   | Nincs feltöltés                                              |
+| LWTBZA    |                                             | 5                                 | Nincs videó, rajz és gombok                                  |
+| LYW7WU    | Kígyó almákkal, mérgekkel, színes háttérrel | 10                                | Színes háttér ötletes                                        |
+| NELX6O    | Kígyó                                       | 5                                 | Nem indul, nincs videó                                       |
+| NFHAJK    | Akasztófa                                   | 10                                | Más felbontásban nem jelennek meg a kitalát betűk            |
+| NHI1BY    | Szótanító                                   | 10                                |                                                              |
+| NIUOPT    | Kígyó képekkel                              | 10                                |                                                              |
+| NQDMUK    |                                             | Nincs feltöltés                   |                                                              |
+| OQE7DV    | Akasztófa                                   | 0                                 | Hibás feltöltés, csak .sln                                   |
+| P96A8L    |                                             |                                   | Nincs feltöltés                                              |
+| PMZ3I1    | Akasztófa                                   | 10                                | Vesztésnél a szót kéne megjeleníteni                         |
+| PR1WQ7    | Akasztófa                                   | 10                                |                                                              |
+| PS89OG    | Labirintus                                  | 9                                 | Nincs videó                                                  |
+| PVT0Q8    | Akasztófa - szép                            | 10                                |                                                              |
+| R5YBAX    | Kígyó almákkal mérgekkel                    | 10                                |                                                              |
+| R8FE3L    | Kígyó almákkal mérgekkel                    | Videó van, feltöltést nem találom |                                                              |
+| RFGXRQ    | Akasztófa                                   | 8                                 |                                                              |
+| ST2OSL    | Életjáték - szép                            | 10                                |                                                              |
+| SXPCZP    | Labirintus                                  | 8                                 | Nincs videó                                                  |
+| T1LU8O    | Akasztófa                                   | 10                                |                                                              |
+| TFKU89    |                                             |                                   | Nincs feltöltés                                              |
+| TOTK2W    | Game of life - nice                         | 10                                |                                                              |
+| TSGCHU    | Kígyó almákkal, mérgekkel                   | 10                                |                                                              |
+| TUGNDX    |                                             |                                   | Nincs feltöltés                                              |
+| U1Q7MO    | Akasztófa                                   | 10                                | Dark mode                                                    |
+| UE6FO9    | Kígyó almákkal mérgekkel                    | 10                                |                                                              |
+| UI3AF7    |                                             |                                   | Nincs feltöltés                                              |
+| W1C4GQ    | Labirintus                                  | 10                                | Minta fájl hiányzik                                          |
+| WCHH75    | Különbség kereső                            | 10                                |                                                              |
+| WFTYT0    | Kasztófa                                    | 10                                |                                                              |
+| WH4DIL    |                                             |                                   | Nincs feltöltés                                              |
+| X61T7I    | Akasztófa                                   | 0                                 | Nem fordul                                                   |
+| XE6XKN    |                                             |                                   | Nincs feltöltés                                              |
+| Y84DWY    | Akasztófa                                   | 10                                | supercalifragilisticexpialidocious                           |
+| Z5MF0B    | Két kígyó                                   | 10                                |                                                              |
+| ZFTS34    |                                             |                                   | Nincs feltöltés                                              |
+| ZMHGVJ    | Kígyó                                       | 10                                |                                                              |
+
+
+
+
 
 | Neptunkód | ZH1  |                 | ZH2                        | ZH3  | Extra |
 | --------- | ---- | --------------- | -------------------------- | ---- | ----- |
