@@ -1,3 +1,80 @@
+# Javító / pótló alkalom
+
+Kedves Kollégák!
+
+Elkészült a pénteki (május 30.) pótlások és javítások terembeosztása. A táblázatban az „A” betű a Gellért Campuson az Adattér jelölése, az „E” az E.245. Reggel, mielőtt indultok, még nézzetek rá, lehet, hogy változtatni kell rajta. Hagyjatok időt az Adattér megtalálására, ha még nem jártatok ott. Mivel a teremkapacitások határán vagyunk, és számolni kell nem működő gépekkel is, kényelmesebb terembe vagy időpontra történő átjelentkezésre vonatkozó kéréseket nem tudunk teljesíteni. Ha kérdésetek van, kérünk Teams-ben jelezzétek, ne mail-ben. Pár perc csúszás előfordulhat. Ha valaki mégsem jön el, azt is jelezze, kérem! 
+
+|        | 1. ZH | 2. ZH | 3.ZH  | Projekt  |
+| ------ | ----- | ----- | ----- | -------- |
+|        | 08:00 | 09:50 | 11:40 |          |
+| A64MWU |       |       | A     | A: 09:50 |
+| ABXLXL |       |       | E     |          |
+| AUGBR7 | A     | A     | A     |          |
+| BIV92L |       |       | E     |          |
+| BK3C9F |       | E     | E     |          |
+| C9VSLT |       | E     | E     |          |
+| CAAU73 | A     | A     | A     |          |
+| CDQX3M |       | E     | E     |          |
+| CDQX3M |       | E     | E     |          |
+| CEUF61 |       |       | E     |          |
+| COPMQY |       | E     | E     |          |
+| CUE7OX |       | E     |       |          |
+| DBKR7M |       |       | E     |          |
+| DSZ978 |       |       | E     |          |
+| dthh7j |       | E     |       |          |
+| E2KN7D |       | E     |       |          |
+| F74YRC |       | E     |       |          |
+| F7GYL9 |       | E     | E     |          |
+| FD0RM8 |       | E     | E     |          |
+| FJU9QR | A     |       |       |          |
+| FXFACS |       | E     | E     |          |
+| G1A0FW |       | E     | E     |          |
+| G1A0FW |       | E     | E     |          |
+| G8M3AQ |       | E     | E     |          |
+| Gr5u27 |       | E     | E     |          |
+| GTHT0A |       |       | E     |          |
+| GXZMV8 |       |       | A     |          |
+| H2OIN0 | A     |       |       |          |
+| HA1C6B |       | E     | E     |          |
+| HBB8BO | A     |       | A     |          |
+| HHJJF4 | A     |       |       |          |
+| Hpplbl | A     |       | A     |          |
+| I86RIQ | A     | A     | A     |          |
+| I99MRN |       | E     | E     |          |
+| ISJEXD |       | E     | E     |          |
+| JF3ZG3 | A     | A     | A     |          |
+| JGRVIF | A     |       |       |          |
+| JPLJST |       |       | E     |          |
+| LYW7WU |       | E     | E     |          |
+| NELX6O | A     | A     | A     |          |
+| NFHAJK |       | E     | E     |          |
+| NHI1BY |       | E     | E     |          |
+| NIUOPT | A     |       |       |          |
+| OQE7DV | A     |       | A     |          |
+| PMZ3I1 |       |       | E     |          |
+| PR1WQ7 | A     |       | A     |          |
+| PS89OG |       | A     | A     | A: 08:00 |
+| PS89OG |       | E     | E     |          |
+| PVT0Q8 |       |       | A     |          |
+| PVT0Q8 |       |       | E     |          |
+| R5YBAX |       |       | E     |          |
+| st2osl | A     |       |       |          |
+| sxpczp | A     | A     |       |          |
+| TOTK2W |       | E     | E     |          |
+| TSGCHU |       | E     | E     |          |
+| TUGNDX |       |       |       |          |
+| WFTYT0 |       |       | E     |          |
+| WH4DIL |       | E     | E     |          |
+| X61T7I | A     | A     |       |          |
+| y84dwy |       | E     | E     |          |
+| ZMHGVJ |       | E     |       |          |
+
+
+
+
+
+
+
 # Eredmények
 
 Kedves Kollégák! 
