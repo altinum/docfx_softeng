@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Trivia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86a5d2090c4c038e6124abd6479c00745a7f4334")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b33ff930f93d45966a2204288c9d2b164f91bb3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Trivia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Trivia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
