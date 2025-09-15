@@ -90,77 +90,78 @@ Főbb entitások:
 
 **2. feladat:** Az azonosított entitásokhoz határozd meg a szükséges attribútumokat (mezőket). Gondold át, hogy melyik mezők lesznek elsődleges- és idegenkulcsok. Milyen adattípusokat használnál az egyes mezők esetén?
 
-<details>
-<summary>Javasolt megoldás</summary>
 
-<div class="mermaid">
 
-erDiagram
-    UGYFEL ||--o{ RENDELES : "leadja"
-    RENDELES ||--|{ RENDELES_TETEL : "tartalmaz"
-    TERMEK ||--o{ RENDELES_TETEL : "szerepel"
-    TERMEK }|--|| TERMEK_KATEGORIA : "tartozik"
-    TERMEK_KATEGORIA ||--o{ TERMEK_KATEGORIA : "alkategóriája"
-    CIM ||--o{ UGYFEL : "lakhelye"
-    CIM ||--o{ RENDELES : "szállítási cím"
+```mermaid
+erDiagram  
+UGYFEL {
+    INT UgyfelID PK
+    NVARCHAR(100) Nev
+    NVARCHAR(255) Email
+    NVARCHAR(20) Telefonszam
+    INT AlapertelmezettCimID FK
+}
 
-    UGYFEL {
-        INT UgyfelID PK
-        NVARCHAR(100) Nev
-        NVARCHAR(255) Email
-        NVARCHAR(20) Telefonszam
-        INT LakcimID FK
-    }
+TERMEK {
+    INT TermekID PK
+    NVARCHAR(100) Nev
+    NVARCHAR(MAX) Leiras
+    DECIMAL(10_2) AktualisAr
+    INT Keszlet
+    INT KategoriaID FK
+}
 
-    CIM {
-        INT CimID PK
-        NVARCHAR(100) Utca
-        NVARCHAR(20) Hazszam
-        NVARCHAR(50) Varos
-        NVARCHAR(10) Iranyitoszam
-        NVARCHAR(50) Orszag
-    }
+TERMEK_KATEGORIA {
+    INT KategoriaID PK
+    NVARCHAR(50) Nev
+    NVARCHAR(MAX) Leiras
+    INT SzuloKategoriaID FK   
+}
 
-    RENDELES {
-        INT RendelesID PK
-        INT UgyfelID FK
-        INT SzallitasiCimID FK
-        NVARCHAR(20) Statusz
-        DATETIME RendelesDatum
-        DECIMAL(5_2) Kedvezmeny
-        DECIMAL(10_2) Vegosszeg
-    }
+UGYFEL_CIM {
+	INT UgyfelID PK
+	INT CimID PK
+}
 
-    RENDELES_TETEL {
-        INT TetelID PK
-        INT RendelesID FK
-        INT TermekID FK
-        INT Mennyiseg
-        DECIMAL(10_2) EgysegAr
-        DECIMAL(5_2) Afa
-        DECIMAL(10_2) NettoAr
-        DECIMAL(10_2) BruttoAr
-    }
+CIM {
+    INT CimID PK
+    NVARCHAR(100) Utca
+    NVARCHAR(20) Hazszam
+    NVARCHAR(50) Varos
+    NVARCHAR(10) Iranyitoszam
+    NVARCHAR(50) Orszag
+}
 
-    TERMEK {
-        INT TermekID PK
-        NVARCHAR(100) Nev
-        NVARCHAR(MAX) Leiras
-        DECIMAL(10_2) AktualisAr
-        INT Keszlet
-        INT KategoriaID FK
-    }
+RENDELES {
+    INT RendelesID PK
+    INT UgyfelID FK
+    INT SzallitasiCimID FK
+    NVARCHAR(20) Statusz
+    DATETIME RendelesDatum
+    DECIMAL(5_2) Kedvezmeny
+    DECIMAL(10_2) Vegosszeg
+}
 
-    TERMEK_KATEGORIA {
-        INT KategoriaID PK
-        NVARCHAR(50) Nev
-        NVARCHAR(MAX) Leiras
-        INT SzuloKategoriaID FK
-    }
+RENDELES_TETEL {
+    INT TetelID PK
+    INT RendelesID FK
+    INT TermekID FK
+    INT Mennyiseg
+    DECIMAL(10_2) EgysegAr
+    DECIMAL(5_2) Afa
+    DECIMAL(10_2) NettoAr
+    DECIMAL(10_2) BruttoAr
+}
 
-</div>
-
-</details><br/>
+UGYFEL ||--o{ RENDELES : "leadja"
+RENDELES ||--|{ RENDELES_TETEL : "tartalmaz"
+TERMEK ||--o{ RENDELES_TETEL : "szerepel"
+TERMEK }|--|| TERMEK_KATEGORIA : "tartozik"
+TERMEK_KATEGORIA ||--o{ TERMEK_KATEGORIA : "alkategóriája"
+UGYFEL ||--o{ UGYFEL_CIM : ""
+CIM ||--o{ UGYFEL_CIM : ""
+CIM ||--o{ RENDELES : "szállítási cím"
+```
 
 **3. feladat:** A következő megkötések figyelembevételével hozd létre tervező vagy SQL script segítségével az adattáblákat:
 * Minden tábla elsődleges kulcsa identitás mező legyen (automatikus számláló, IDENTITY).
