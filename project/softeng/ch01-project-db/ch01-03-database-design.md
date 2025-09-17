@@ -1,8 +1,20 @@
-# 1.3 A rendeléskezelő rendszer adatbázisának tervezése
+# 1 A rendeléskezelő rendszer adatbázisának tervezése
 
 Ebben a fejezetben végigvezetlek a rendeléskezelő rendszerünk adatbázisának tervezési folyamatán. Az adatbázis tervezése kulcsfontosságú lépés az alkalmazásfejlesztés során, hiszen ez alapozza meg a rendszer hatékony működését és bővíthetőségét. Lépésről lépésre haladunk, hogy egy jól strukturált, normalizált adatbázist hozzunk létre.
 
-## Követelmények meghatározása
+Feladatok a gyakorlaton:
+
+① Azure for Students account létrehozása, majd SQL adatbázis létrehozása Azure felhőben
+
+② Adatbázis logikai tervének elkészítése Mermaid diagramban 1.1-ben lefektetett követelmények alapján
+
+③ Az előző lépésben tervezett adatbázis felépítése a saját SQL szerverünkön
+
+④ Adatbázis feltöltése minta termékekkel
+
+
+
+## 1.1 Követelmények meghatározása
 
 ### Ügyfelek és termékek kezelése
 
@@ -70,9 +82,17 @@ Ezek a követelmények együttesen egy komplex, de rugalmas rendszer alapjait fe
 
 Ne feledd, hogy a jó követelménymeghatározás a sikeres adatbázis-tervezés alapja. Minél pontosabban tudjuk megfogalmazni az igényeinket, annál hatékonyabb és használhatóbb rendszert tudunk majd létrehozni. A következő alfejezetekben lépésről lépésre fogjuk felépíteni az adatbázisunkat ezen követelmények alapján.
 
-## Adatbázis tervezése
+## 1.2 Adatbázis logikai tervezése
+
+**0. feladat:** Határozz meg konvenciót az adatbázis objekutmok elnevezésére!
 
 **1. feladat:** A követelmények alapján azonosítsd a rendszer főbb entitásait (tábláit). Ha felsoroltad, hasonlítsd össze megoldásodat a javasolt megoldással.
+
+**2. feladat:** Az azonosított entitásokhoz határozd meg a szükséges attribútumokat (mezőket). Gondold át, hogy melyik mezők lesznek elsődleges- és idegenkulcsok. Milyen adattípusokat használnál az egyes mezők esetén?
+
+**3. feladat:** Építsd fel Mermaid-ben a logikai adatbázis tervet!
+
+
 
 <!--<details>
 <summary>Javasolt megoldás</summary>-->
@@ -88,28 +108,14 @@ Főbb entitások:
 
 <!--</details><br/>-->
 
-**2. feladat:** Az azonosított entitásokhoz határozd meg a szükséges attribútumokat (mezőket). Gondold át, hogy melyik mezők lesznek elsődleges- és idegenkulcsok. Milyen adattípusokat használnál az egyes mezők esetén?
 
 
+Példa Mermaid erDiagram:
 
-```mermaid
-erDiagram  
-UGYFEL {
-    INT UgyfelID PK
-    NVARCHAR(100) Nev
-    NVARCHAR(255) Email
-    NVARCHAR(20) Telefonszam
-    INT AlapertelmezettCimID FK
-}
+```
+erDiagram
 
-TERMEK {
-    INT TermekID PK
-    NVARCHAR(100) Nev
-    NVARCHAR(MAX) Leiras
-    DECIMAL(10_2) AktualisAr
-    INT Keszlet
-    INT KategoriaID FK
-}
+TERMEK_KATEGORIA ||--o{ TERMEK_KATEGORIA : "alkategóriája"
 
 TERMEK_KATEGORIA {
     INT KategoriaID PK
@@ -117,53 +123,43 @@ TERMEK_KATEGORIA {
     NVARCHAR(MAX) Leiras
     INT SzuloKategoriaID FK   
 }
-
-UGYFEL_CIM {
-	INT UgyfelID PK
-	INT CimID PK
-}
-
-CIM {
-    INT CimID PK
-    NVARCHAR(100) Utca
-    NVARCHAR(20) Hazszam
-    NVARCHAR(50) Varos
-    NVARCHAR(10) Iranyitoszam
-    NVARCHAR(50) Orszag
-}
-
-RENDELES {
-    INT RendelesID PK
-    INT UgyfelID FK
-    INT SzallitasiCimID FK
-    NVARCHAR(20) Statusz
-    DATETIME RendelesDatum
-    DECIMAL(5_2) Kedvezmeny
-    DECIMAL(10_2) Vegosszeg
-}
-
-RENDELES_TETEL {
-    INT TetelID PK
-    INT RendelesID FK
-    INT TermekID FK
-    INT Mennyiseg
-    DECIMAL(10_2) EgysegAr
-    DECIMAL(5_2) Afa
-    DECIMAL(10_2) NettoAr
-    DECIMAL(10_2) BruttoAr
-}
-
-UGYFEL ||--o{ RENDELES : "leadja"
-RENDELES ||--|{ RENDELES_TETEL : "tartalmaz"
-TERMEK ||--o{ RENDELES_TETEL : "szerepel"
-TERMEK }|--|| TERMEK_KATEGORIA : "tartozik"
-TERMEK_KATEGORIA ||--o{ TERMEK_KATEGORIA : "alkategóriája"
-UGYFEL ||--o{ UGYFEL_CIM : ""
-CIM ||--o{ UGYFEL_CIM : ""
-CIM ||--o{ RENDELES : "szállítási cím"
 ```
 
-**3. feladat:** A következő megkötések figyelembevételével hozd létre tervező vagy SQL script segítségével az adattáblákat:
+```mermaid
+erDiagram
+
+TERMEK_KATEGORIA ||--o{ TERMEK_KATEGORIA : "alkategóriája"
+
+TERMEK_KATEGORIA {
+    INT KategoriaID PK
+    NVARCHAR(50) Nev
+    NVARCHAR(MAX) Leiras
+    INT SzuloKategoriaID FK   
+}
+```
+
+Egy onlie Markdown szerkesztő: https://stackedit.io/
+
+Egy online Mermaid szerkesztő: https://mermaid.live/
+
+> [!tip]
+>
+> Ha kész a diagram, hívd a gyakvezért, és nézzétek át!
+
+
+
+## 1.3 Adatbázis fizikai felépítése
+
+Építsd fel az adatbázist az SQL szervereden! Allítsd össze az SQL mondatokat, ami felépíti az adatbázist!
+
+**1. feladat:** A következő megkötések figyelembevételével hozd létre tervező vagy SQL script segítségével az adattáblákat.
+
+> [!TIP]
+>
+> Használhatsz AI-t is a Mermaid diagram MS-SQL mondatokká konvertálásához!
+
+
+
 * Minden tábla elsődleges kulcsa identitás mező legyen (automatikus számláló, IDENTITY).
 * Minden százalékos érték (adó, kedvezmény) 0-100 közötti értéket vehet fel.
 * Az **ügyfelek** neve, e-mailje, lakcime nem lehet üres, e-mail egyedi. Címekből nem hiányozhat semmi.
@@ -292,3 +288,7 @@ CREATE TABLE RENDELES_TETEL (
 );
 ```
 <!--</details><br/>-->
+
+## 1.4 Mintaadatok generálása
+
+AI segítségével generálj mintaadatokat a termék és termékkategória táblákba!

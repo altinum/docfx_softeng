@@ -2,8 +2,6 @@
   items:
     - name: 📝 Adatbázis tervezése
       href: ./ch01-project-db/ch01-03-database-design.md
-    - name: 📝 Adatbázis feltöltése
-      href: ./ch01-project-db/ch01-04-synthetic-data.md
     - name: 📝 ChatGPT beszélgetés
       href: ./ch01-project-db/chat.md
 - name: 2. hét
