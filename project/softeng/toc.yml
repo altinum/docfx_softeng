@@ -6,6 +6,18 @@
       href: ./ch01-project-db/chat.md
 - name: 2. hét
   items:
+    - name: 📝 Codd élete
+      href: ./ch01-project-db/codd_biography.md
+    - name: 📝 Adatbázistervezés Mermaidben
+      href: ./ch01-project-db/ecommerce_in_mermaid.md
+    - name: 📝 Fizikai adatbázistervezés
+      href: ./ch01-project-db/mermaid_to_sql.md
+    - name: "📝 Tervezédi minta: kulcs-éték tár"
+      href: ./ch01-project-db/key_value.md
+    - name: "📝 Tervezédi minta: hierarchia"
+      href: ./ch01-project-db/hirerachia.md
+    - name: "📝 Tervezési gyakorlat: 7 perc 7 randi"
+      href: ./ch01-project-db/7minutes7randoms_practice.md
     - name: 📝 Új projekt & Scaffold-Db
       href: ./ch02-winforms/ch02-01-scaffolding.md
 - name: 3. hét
