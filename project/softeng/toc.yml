@@ -12,6 +12,10 @@
       href: ./ch01-project-db/ecommerce_in_mermaid.md
     - name: 📝 Fizikai adatbázistervezés
       href: ./ch01-project-db/mermaid_to_sql.md
+    - name: 📝 "2. gyakorlat"
+      href: ./ch01-project-db/2_gyakorlat.md
+- name: 3. hét
+  items:
     - name: "📝 Tervezédi minta: kulcs-éték tár"
       href: ./ch01-project-db/key_value.md
     - name: "📝 Tervezédi minta: hierarchia"
@@ -20,8 +24,6 @@
       href: ./ch01-project-db/7minutes7randoms_practice.md
     - name: 📝 Új projekt & Scaffold-Db
       href: ./ch02-winforms/ch02-01-scaffolding.md
-- name: 3. hét
-  items:
     - name: 📝 TreeView feltöltése
       href: ./ch02-winforms/ch02-03-product-category-treeview-part01.md
 - name: 4. hét
