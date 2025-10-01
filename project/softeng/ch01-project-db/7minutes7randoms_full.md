@@ -1,40 +1,37 @@
 # "7 minutes 7 randoms" dating club
 
-## Gyakorlati feladat
-
-❶ A munkátokat Markdown-ban dokumentáljátok, ezt kell majd beadni.
-
-❷ Készítsetek egy sémát az adatbázisotokban "dating" néven. Az összes táblát ebbe a sémába hozzátok majd létre!
-
-❸ Készítsétek el a feladatleírásban szereplő adatbázis Mermaid diagramját!
-
-❹ Készítéstek el az adatbázist felépítő SQL mondatokat is!
-
-❺ Építéstek fel az adatbázist a saját szervereteken!
-
-❻ Töltsétek fel néhány mintaadattal!
-
-❼ Készítsetek tárolt eljárást eseményre jelentkezésre, mely figyeli, hogy ne legyen több, mint 7 az adott nemből az adott eseményen! 
-
-Leadási határidő: következő gyakorlat.
-
-
-
-## Task description
-
 Students can ask the lecturer on the details of the task and create a Mermaid diagram that can be converted to SQL script using ChatGPT. 
 
 The "7 Minutes 7 Randoms" dating service organizes dating events. Members of the club can apply for events. Each event hosts 14 participants: 7 boys and 7 girls. Each girl sits at a table, and each boy has a chance to talk to each girl for 7 minutes. At the end of the event, participants can give "hearts" to the ones they like. In case of mutual sympathy, organizers hand out contacts. The system ensures that those who have already met do not attend the same event again.
 
 ``` mermaid
 erDiagram
-    MEMBER 
+    MEMBER {
+        int id PK "Primary key"
+        string name
+        string email
+        string gender
+    }
 
-    EVENT 
+    EVENT {
+        int id PK "Primary key"
+        string date
+        string location
+        string status
+    }
 
-    PARTICIPANT 
-    
-    HEART 
+    PARTICIPANT {
+        int id PK "Primary key"
+        int memberId FK "Foreign key to Member"
+        int eventId FK "Foreign key to Event"
+    }
+
+    HEART {
+        int id PK "Primary key"
+        int giverId FK "Foreign key to Member (giver)"
+        int receiverId FK "Foreign key to Member (receiver)"
+        int eventId FK "Foreign key to Event"
+    }
 
     MEMBER ||--o{ PARTICIPANT : "attends"
     EVENT ||--o{ PARTICIPANT : "includes"
@@ -46,7 +43,7 @@ erDiagram
 
 
 
-## Lessons to learn:
+Lessons to learn:
 
 ① The number 7 does NOT appear in the database
 
