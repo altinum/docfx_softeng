@@ -41,8 +41,12 @@
       href: ./ch02-winforms/ch03-03-treeview-video.md
 - name: 5. hét
   items:
+    - name: 📖 Hierarchiák kezeslése TSQL-ben
+      href: ./fa/hirerachia.md
     - name: 📖 XML prezentáció
       href: ./ch02-winforms/ch02-03-xml-slideshow.html
+    - name: 📖 XPATH
+      href: ./fa/xpath.md
     - name: 📝 XML mentése
       href: ./ch02-winforms/ch02-03-product-category-xml.md      
 - name: 6. hét

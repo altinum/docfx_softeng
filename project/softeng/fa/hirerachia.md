@@ -48,22 +48,44 @@ graph TD
 
 
 
+Példa lehet még 
+
+- a [Szálmatükör](szamlatukor.pdf),
+- a könyvtárakban használt ETO (Egységes Tizedes Osztályozás),
+- Cégek szervezeti fája
+
+
+
 ## Tábla létrehozása
 
 ``` mssql
 CREATE TABLE Kategoria (
     KategoriaId INT PRIMARY KEY IDENTITY,
     Nev NVARCHAR(100) NOT NULL,
-    Hierarchia hierarchyid NOT NULL
+    HierarchiaUtvonal hierarchyid NOT NULL
 );
 ```
 
 ## Főkategória beszúrása a táblába
 
 ```sql
-INSERT INTO Kategoria (Nev, Hierarchia)
+INSERT INTO Kategoria (Nev, HierarchiaUtvonal)
 VALUES (N'Főkategória', hierarchyid::GetRoot());
 ```
+
+Ellenőrzés:
+
+```sql
+SELECT * FROM Kategoria;
+```
+
+Szöveggként bármikor megjeleníthető a `HierarchiaUtvonal`:
+
+```sql
+SELECT KategoriaId, Nev, HierarchiaUtvonal.ToString() AS HierarchiaUtvonal FROM Kategoria;
+```
+
+
 
 ## Főkategória kikeresése
 
@@ -78,49 +100,49 @@ SELECT @főkategória AS MyVariable;
 
 Példa egy alkategória beszúrására:
 
-```mssql
+```sql
 EXEC AddSubcategory @ParentId = 1, @SubcategoryName = N'Alkategória2';
 ```
 
 AI által generált mintaadatok:
 
-``` mssql
+``` sql
 ALTER PROCEDURE AddSubcategory
     @ParentId INT,
     @SubcategoryName NVARCHAR(100)
 AS
 BEGIN
-    DECLARE @ParentHierarchy hierarchyid;
-    DECLARE @NewHierarchy hierarchyid;
+    DECLARE @SzuloHierarchiaUtvonal hierarchyid;
+    DECLARE @UjHierarchiaUtvonal hierarchyid;
     DECLARE @LastChild hierarchyid;
 
     -- Ellenőrizzük, hogy létezik-e a szülő
-    SELECT @ParentHierarchy = Hierarchia
+    SELECT @SzuloHierarchiaUtvonal = HierarchiaUtvonal
     FROM Kategoria
     WHERE KategoriaId = @ParentId;
 
-    IF @ParentHierarchy IS NULL
+    IF @SzuloHierarchiaUtvonal IS NULL
     BEGIN
         RAISERROR(N'A megadott szülő nem létezik!', 16, 1);
         RETURN;
     END
 
     -- Megkeressük a szülő legutolsó gyermekét
-    SELECT @LastChild = MAX(Hierarchia)
+    SELECT @LastChild = MAX(HierarchiaUtvonal)
     FROM Kategoria
-    WHERE Hierarchia.GetAncestor(1) = @ParentHierarchy;
+    WHERE HierarchiaUtvonal.GetAncestor(1) = @SzuloHierarchiaUtvonal;
 
     -- Új hierarchia érték generálása
-    SET @NewHierarchy = @ParentHierarchy.GetDescendant(@LastChild, NULL);
+    SET @UjHierarchiaUtvonal = @SzuloHierarchiaUtvonal.GetDescendant(@LastChild, NULL);
 
-    INSERT INTO Kategoria (Nev, Hierarchia)
-    VALUES (@SubcategoryName, @NewHierarchy);
+    INSERT INTO Kategoria (Nev, HierarchiaUtvonal)
+    VALUES (@SubcategoryName, @UjHierarchiaUtvonal);
 END
 ```
 
 ## Kategória tábla feltöltése mintaadatokkal
 
-``` mssql
+``` sql
 DELETE FROM Kategoria WHERE KategoriaId > 1;
 DBCC CHECKIDENT ('Kategoria', RESEED, 1);
 -- Régiók
@@ -159,18 +181,18 @@ EXEC AddSubcategory 17, N'Veszprémi Üzlet';
 
 SELECT TOP (1000) [KategoriaId]
       ,[Nev]
-      ,[Hierarchia]
-      ,Hierarchia.ToString() AS HierarchiaString
+      ,[HierarchiaUtvonal]
+      ,HierarchiaUtvonal.ToString() AS HierarchiaString
   FROM [dbo].[Kategoria]
 ```
 
 ## Elem összes leszármazottjának lekérdezése
 
-```mssql
+```sql
 SELECT *
 FROM Kategoria
 WHERE Hierarchia.IsDescendantOf(
-    (SELECT Hierarchia FROM Kategoria WHERE KategoriaId = 2)
+    (SELECT HierarchiaUtvonal FROM Kategoria WHERE KategoriaId = 2)
 ) = 1
 AND KategoriaId <> 2;
 ```

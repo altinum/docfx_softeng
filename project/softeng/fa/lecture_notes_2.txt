@@ -1,0 +1,42 @@
+CREATE TABLE Kategoria (
+    KategoriaId INT PRIMARY KEY IDENTITY,
+    Nev NVARCHAR(100) NOT NULL,
+    HierarchiaUtvonal hierarchyid NOT NULL
+);
+---------------
+INSERT INTO Kategoria (Nev, HierarchiaUtvonal)
+VALUES (N'Főkategória', hierarchyid::GetRoot());
+---------------
+SELECT KategoriaId, Nev, HierarchiaUtvonal.ToString() AS HierarchiaUtvonal FROM Kategoria;
+---------------
+ALTER PROCEDURE AddSubcategory
+    @ParentId INT,
+    @SubcategoryName NVARCHAR(100)
+AS
+BEGIN
+    DECLARE @SzuloHierarchiaUtvonal hierarchyid;
+    DECLARE @UjHierarchiaUtvonal hierarchyid;
+    DECLARE @LastChild hierarchyid;
+
+    -- Ellenőrizzük, hogy létezik-e a szülő
+    SELECT @SzuloHierarchiaUtvonal = HierarchiaUtvonal
+    FROM Kategoria
+    WHERE KategoriaId = @ParentId;
+
+    IF @SzuloHierarchiaUtvonal IS NULL
+    BEGIN
+        RAISERROR(N'A megadott szülő nem létezik!', 16, 1);
+        RETURN;
+    END
+
+    -- Megkeressük a szülő legutolsó gyermekét
+    SELECT @LastChild = MAX(HierarchiaUtvonal)
+    FROM Kategoria
+    WHERE HierarchiaUtvonal.GetAncestor(1) = @SzuloHierarchiaUtvonal;
+
+    -- Új hierarchia érték generálása
+    SET @UjHierarchiaUtvonal = @SzuloHierarchiaUtvonal.GetDescendant(@LastChild, NULL);
+
+    INSERT INTO Kategoria (Nev, HierarchiaUtvonal)
+    VALUES (@SubcategoryName, @UjHierarchiaUtvonal);
+END
