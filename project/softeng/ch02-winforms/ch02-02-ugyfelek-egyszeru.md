@@ -1,21 +1,25 @@
-## Emlékeztető: Alapvető CRUD műveletek bemutatása Ügyfél táblán
+# 5.2 Alapvető CRUD műveletek bemutatása Ügyfél táblán
 
-Ebben a rövid emlékeztetőben áttekintjük az alapvető CRUD (Create, Read, Update, Delete) műveleteket egy egyszerű Ügyfél táblán keresztül. Ez segít felfrissíteni a tudásodat az adatbázis-műveletek terén, mielőtt bonyolultabb feladatokba kezdenél.
+Ebben a rövid emlékeztetőben áttekintjük az alapvető **CRUD (Create, Read, Update, Delete)** műveleteket egy egyszerű Ügyfél táblán keresztül. Ez segít felfrissíteni a tudásodat az adatbázis-műveletek terén, mielőtt bonyolultabb feladatokba kezdenél. A példában magyar adatbázis objektum nevek szereplenek, nektek angol van. Így végig kell gondolnotok, mit is csináltok :)
+
+> [!TIP]
+>
+> Ha még nincs minataadatod a `Customer` táblában, kérlek, generálj!
 
 ### 1. Űrlap létrehozása és beállítása
 
-Először hozz létre egy új Windows Forms űrlapot "UgyfelForm" néven. Az űrlapon helyezz el egy DataGridView-t és négy gombot a CRUD műveletekhez.
+Először hozz létre egy új Windows Forms űrlapot `UgyfelForm` néven. Az űrlapon helyezz el egy `DataGridView`-t és négy gombot a CRUD műveletekhez.
 
 ![Kezdeti UI](./02-img/image.png)
 
 ### 2. DataGridView és BindingSource beállítása
 
-1. Kattints a DataGridView jobb felső sarkában lévő kis háromszögre.
-2. Válaszd a "Choose Data Source" opciót.
-3. Kattints az "Add Project Data Source" gombra.
-4. Válaszd ki az "Ugyfel" entitást az adatforrások közül.
+1. Kattints a `DataGridView` jobb felső sarkában lévő kis háromszögre.
+2. Válaszd a *"Choose Data Source"* opciót.
+3. Kattints az *"Add Project Data Source"* gombra.
+4. Válaszd ki az `Ugyfel` vagy   entitást az adatforrások közül.
 
-Ez létrehoz egy `ugyfelBindingSource`-t és összeköti a DataGridView-val.
+Ez létrehoz egy `ugyfelBindingSource`-t és összeköti a `DataGridView`-val.
 
 ![DataSource beállítása](./02-img/DataGridView-datasource.gif)
 
@@ -70,7 +74,7 @@ public partial class UgyfelForm : Form
     {
         if (dataGridViewUgyfelek.CurrentRow != null)
         {
-            var torlendoUgyfel = dataGridViewUgyfelek.CurrentRow.DataBoundItem as Ugyfel;
+            var torlendoUgyfel = ugyfelBindingSource.Current as Ugyfel;
             if (torlendoUgyfel != null)
             {
                 _context.Ugyfel.Remove(torlendoUgyfel);
@@ -95,4 +99,4 @@ public partial class UgyfelForm : Form
 - A `_context.SaveChanges()` hívás menti a változtatásokat az adatbázisba. Ez egy fontos lépés, amit nem szabad kihagyni a műveletek végén.
 - Új elemet a DGV-n keresztül nem tudsz hozzáadni, ahhoz komplexebb megoldásra lesz szükség.
 
-Ez a rövid emlékeztető segít felfrissíteni a CRUD műveletek alapjait Windows Forms környezetben. A következő fejezetekben erre az alapra építve fogsz komplexebb funkciókat megvalósítani a rendeléskezelő rendszerben.
+Reméljük, hogy ez a rövid emlékeztető segített felfrissíteni a CRUD műveletek alapjait Windows Forms környezetben. A következő fejezetekben erre az alapra építve fogsz komplexebb funkciókat megvalósítani a rendeléskezelő rendszerben.

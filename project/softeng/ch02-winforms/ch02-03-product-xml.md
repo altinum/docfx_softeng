@@ -2,9 +2,13 @@
 id: xml
 ---
 
-# Kategóriák mentése XML dokumentumba
+# 5.3 Termékek mentése XML dokumentumba
 
 ## XML építése C#-ban - elméleti összefoglaló
+
+> [!tip]
+>
+> Ezt az összefoglalót csak fusd át, a gyakorlati feladat ezután következik. 
 
 XML dokumentumok kezelésére több osztály is létezik, mi az `XDocument` -et használjuk. Ez a LINQ (Language Integrated Query) alapú megközelítés XML kezelésére. Nagyobb rugalmasságot nyújt a DOM alapú a régebbi `XmlDocument`-hez képest, és a LINQ szintaxisát használja az elemek eléréséhez és módosításához.
 
@@ -30,7 +34,7 @@ Ebből lesz ez a sor az XML-ben:
 
 &#10104; Egy gyökérelem létrehozásával érdemes kezdeni, melyet a dokumnetumhoz adunk:
 
-```
+```csharp
 XDocument xdoc = new XDocument();
 
 XDeclaration xdecl = new XDeclaration("1.0", "utf-8", "yes");
@@ -184,5 +188,19 @@ Vagy ilyen:
     StockQuantity="18"
     CategoryFk="5" />
 ...
+```
+
+
+
+Keresés XPath-al az elsőben:
+
+```
+/Products/Product[ProductSk='3']
+```
+
+és a másodikban:
+
+```
+/Products/Product[@ProductSk='3']
 ```
 

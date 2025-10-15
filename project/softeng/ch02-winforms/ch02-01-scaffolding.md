@@ -1,4 +1,4 @@
-# 2.1 Windows Forms projekt létrehozása és Scaffold-Db használata
+# 5.1 Windows Forms projekt létrehozása és Scaffold-Db használata
 
 Ebben az alfejezetben létrehozzuk a rendeléskezelő rendszerünk alapját képező Windows Forms projektet, és összekapcsoljuk azt az előző fejezetben megtervezett adatbázisunkkal. Ez a lépés kulcsfontosságú a fejlesztési folyamatunkban, hiszen itt kezdjük el összekapcsolni az adatbázis-réteget a felhasználói felülettel.
 
@@ -39,36 +39,7 @@ Ezek a csomagok lehetővé teszik számunkra, hogy használjuk az Entity Framewo
 
 ## ConnectionString felépítése
 
-A ConnectionString az a karakterlánc, amely tartalmazza az adatbázishoz való kapcsolódáshoz szükséges információkat. Ezt fogjuk használni a Scaffold-Db folyamat során és később az alkalmazásunkban is. Kövessük az alábbi lépéseket a ConnectionString megszerzéséhez:
-
-1. A Visual Studio-ban nyisd meg a Server Explorer ablakot (View > Server Explorer).
-2. Jobb klikk a "Data Connections" elemre, majd válaszd az "Add Connection" opciót.
-3. A megjelenő ablakban válaszd ki az adatbázis szervert.
-4. Válaszd ki a megfelelő adatbázist (RendelesDB).
-5. Kattints a "Test Connection" gombra, hogy ellenőrizd a kapcsolatot.
-6. Ha sikeres a kapcsolódás, kattints az "OK" gombra.
-
-Most, hogy hozzáadtuk az adatbázis kapcsolatot, megszerezhetjük a ConnectionString-et:
-
-7. A Server Explorer-ben kattints jobb gombbal az újonnan létrehozott adatbázis kapcsolatra.
-8. Válaszd a "Properties" opciót.
-9. A Properties ablakban keresd meg a "Connection String" sort.
-10. Másold ki a teljes Connection String értéket.
-
-A Connection String általában így néz ki:
-
-```
-Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=RendelesDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False
-```
-
-Nézzük meg, mit jelentenek az egyes részei:
-
-- `Data Source=(localdb)\MSSQLLocalDB`: Ez határozza meg az adatbázis szervert. Ebben az esetben a lokális fejlesztői adatbázist használjuk.
-- `Initial Catalog=RendelesDB`: Ez az adatbázis neve, amihez kapcsolódni szeretnénk.
-- `Integrated Security=True`: Ez azt jelenti, hogy a Windows bejelentkezésünket használjuk az authentikációhoz.
-- `Connect Timeout=30`: Ennyi másodpercig próbál kapcsolódni, mielőtt hibát dobna.
-- `Encrypt=False`: Nem használunk titkosítást a kapcsolathoz.
-- `Trust Server Certificate=False`: Nem bízunk meg automatikusan a szerver tanúsítványában.
+A ConnectionString az a karakterlánc, amely tartalmazza az adatbázishoz való kapcsolódáshoz szükséges információkat. Ezt fogjuk használni a Scaffold-Db folyamat során és később az alkalmazásunkban is. Kövessük az alábbi lépéseket a ConnectionString megszerzéséhez látogass el az Azure-ba. Ne felejtsd el a jelszót kitölteni, mert a vágólapra másolt connection stringből adatvédelmi okokból ki van szedve. 
 
 Ez a Connection String tartalmazza az összes szükséges információt az adatbázisunkhoz való kapcsolódáshoz. A következő lépésben ezt fogjuk felhasználni a Scaffold-Db folyamat során.
 
@@ -82,25 +53,24 @@ Kövesd ezeket a lépéseket:
 2. Írd be a következő parancsot, behelyettesítve a korábban kimásolt Connection String-et:
 
 ```
-Scaffold-DbContext "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=RendelesDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -ContextDir Data -Context RendelesDbContext -DataAnnotations -Force -NoPluralize
+Scaffold-DbContext "[connection string]" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models  -Context RendelesDbContext -DataAnnotations -Force 
 ```
 
 Ez a parancs a következőket csinálja:
 - Használja a megadott Connection String-et az adatbázishoz való kapcsolódáshoz
 - Microsoft SQL Server adatbázist feltételez
-- Az osztályokat a Models mappába generálja
-- A DbContext osztályt a Data mappába helyezi
-- RendelesDbContext néven hozza létre a DbContext osztályt
-- Használja a Data Annotations attribútumokat a modellek definiálásához
-- A -Force kapcsoló azt jelenti, hogy ha már léteznek fájlok, azokat felülírja
-- A -NoPluralize megelőzi, hogy az angol nyelvtan szerinti többesszámra végződő szavak módosítva legyenek.
+- Az osztályokat a `Models` mappába generálja
+- `RendelesDbContext` néven hozza létre a `DbContext` osztályt
+- Használja a _Data Annotations_ attribútumokat a modellek definiálásához
+- A `-Force` kapcsoló azt jelenti, hogy ha már léteznek fájlok, azokat felülírja. **Nagyon hasznos, ha változtatunk az adatbázis struktúráján, és újra kell generálni az osztályokat.** 
+- A `-NoPluralize` kapcsoló opcionális megelőzi, hogy az angol nyelvtan szerinti többesszám megjelenjen a táblákhoz tartozó osztálynevekben. Hasznos, **ha magyar táblaneveket használunk**, de most nem ez a helyzet. 
 
 ## Generált eredmény áttekintése
 
-A Scaffold-DbContext parancs lefutása után a Visual Studio Solution Explorer-ében látni fogod, hogy létrejött két új mappa:
+A `Scaffold-DbContext` parancs lefutása után a Visual Studio Solution Explorer-ében látni fogod, hogy létrejött két új mappa:
 
-1. Models: Itt találod az egyes adatbázis tábláknak megfelelő C# osztályokat (pl. Ugyfel.cs, Termek.cs, stb.)
-2. Data: Itt található a RendelesDbContext.cs fájl, ami az Entity Framework Core DbContext osztálya.
+1. `Models`: Itt találod az egyes adatbázis tábláknak megfelelő C# osztályokat (pl. `Customer.cs`, `Product.cs`, stb.)
+2. Ugyanitt található a `RendelesDbContext.cs` fájl, ami az Entity Framework Core DbContext osztálya.
 
 ![Scaffolding után](./01-img/image-3.png)
 
@@ -159,6 +129,8 @@ Fontos megjegyezni néhány további részletet:
 
 Ez az automatikusan generált kód kiváló alapot nyújt a további fejlesztéshez. A Data Annotations használata nemcsak az adatbázis struktúrát tükrözi pontosan, de segít a validációban és az adatok integritásának megőrzésében is az alkalmazás szintjén.
 
-Gratulálok! Sikeresen létrehoztad a Windows Forms projektedet, összekapcsoltad az adatbázissal, és legeneráltad a szükséges modell osztályokat. Ez egy hatalmas lépés a rendeléskezelő alkalmazásunk fejlesztésében.
+> [!IMPORTANT]
+>
+> Gratulálok! Sikeresen létrehoztad a Windows Forms projektedet, összekapcsoltad az adatbázissal, és legeneráltad a szükséges modell osztályokat. Ez egy hatalmas lépés a rendeléskezelő alkalmazásunk fejlesztésében.
 
 A következő lépésekben elkezdjük majd használni ezeket az osztályokat, hogy CRUD (Create, Read, Update, Delete) műveleteket végezzünk az adatbázisban a felhasználói felületen keresztül.

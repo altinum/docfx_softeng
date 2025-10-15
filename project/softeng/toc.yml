@@ -41,14 +41,24 @@
       href: ./ch02-winforms/ch03-03-treeview-video.md
 - name: 5. hét
   items:
-    - name: 📖 Hierarchiák kezeslése TSQL-ben
-      href: ./fa/hirerachia.md
-    - name: 📖 XML prezentáció
-      href: ./ch02-winforms/ch02-03-xml-slideshow.html
-    - name: 📖 XPATH
-      href: ./fa/xpath.md
-    - name: 📝 XML mentése
-      href: ./ch02-winforms/ch02-03-product-category-xml.md      
+    - name: Előadás
+      items:
+        - name: 📖 Hierarchiák kezeslése TSQL-ben
+          href: ./fa/hirerachia.md
+        - name: 📖 XML prezentáció
+          href: ./ch02-winforms/ch02-03-xml-slideshow.html
+        - name: 📖 XPATH
+          href: ./fa/xpath.md
+        - name: 📝 XML mentése
+          href: ./ch02-winforms/ch02-03-product-category-xml.md      
+    - name: Gyakorlat
+      items:
+        - name: "#1 Windows Forms & Sacffold"
+          href: ./ch02-winforms/ch02-01-scaffolding.md
+        - name: "#2 Alapvető CRUD műveletek"
+          href: ./ch02-winforms/ch02-02-ugyfelek-egyszeru.md
+        - name: "#3 Termékek mentése XML dokumentumba"
+          href: ./ch02-winforms/ch02-03-product-xml.md
 - name: 6. hét
   items:
     - name: 📖 RegEx összefoglaló
