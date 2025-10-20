@@ -83,7 +83,7 @@ private void buttonAddViaBindinglist_Click(object sender, EventArgs e)
 
 Az eredmény hasonló, menteni is lehet, és meg is jelenik.
 
-### #3 Új rekord felvétele a `BindingList`-en keresztül
+### #3 Új rekord felvétele a `BindingSource`-on keresztül
 
 ```csharp
 private void buttonAddViaBindingSource_Click(object sender, EventArgs e)

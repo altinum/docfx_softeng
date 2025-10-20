@@ -26,13 +26,18 @@ Most, hogy megvan az alap projektünk, telepítenünk kell néhány NuGet csomag
 Most pedig kövesd ezeket a lépéseket a szükséges csomagok telepítéséhez:
 
 1. A Visual Studio-ban kattints jobb gombbal a Solution Explorer-ben a projekted nevére.
+
 2. Válaszd a "Manage NuGet Packages" (NuGet csomagok kezelése) opciót.
+
 3. A "Browse" fülön keresd meg és telepítsd a következő csomagokat:
 
    - Microsoft.EntityFrameworkCore.SqlServer
+
    - Microsoft.EntityFrameworkCore.Tools
-   - Microsoft.EntityFrameworkCore.Design
-![NuGet Package Manager](./01-img/image-2.png)
+
+     
+     ![NuGet Package Manager](./01-img/image-2.png)
+
 4. Mindegyik csomagnál válaszd ki a legújabb stabil verziót, amely kompatibilis a .NET 8-cal.
 
 Ezek a csomagok lehetővé teszik számunkra, hogy használjuk az Entity Framework Core-t, ami egy modern objektum-relációs leképező (ORM) keretrendszer. De miért van szükségünk ezekre a konkrét csomagokra? Az EntityFrameworkCore.SqlServer csomag tartalmazza az SQL Server adatbázishoz való kapcsolódáshoz szükséges kódokat. Az EntityFrameworkCore.Tools és EntityFrameworkCore.Design csomagok pedig olyan eszközöket biztosítanak, amelyek segítenek az adatbázis-műveletek végrehajtásában és a modellek generálásában, amit a következő lépésekben fogunk használni. Ezek a csomagok együttesen teszik lehetővé, hogy hatékonyan és biztonságosan kommunikáljunk az adatbázisunkkal, anélkül hogy minden SQL lekérdezést nekünk kellene megírnunk.
