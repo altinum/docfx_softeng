@@ -25,7 +25,7 @@ public partial class Form2 : Form
     }
 ```
 
-Az adatközés tehát három rétegben valüsult meg:
+Az adatközés tehát három rétegben valsult meg:
 
 1. `context.Nyersanyagok.Local`, melybe a `context.Nyersanyagok.Load();`metódussal letöltöttük a teljes táblát a szerverről.
 2. `BindingList<Nyersanyagok> nyersanyagokBindingList` - ide a `nyersanyagokBindingList = context.Nyersanyagok.Local.ToBindingList();` sorral kerültek az adatok.

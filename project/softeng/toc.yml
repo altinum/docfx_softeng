@@ -84,6 +84,10 @@
           href: ./6_receptes/index.md
         - name: "🎓 előadás jegyzet"
           href: ./6_receptes/codesamples.md
+    - name: Gyakorlat
+      items:
+        - name: "📝 Tankönyvtámogatás mintafeladat"
+          href: ./7b_linq_tankonyvtamogatas_peldan_keresztul/index.md        
 - name: 7. hét (őszi szünet után)
   items:
     - name: 📝 Rendeléskezelés
