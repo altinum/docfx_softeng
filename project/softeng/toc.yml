@@ -87,9 +87,33 @@
     - name: Gyakorlat
       items:
         - name: "📝 Tankönyvtámogatás mintafeladat"
-          href: ./7b_linq_tankonyvtamogatas_peldan_keresztul/index.md        
+          href: ./7b_linq_tankonyvtamogatas_peldan_keresztul/index.md   
+        - name: "🎬 Megoldás vidókon"
+          items: 
+          -  name: "🎬 #1 Előkészületek"
+             href: ./7b_linq_tankonyvtamogatas_peldan_keresztul/video1.md   
+          -  name: "🎬 #2 Server Explorer"
+             href: ./7b_linq_tankonyvtamogatas_peldan_keresztul/video2.md   
+          -  name: "🎬 #3 Diákok listázása"
+             href: ./7b_linq_tankonyvtamogatas_peldan_keresztul/video3.md   
+          -  name: "🎬 #4 Szűrés memóriából"
+             href: ./7b_linq_tankonyvtamogatas_peldan_keresztul/video4.md   
+          -  name: "🎬 #5 TextBox Adatkötés"
+             href: ./7b_linq_tankonyvtamogatas_peldan_keresztul/video5.md   
+          -  name: "🎬 #6 Könyvek listázása"
+             href: ./7b_linq_tankonyvtamogatas_peldan_keresztul/video6.md   
+          -  name: "🎬 #7 Master-detail"
+             href: ./7b_linq_tankonyvtamogatas_peldan_keresztul/video7.md   
+          -  name: "🎬 #8 Megrendelés törlése"
+             href: ./7b_linq_tankonyvtamogatas_peldan_keresztul/video8.md   
+          -  name: "🎬 #9 Új megrendelés"
+             href: ./7b_linq_tankonyvtamogatas_peldan_keresztul/video9.md   
+
+
 - name: 7. hét (őszi szünet után)
   items:
+    - name: "UI UserControllal"
+      href: ./zh1/TobbpanelesUI/index.md
     - name: 📝 Rendeléskezelés
       href: ./ch02-winforms/ch02-05-order-management.md
 - name: 8. hét (1. ZH)
