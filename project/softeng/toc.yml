@@ -80,7 +80,7 @@
   items:
     - name: Előadás
       items:
-        - name: "🎓 előadás mintafeladat"
+        - name: "🎓 Receptes mintafeladat"
           href: ./6_receptes/index.md
         - name: "🎓 előadás jegyzet"
           href: ./6_receptes/codesamples.md
@@ -124,6 +124,26 @@
       href: ./ertekeles/zh_ertekeles_szabalyai.md
     - name: 📝+🎬 In-memory adatbázis (ism.)
       href: ./IN_MEMORY/in_memory_db.md
+    - name: Adatbázisok gykorlásra
+      items: 
+      - name: Bikestore
+        href: ./zh1/db_gyakorlás/db_bikestore.md
+      - name: Cocktails
+        href: ./zh1/db_gyakorlás/db_cokctail.md
+      - name: Chinook
+        href: ./zh1/db_gyakorlás/db_chinook.md
+      - name: Étkeztetés
+        href: ./zh1/db_gyakorlás/db_etkeztetes.md
+      - name: Pets
+        href: ./zh1/db_gyakorlás/db_pets.md
+      - name: Tanulmányi
+        href: ./zh1/db_gyakorlás/db_tanulmanyi.md
+    - name: DB tervezési feladatok
+      items:     
+      - name: Fogászat
+        href: ./zh1/db_tervezes/db_terv_fogaszat.md
+      - name: Korcsolya verseny
+        href: ./zh1/db_tervezes/db_terv_korcsolya.md
 - name: "9. hét - WEB"
   items:
   - name: 🎓 "Böngészők fejlesztőknek"
