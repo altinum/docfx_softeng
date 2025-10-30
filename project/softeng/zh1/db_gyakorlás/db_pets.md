@@ -1,5 +1,7 @@
 # "Pets" mintaadatbázis
 
+## Az adatbázis elérése
+
 🅐 Az adatbázist felépítő sql mondatok letölthetők innen, ha saját szerveren, vagy lokálisan szeretnéd felépíteni az adatbázist: [se_pest.sql](se_pest.sql) 
 
 🅑 Ha az egyetemi szerveren lévő változatot használnád:
@@ -12,6 +14,26 @@ Scaffold-DbContext "Data Source=bit.uni-corvinus.hu;Initial Catalog=se_pets;User
 > [!WARNING]
 >
 > Az bit.uni-corvinus.hu csak VPN alól érhető el! 
+
+## Mit érdemes gyakorolni?
+
+❶ Jelenítsd meg egy `ListBox`-ban a tulajdonosok neveit az `Owner` tábla alapján. A lista legyen szövegdobozban keresztül szűrhető!
+
+❷ A tulajdonosok mellett egy másik `ListBox`-ban jelenjenek meg az éppen kiválasztott tulajdonos állatai az `Animal` tábla adatai alapján. 
+
+❸ Állatokat tartalmazó lista alatt jelenítsd meg, hogy az éppen kiválasztott állat milyen fajba tartozik.
+
+❹ Az állatokat tartalmazó lista mellett jelen is meg egy újabb `ListBox`-ot, Melyben az éppen kiválasztott állathoz tartozó kezeléseket jelennek meg.
+
+❺ Készíts gombot mellyel új kezelést lehet létrehozni az aznapi dátummal!
+
+❻ A kezeléseket tartozó listbox mellett jelenítsd meg, hogy a kiválasztott kezelés alkalmával milyen beavatkozásokat végeztek el.
+
+❼ A következő lépésben tedd lehetővé új beavatkozások felvételét és törlését az éppen kiválasztott kezeléshez. Ehhez szükséged lesz még egy listára mely az elvégezhető kezeléseket tartalmazza, valamint egy hozzáadás és egy törlés gombra.
+
+
+
+## Az adatbázis sémája
 
 
 

@@ -1,5 +1,7 @@
 # "Bikestore" mintaadatbázis
 
+## Az adatbázis elérése
+
 🅐 Az adatbázist felépítő sql mondatok letölthetők innen, ha saját szerveren, vagy lokálisan szeretnéd felépíteni az adatbázist: [se_bikestore.sql](se_bikestore.sql) 
 
 🅑 Ha az egyetemi szerveren lévő változatot használnád:
@@ -12,7 +14,35 @@ Scaffold-DbContext "Data Source=bit.uni-corvinus.hu;Initial Catalog=se_bikestore
 >
 > Az bit.uni-corvinus.hu csak VPN alól érhető el! 
 
+## Mit érdemes gyakorolni?
 
+### 1. gyakorló feladatsor: Áruházak raktárkészletének kezelése
+
+❶ Keress egy N:M kapcsolatot az adatbázisban. Ilyen például az áruházak (`stores`) és a termékek (`products`) közötti kapcsolat, ahol a kapcsolótábla a `stocks`. 
+
+❷ Jelenítsd meg baloldalon egy szűrhető listában az áruházakat.
+
+❸ Ha a felhasználó kiválaszt egy áruházat, az áruházakat tartalmazó lista mellett egy rácsban jelenjen meg az adott áruház raktárkészlete. Jelenítsd meg a terméknév mellett a darabszámot is! A rács feltöltéséhez készít saját osztályt!
+
+❹ Az űrlap jobb oldalán egy szűrhető listában jelenítsd meg a termékeket!
+
+❺ Helyezz el egy `Hozzádás` és egy `Törlés` gombot, valamint egy szövegdobozt a raktárkészletet megjelenítő rács és a terméklista között.
+
+❻ A `Hozzádás` gomb bővítse a kiválasztott áruház raktárkészletét A kiválasztott termékkel a szövegdobozban megadott mennyiséggel. Új rekord hozzáadásáról beszélünk. Geekek írhatnak egy lekérdezést, ami megnézi, hogy az adott termékhez van-e már bejegyzés a `stocks` táblában. Ha van akkor a darabszámot bővítjük, és csak akkor veszünk fel új rekordot, ha nincs.
+
+❼ Valósítsd meg a törlés funkciót is értelemszerűen!
+
+### 2. gyakorló feladatsor: Rendelések kezelése
+
+❶ A rendelések kezelésénél egyenlőre szorítkozzunk az adatbázisba rögzített megrendelések megjelenítésére. Az űrlap volt balról jobbra haladva az alábbiak szerint építsd föl:
+
+❷ Helyezz el egy `ListBox`-ot és felette egy `TextBox`-ot, Melyben a vásárlókat jelenített meg névre szűrhetően.
+
+❸ A vásárlók listája mellett lévő `ListBox`-ban jelenítsd meg az éppen kiválasztott vásárló megrendeléseit!
+
+❹ A megrendelések mellett helyezz el egy rácsot! Ide kerüljenek a kiválasztott megrendeléshez tartozó rendelési tételek az `order_items` tábla alapján. A rács adatkötéséhez használj saját osztályt!
+
+## Az adatbázis sémája
 
 ``` mermaid
 erDiagram

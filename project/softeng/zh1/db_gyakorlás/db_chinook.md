@@ -1,10 +1,16 @@
 # "Chinook" mintaadatbázis
 
+## Az adatbázis elérése
+
 A **Chinook adatbázis** egy nyílt forráskódú, mintaadatbázis, amely egy digitális médiabolt működését modellezi. A projekt célja, hogy alternatívát kínáljon a klasszikus **Northwind** adatbázis helyett, és bemutassa az SQL lekérdezések, adatmodellezés és ORM eszközök használatát különböző adatbázis-kezelő rendszerekben. A Chinook adatbázis tartalmazza az előadók, albumok, zeneszámok, vásárlások és ügyfelek adatait, és több mint 15 000 rekordot tartalmaz. [YugabyteDB Docs](https://docs.yugabyte.com/preview/sample-data/chinook/?utm_source=chatgpt.com)
 
 A projekt a [GitHub-on](https://github.com/lerocha/chinook-database?utm_source=chatgpt.com) érhető el, ahol letölthetők az SQL szkriptek különböző adatbázis-kezelő rendszerekhez, például SQL Server, PostgreSQL, MySQL, SQLite és mások.
 
+## Mit érdemes gyakorolni?
 
+Készíts alkalamzást, melyen keresztül a megreneléseket lehet kezelni!
+
+## Az adatbázis sémája
 
 ``` mermaid
 erDiagram

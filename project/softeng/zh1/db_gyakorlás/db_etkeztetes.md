@@ -1,5 +1,7 @@
 # "Étkeztetés" mintaadatbázis
 
+## Az adatbázis elérése
+
 Ez az adatbázis már szerepelt előadáson. Érdemes lehet egyénileg felépíteni a mintafeladatot!
 
 🅐 Az adatbázist felépítő sql mondatok letölthetők innen, ha saját szerveren, vagy lokálisan szeretnéd felépíteni az adatbázist: [se_etkeztetes.sql](se_etkeztetes.sql) 
@@ -20,7 +22,11 @@ A `-NoPluralize` kapcsoló segít a magyar nyelvű táblanevek kezelésében: ne
 >
 > Az adatbázisban szereplő táblanevek nem követendő példák, annak illusztrálására szolgálnak, hogy a gyakorlatban "örökölhetünk" régi, más elnevezési konvenciók mentén felépített adatbázisokat. 
 
+## Mit érdemes gyakorolni?
 
+A 6. előadáson bemutatott mintafeladatot érdemes felépíteni, melynek lépései felkerültek a honlapra is. 
+
+## Az adatbázis sémája
 
 ``` mermaid
 erDiagram
