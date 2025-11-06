@@ -114,8 +114,28 @@
   items:
     - name: "UI UserControllal"
       href: ./zh1/TobbpanelesUI/index.md
-    - name: 📝 Rendeléskezelés
-      href: ./ch02-winforms/ch02-05-order-management.md
+    - name: "🎬 Órarendkezelő videók"
+      items: 
+      - name: "1. Git clone"
+        href: ./se_lecture_video/video1.md
+      - name: "2. UserControl-ok & gombok"
+        href: ./se_lecture_video/video2.md
+      - name: "3. Adatok betöltése"
+        href: ./se_lecture_video/video3.md
+      - name: "4. BindingSource + DGV"
+        href: ./se_lecture_video/video4.md
+      - name: "5. ListBox idegen kulcshoz"
+        href: ./se_lecture_video/video5.md
+      - name: "6. DGV + ComboBox"
+        href: ./se_lecture_video/video6.md
+      - name: "7-10. Szerkesztő ablak"
+        href: ./se_lecture_video/video7-10.md
+      - name: "11. Rekord törlése"
+        href: ./se_lecture_video/video11.md
+      - name: "12. Új rekord"
+        href: ./se_lecture_video/video12.md
+    # - name: 📝 Rendeléskezelés
+    #   href: ./ch02-winforms/ch02-05-order-management.md
 - name: 8. hét (1. ZH)
   items:
     - name: 🎓 1. ZH checklist
@@ -126,23 +146,43 @@
       href: ./IN_MEMORY/in_memory_db.md
     - name: Adatbázisok gykorlásra
       items: 
-      - name: Bikestore
+      - name: 📝 Bikestore DB
         href: ./zh1/db_gyakorlás/db_bikestore.md
-      - name: Cocktails
+      - name: "🎬 Bikestore videók"  
+        items: 
+         - name: "1. Videó"
+           href: ./se_bikestore/video1.md
+         - name: "2. Videó"
+           href: ./se_bikestore/video2.md
+         - name: "3. Videó"
+           href: ./se_bikestore/video3.md
+         - name: "4. Videó"
+           href: ./se_bikestore/video4.md
+         - name: "5. Videó"
+           href: ./se_bikestore/video5.md
+         - name: "6. Videó"
+           href: ./se_bikestore/video6.md
+         - name: "7. Videó"
+           href: ./se_bikestore/video7.md
+         - name: "8. Videó"
+           href: ./se_bikestore/video8.md
+         - name: "9. Videó"
+           href: ./se_bikestore/video9.md
+      - name: 📝 Cocktails DB
         href: ./zh1/db_gyakorlás/db_cokctail.md
-      - name: Chinook
+      - name: 📝 Chinook DB
         href: ./zh1/db_gyakorlás/db_chinook.md
-      - name: Étkeztetés
+      - name: 📝 Étkeztetés DB
         href: ./zh1/db_gyakorlás/db_etkeztetes.md
-      - name: Pets
+      - name: 📝Pets DB
         href: ./zh1/db_gyakorlás/db_pets.md
-      - name: Tanulmányi
+      - name: 📝Tanulmányi DB
         href: ./zh1/db_gyakorlás/db_tanulmanyi.md
     - name: DB tervezési feladatok
       items:     
-      - name: Fogászat
+      - name: 📝Fogászat
         href: ./zh1/db_tervezes/db_terv_fogaszat.md
-      - name: Korcsolya verseny
+      - name: 📝 Korcsolya verseny
         href: ./zh1/db_tervezes/db_terv_korcsolya.md
 - name: "9. hét - WEB"
   items:
