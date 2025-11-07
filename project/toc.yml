@@ -3,6 +3,7 @@
   homepage: softtech/index.md
 - name: GI Sofware engineering
   href: softeng/
+  homepage: softeng/index.md
 - name: Data Science 
   href: softeng2/
 - name: Android .NET Workshop 

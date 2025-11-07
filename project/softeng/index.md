@@ -1,48 +1,56 @@
-# A Software Engineering kurzusról
-
-**Kedves Hallgató!**
-
-Üdvözlünk a *Software Engineering* kurzus keretében! A következő oldalakon egy rendeléskezelő rendszer fejlesztési folyamatát fogjuk bemutatni, amely értékes gyakorlati tapasztalatot nyújt számodra a szoftverfejlesztés területén.
-
-Ez a projekt lehetőséget biztosít, hogy elméleti tudásodat valós környezetben alkalmazd. A rendeléskezelő rendszer, amit létrehozol, bár elsősorban oktatási célokat szolgál, jó alapot nyújthat egy későbbi, üzleti környezetben használható alkalmazás fejlesztéséhez.
-
-A kurzus során olyan technológiákkal fogsz dolgozni, amelyek széles körben elterjedtek az iparágban. A .NET 9 keretrendszer, a C# programozási nyelv, az MS SQL adatbázis és a Windows Forms technológia mind olyan eszközök, amelyek ismerete előnyt jelenthet a munkaerőpiacon.
-
-A projekt komplexitása lehetővé teszi, hogy ne csak programozási készségeidet fejleszd, hanem betekintést nyerj az adatbázis-tervezés, az üzleti folyamatok modellezése és a felhasználói felületek kialakításának világába is. Ez a széles körű tapasztalat értékes lesz szakmai fejlődésed szempontjából.
-
-Fontos megjegyezni, hogy ez a projekt a portfóliód részévé válhat. Egy olyan komplex alkalmazás fejlesztése, amely valós üzleti problémára reflektál, jó referencia lehet jövőbeli álláskeresésed során.
-
-A kurzus során lépésről lépésre haladunk majd, így fokozatosan sajátíthatod el az szükséges ismereteket. Bár lesznek kihívást jelentő szakaszok, ezek leküzdése mind hozzájárul a szakmai fejlődésedhez.
-
-Bízunk benne, hogy ez a projekt nemcsak a kurzus követelményeinek teljesítését segíti, hanem valódi szakmai tapasztalattal is gazdagít.
-
-Eredményes munkát és sikeres tanulást kívánunk!
-
-*A szerzők*
 
 
+# Software Engineering
 
-# Projekt: Rendeléskezelő rendszer fejlesztése
+Tárgykód: INSA039NMBB, régi kódon INSA039NMBB Szoftver-technológia II.
 
-## Általános
-1. [Azure for Students regisztráció](./general/ingyenes_hallgatoi_azure_fiok_regisztralasa/index.md)
-2. [Azure SQL adatbázis létrehozása](./general/azure_sql_adatbazis_letrehozasa_2022/index.md)
-3. [SQL generálása SSMS-ből adatbázis létrehozására](./general/sql_generalasa_ssms-bol_adatbazis_letrehozasara/index.md)
+A tárgy oktatója: Dr. Mohácsi László
 
-## 1. fejezet
-1. [A rendeléskezelő rendszer funkcióinak áttekintése](./ch01-project-db/ch01-01-project-intro.md)
-2. [Adatbázis-tervezés elméleti alapjai](./ch01-project-db/ch01-02-database-theory.md)
-3. [A rendeléskezelő rendszer adatbázisának tervezése](./ch01-project-db/ch01-03-database-design.md)
-4. [Adatbázis feltöltése szintetikus adatokkal](./ch01-project-db/ch01-04-synthetic-data.md)
+[Tantárgyi inforámciók](./ertekeles/tantargyi_informaciok.md)
 
-## 2. fejezet
-1. [Windows Forms projekt létrehozása és Scaffold-Db használata](./ch02-winforms/ch02-01-scaffolding.md)
-2. [Emlékeztető: CRUD műveletek végrehajtása egy táblán DataGridView segítségével](./ch02-winforms/ch02-02-ugyfelek-egyszeru.md)
-3. [PART 1: CRUD műveletek és DataBinding TreeView segítségével (Termékkategóriák adatainak kezelése)](./ch02-winforms/ch02-03-product-category-treeview-part01.md)
-3. [PART 2: CRUD műveletek és DataBinding TreeView segítségével (Termékkategóriák adatainak kezelése)](./ch02-winforms/ch02-03-product-category-treeview-part02.md)
-4. [PART 3: Termékkategóriák adatainak XML dokumnetumba mentése](./ch02-winforms/ch02-03-product-category-xml.md)
-5. [RegEx összefoglaló](./ch02-winforms/ch02-04-01-regex.md)
-6. [Validáció elmélet](./ch02-winforms/ch02-04-02-validation.md)
-7. [Adatok validálása (Ügyfelek adatainak kezelése)](./ch02-winforms/ch02-04-user-management.md)
-8. [Rendeléskezelés (Rendeles és Rendeles_tetel táblák kezelése)](./ch02-winforms/ch02-05-order-management.md)
-9. [Adatok exportálása Excelbe](./ch02-winforms/ch02-06-excel.md)
+## A számonkérések időpontjai
+
+| Hét első napja |                         |                               |
+| -------------- | ----------------------- | ----------------------------- |
+| 2024-09-15     | 1. hét                  |                               |
+| 2024-09-22     | 2. hét                  |                               |
+| 2024-09-29     | 3. hét                  |                               |
+| 2024-10-6      | 4. hét                  |                               |
+| 2024-10-13     | 5. hét                  |                               |
+| 2024-10-20     | 6. hét                  |                               |
+| 2024-10-27     | Őszi szünet             |                               |
+| 2024-11-3      | 7. hét                  |                               |
+| 2024-11-10     | 8. hét                  | 1. ZH (35 pont)               |
+| 2024-11-17     | 9. hét                  |                               |
+| 2024-11-24     | 10. hét                 |                               |
+| 2024-13-1      | 11. hét                 | 2. ZH (35 pont)               |
+| 2024-12-8      | 12. hét                 | Projekt ZH (30 pont)          |
+| 2024-12-15     | Vizsgaidőszak első hete | Pótlási lehetőség: péntek de. |
+
+## Segédanyagok az 1. ZH-hoz
+
+
+| Hely                                                             |    Leírás                                                 |
+| ------------------------------------------------------------ | --------------------------------------------------- |
+| 6.hét / Gyakorlat / [Tankönyvtámogatás videók](./7b_linq_tankonyvtamogatas_peldan_keresztul/video1.md) | 🎬 6. gyakorlat tankönyvtámogatás mnatafeladatának megoldása videón |
+| 7.hét / Gyakorlat / [Órarendkezelő videók](./se_lecture_video/video1.md) | 🎬 7. gyakorlat bővített feladatmegoldása videón |
+| 8.hét / Adatbázisok gykorlásra / [Bikestore adatbázis](./zh1/db_gyakorlás/db_bikestore.md) | Mintaadatbázis, hasonlóhoz kell UI-t építeni a ZH-n |
+| 8.hét / Adatbázisok gykorlásra / [Bikestore mintafeladat](./se_bikestore/video1.md) | 🎬 Mintafeladat megoldásmenete videókon |
+| 8.hét / Adatbázisok gykorlásra / [Cocktail adatbázis](./zh1/db_gyakorlás/db_cokctail.md) | Mintaadatbázis, hasonlóhoz kell UI-t építeni a ZH-n |
+| 8.hét / Adatbázisok gykorlásra / [Chinook adatbázis](./zh1/db_gyakorlás/db_chinook.md) | Mintaadatbázis, hasonlóhoz kell UI-t építeni a ZH-n |
+| 8.hét / Adatbázisok gykorlásra / [Étkeztetés adatbázis](./zh1/db_gyakorlás/db_etkeztetes.md) | Mintaadatbázis, hasonlóhoz kell UI-t építeni a ZH-n |
+| 8.hét / Adatbázisok gykorlásra / [Pets adatbázis](./zh1/db_gyakorlás/db_pets.md) | Mintaadatbázis, hasonlóhoz kell UI-t építeni a ZH-n |
+| 8.hét / Adatbázisok gykorlásra / [Tamulmányi adatbázis](./zh1/db_gyakorlás/db_tanulmanyi.md) | Mintaadatbázis, hasonlóhoz kell UI-t építeni a ZH-n (magyar változat) |
+| 8.hét / DB tervezési feladatok / [Fogászat tervezési feladat](./zh1/db_tervezes/db_terv_fogaszat.md) | Mintaadatbázis, hasonlóhoz kell UI-t építeni a ZH-n  |
+| 8.hét / DB tervezési feladatok / [Korcsolya verseny tervezési feladat](./zh1/db_tervezes/db_terv_korcsolya.md) | Mintaadatbázis, hasonlóhoz kell UI-t építeni a ZH-n |
+| 8.hét / [1. ZH checklist](./ertekeles/zh1_checklist.md) | Checklist az első ZH-hoz |
+
+> [!WARNING]
+>
+> A 7. hét anyagából a felugró ablakos rekordrögzítést is kell tudni!
+
+> [!WARNING]
+>
+> A feladtaleírás a ZH-ban lényegretörő lesz, akár képenyőkép szintű egyes feladatoknál, nem lesz elemi lépésekre bontva, mit a gyakorlati feladatsorok. 
+
+
