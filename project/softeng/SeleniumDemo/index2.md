@@ -1,6 +1,12 @@
 # Third Party Package-ek használata
 
-A mai gyakorlat rendhagyó lesz több szempontból is. Egy saját projektet kell létrehozni legalább az egyik mintaprojektben is használt csomag felhasználásával.
+> [!WARNING]
+>
+> Ez az oldal csak egy kitekintés. 
+
+
+
+Ez a gyakorlat rendhagyó több szempontból is. Egy saját projektet kell létrehozni legalább az egyik mintaprojektben is használt csomag felhasználásával.
 
 A programnyelvek igazi erejét, az ökoszisztéma gerincét, az elérhető csomagok/könyvtárak alkotják. A programozás tulajdonképpen probléma megoldás több szinten, minél absztraktabb módon. Nem kell gépi kódot írnunk, mert vannak magas szintű programnyelvek, nem kell minden dolgot feltalálni a programnyelvekben sem, mert vannak alaposztályok és funkciók, és erre épülnek rá a harmadik féltől származó könyvtárak/csomagok. Miért vesződjünk azzal, hogy egy objektumot `JSON`-ná konvertáljunk, ha ezt már valaki nagy fáradozással megtette helyettünk? A .NET keretrendszerhez nagyon sokféle csomag érhető el -- akárcsak Python-hoz.
 
@@ -397,12 +403,3 @@ public class Excelizer
 }
 ```
 
-## Leadandó feladat
-
-## 
-
-> [!WARNING]
->
-> Csak ezt kell leadni gyakrolat végén!
-
-(+/-) Építs olyan alkalmazást, mely tetszőleges weblapról legyűjti az USD/HUF pillanatnyi árfolyamát!
