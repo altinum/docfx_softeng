@@ -6,7 +6,7 @@ A gyakorlaton egy olyan egyszerű példán megyünk végég, melyben adatbázisb
 
 > [!tip]
 >
-> Folytasd az előző alkalamzást!
+> Folytathatod az előző alkalamzást, vagy gyakorláskét újraépítheted!
 
 Egy háromrétegű alkalmazásra nézünk egy egyszerű példát:
 - egy SQL adattábált érünk el
@@ -73,12 +73,7 @@ Data Source=bit.uni-corvinus.hu;Initial Catalog=FunnyDatabase;User ID=vendeg;Pas
 
 ❸ Séma leképezése C# osztályokba
 
-Mint ahogy arról már szó volt egy korábbi gyakorlaton (*Csatlakozás SQL adatbázishoz*), .NET Core alatt nem áll rendelkezésre grafikus eszköz és varázsló az adatbázis sémája alapját leképező C# osztályok előállítására. Ezt is a *Packege Manager Console*-ból kell megoldani parancssorból. (Tools / NuGet Package Manager / Package Manager Console )
-
-```powershell
-Install-Package Microsoft.EntityFrameworkCore.SqlServer
-Install-Package Microsoft.EntityFrameworkCore.Tools
-```
+Mint ahogy arról már szó volt egy korábbi gyakorlaton (*Csatlakozás SQL adatbázishoz*), .NET Core alatt nem áll rendelkezésre grafikus eszköz és varázsló az adatbázis sémája alapját leképező C# osztályok előállítására. Telepítsd a `Microsoft.EntityFrameworkCore.SqlServer`és a `Microsoft.EntityFrameworkCore.Tools` csomagok megfelelő verzióját!
 
 Általánosan:
 ``` powershell
@@ -221,7 +216,9 @@ A `GET` HTTP metódust ki lehet próbálni  a böngésző címsorából, Swagger
 
 ![image-20221114195100509](swagger.png)
 
+## RestMan
 
+Ha nem tetszik a Swagger, vagy más által fejleszett, külső API végpontot szeretnél használni, telepítheted Chrome-ba a RestMan bővítményt. De ugorhatod is ezt a részt :)
 
 ![1620888173761.png](1620888173761.png)
 

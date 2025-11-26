@@ -1,22 +1,32 @@
 # EXCEL-DNA
 
+A feladat egy Excel beépülő létrehozása, mely olyan custom függvényt tartalmat, amely egy tetszőlegesen választott adatbázistábla tartalmát adja vissza "spill array" formában. A "spill array" egy két dimenziós `object[,]`tömb, melynek elemei az adatbázis mezői. Az első index a sor, a második az oszlop. 
+
+
+
 ## Projekt létrehozása és Nu-Get
 
-"Class Library" sablon alapján kell projektet létrehozni. 
+❶ "Class Library" sablon alapján kell projektet létrehozni. 
 
-Mehet .NET 8 is, a VSTO-val szemben az EXCEL-DNA kompatibilis a .NET Core-al. 
+❷ Mehet .NET 8 is, a VSTO-val szemben az EXCEL-DNA kompatibilis a .NET Core-al. 
 
-Telepítendő Nu-Get csomag:
+❸ Telepítendő Nu-Get csomag:
 
 ```
 ExcelDna.AddIn
 ```
 
-A "Target OS" (Project Properties) legyen Windows, különben nem fordul. 
+> [!WARNING]
+>
+> A kötőjeles `Excel-Dna.AddIn` depricated. Csodálatos névválasztás...
+
+❹ A "Target OS" (Project Properties alatt kell beállítani) legyen Windows, különben nem fordul. 
 
 
 
 ## Egyszerű custom függvény
+
+Kezdjük egy egyszerű példával!  A `Class1`-et kell bővíteni olyan függvénnyel, melynek van egy `[ExcelFunction]` attribútuma. A `description` opcionális.
 
 ```csharp
 public class Class1
@@ -28,9 +38,9 @@ public class Class1
 }
 ```
 
-
-
 ## Spill Array 
+
+Ez a példa már `object[,]` tömböt ad vissza. Majd ilyen formátumban kell az adatbázistáblát is visszaadni. 
 
 ```c#
 [ExcelFunction(description: "Példa Spill Array")]
@@ -46,9 +56,13 @@ public static object[,] MySpillArray()
 }
 ```
 
+## Véletlenekből álló custom függvény
 
+Készíts véletlenekből álló spill array-t visszaadó függvényt. Legyen paraméter a tömb magassága, szélessége, és a legnagyobb generált szám! Használd az előző feladat mintakódját!
 
 ## Adatbázis olvasása
+
+Csinálj custom Excel függvényt, ami egy adatbázistábát olvas be. 
 
 ```c#
 [ExcelFunction(IsVolatile = false)]
@@ -59,12 +73,7 @@ public static object[,] GetProductData()
         var products = context.Products.ToList();
         object[,] data = new object[products.Count, 3];
 
-        for (int i = 0; i < products.Count; i++)
-        {
-            data[i, 0] = products[i].ProductSk;
-            data[i, 1] = products[i].ProductName;
-            data[i, 2] = products[i].ListPrice;
-        }
+        //Járd be a products listát egy ciklussal, és állítsd be a tömb elemeit. 
 
         return data;
     }
@@ -72,6 +81,8 @@ public static object[,] GetProductData()
 ```
 
 ## Adatbázis olvasása async
+
+Ez csak egy példa, nem kell megycsinálni
 
 ```c#
 [ExcelFunction(IsVolatile = false)]
@@ -82,23 +93,9 @@ public static object[,] GetProductDataAsync()
     return (object[,]) ExcelAsyncUtil.RunTask(functionName, parameters, async () =>
     {
 
-
-        using (var context = new SeBikestoreContext())
-        {
-            // Fetch products asynchronously
-            var products = context.Products.ToList();
-
-            // Prepare the 2D array for Excel
-            object[,] data = new object[products.Count, 3];
-            for (int i = 0; i < products.Count; i++)
-            {
-                data[i, 0] = products[i].ProductSk;
-                data[i, 1] = products[i].ProductName;
-                data[i, 2] = products[i].ListPrice;
-            }
-
-            return data;
-        }
+        //Adatok beolvasása az adatbázisból
+        
+        return data;
     });
 }
 ```
@@ -106,6 +103,8 @@ public static object[,] GetProductDataAsync()
 
 
 ## Saját Ribbon Bar
+
+Ez sem kell gyakorlaton, de azért leírjuk :) Saját ribbon bar-t i s lehet csinálni. 
 
 ```c#
 using ExcelDna.Integration;
@@ -131,58 +130,12 @@ public class MyRibbon : ExcelRibbon
     public void OnWriteCellClick(IRibbonControl control)
     {
         System.Diagnostics.Debug.WriteLine("OnWriteCellClick triggered");
-        System.Windows.Forms.MessageBox.Show("Button Clicked!");
-
-        
+        System.Windows.Forms.MessageBox.Show("Button Clicked!");       
     }
 }
 ```
 
-
-
-## Adatbázis olvasása Ribbon Bar-ból
-
-```cs
-try
-{
-    dynamic app = ExcelDnaUtil.Application;
-    dynamic ws = app.ActiveSheet;
-
-
-    ExcelAsyncUtil.QueueAsMacro(() =>
-    {
-        try
-        {
-            SeBikestoreContext context = new SeBikestoreContext();
-            var products = context.Products.Take(5).ToList();
-
-            object[,] data = new object[products.Count, 3];
-
-            for (int i = 0; i < products.Count; i++)
-            {
-                data[i, 0] = (double)products[i].ProductSk;
-                data[i, 1] = products[i].ProductName;
-                data[i, 2] = (double)products[i].ListPrice;
-            }
-            ws.Range["A1"].Resize[data.GetLength(0), data.GetLength(1)].Value = data;
-        }
-        catch (Exception ex)
-        {
-            System.Windows.Forms.MessageBox.Show($"Error: {ex.Message}");
-        }
-    });
-
-
-}
-catch (Exception ex)
-{
-    System.Windows.Forms.MessageBox.Show($"Error: {ex.Message}", "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
-}
-```
-
-
-
-A .csproj fájlhoz hozzá kell adni a `<UseWindowsForms>true</UseWindowsForms>` sort, ha WinForms-t is akarunk használni. Valahogy így néz majd ki:
+A .csproj fájlhoz hozzá kell adni a `<UseWindowsForms>true</UseWindowsForms>` sort, ha WinForms-t is akarunk használni. Különben nem megy a  `MessageBox.Show()`- Valahogy így néz majd ki:
 
 ``` xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -197,6 +150,6 @@ A .csproj fájlhoz hozzá kell adni a `<UseWindowsForms>true</UseWindowsForms>` 
 
  
 
+## Advanced Formula Environment
 
-
-https://techcommunity.microsoft.com/blog/excelblog/advanced-formula-environment-is-becoming-excel-labs-a-microsoft-garage-project/3736518
+[Innét tölthető le](https://techcommunity.microsoft.com/blog/excelblog/advanced-formula-environment-is-becoming-excel-labs-a-microsoft-garage-project/3736518) az a a Microsoft Garage Project, ami egy jól használható fügvényszerkesztővel bővíti az Excelt. 

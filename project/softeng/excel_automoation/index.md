@@ -1,6 +1,6 @@
 # Példa a ClosedXML csomag haszálatára
 
-
+A ClosedXML nu-get csomag Excel állományokat tud írni annélkül, hogy az Excel telepítve lenne a gépre. Az alábbi kódminta alapján készíts Forms alkalmazást, ami egy tetszőleges adatbázistábla tartalmát Excelbe menti!
 
 ``` csharp
 using ClosedXML.Excel;

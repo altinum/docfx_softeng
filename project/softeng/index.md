@@ -8,6 +8,8 @@ A tárgy oktatója: Dr. Mohácsi László
 
 [Tantárgyi inforámciók](./ertekeles/tantargyi_informaciok.md)
 
+[ZH eredmények](./eredmenyek.md) **⚠️**
+
 ## A számonkérések időpontjai
 
 | Hét első napja |                         |                               |
@@ -52,5 +54,4 @@ A tárgy oktatója: Dr. Mohácsi László
 > [!WARNING]
 >
 > A feladtaleírás a ZH-ban lényegretörő lesz, akár képenyőkép szintű egyes feladatoknál, nem lesz elemi lépésekre bontva, mit a gyakorlati feladatsorok. 
-
 

@@ -208,18 +208,17 @@
   items:
     - name: előadás
       items:
-        - name: ClosedXML
-          href: ./excel_automoation/index.md
-        - name: "ExcelDNA"
-          href: ./excel_dna/index.md
-        - name: "Selenium (kieg.)"
+        - name: "🎓 Selenium (kieg.)"
           href: ./SeleniumDemo/index2.md
-
-    - name: gyakorlat
-      items:
         - name: "🎓 HTTP & REST"
           href: ./10_elm_http_REST/rest-slideshow.html
-        - name: "📝 ASP .NET API Controller"
+    - name: gyakorlat
+      items:
+        - name: "1. feladat: ExcelDNA"
+          href: ./excel_dna/index.md
+        - name: "2. Feladat: ClosedXML"
+          href: ./excel_automoation/index.md
+        - name: "ZH gyak: ASP .NET"
           href: ./9b_gyak_crude_viccek/index.md
 # - name: "11. hét - WEB"
 #   items: 
