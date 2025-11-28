@@ -1,62 +1,100 @@
 # ZH eredmények
 
-| Neptun | ZH 1 | Megjegyzés              |
-| ------ | ---- | ----------------------- |
-| A64MWU | 35   |                         |
-| ABXLXL | 29   |                         |
-| AUGBR7 | 26   |                         |
-| BAZ7HM | 29   | Nem találom a markdownt |
-| BXHYBS | 35   |                         |
-| BZ5462 | 29   |                         |
-| CAAU73 | 30   |                         |
-| COPMQY | 19   |                         |
-| CUE7OX | 32   |                         |
-| DNNDFT | 9    |                         |
-| DQ4QVH | 24   |                         |
-| DSZ978 | 35   |                         |
-| E2KN7D | 16   |                         |
-| F7GYL9 | 26   | Nem találom a markdownt |
-| FBHJP7 | 32   |                         |
-| FD0RM8 | 21   |                         |
-| FOD7WG | 35   |                         |
-| FXFACS | 20   |                         |
-| G1A0FW | 22   |                         |
-| GR5U27 | 35   |                         |
-| GTHT0A | 31   |                         |
-| GXZMV8 | 33   |                         |
-| H2OIN0 | 25   |                         |
-| H5LLUY | 29   |                         |
-| HA1C6B | 22   |                         |
-| HBB8BO |      |                         |
-| HPPLBL | 24   |                         |
-| I99MRN |      |                         |
-| IVDE6F | 28   |                         |
-| IW10UI | 30   | Json-ba ment            |
-| JC5KSV | 35   |                         |
-| JF3ZG3 | 17   |                         |
-| JG1IHN | 32   |                         |
-| JGRVIF | 18   |                         |
-| JPLJST |      |                         |
-| K8J4NW | 25   |                         |
-| LWTBZA | 32   |                         |
-| LYMYR6 | 32   |                         |
-| NELX6O | 31   |                         |
-| NHI1BY | 0    |                         |
-| NIUOPT | 21   |                         |
-| NQDMUK | 35   |                         |
-| P96A8L | 35   |                         |
-| PMZ3I1 | 23   |                         |
-| PR1WQ7 | 29   |                         |
-| PS89OG | 14   | Nem találom a markdownt |
-| R5YBAX | 32   |                         |
-| R8FE3L | 26   |                         |
-| TFKU89 | 35   |                         |
-| TOTK2W | 32   |                         |
-| TSGCHU | 8    |                         |
-| TUGNDX | 33   |                         |
-| UI3AF7 | 32   |                         |
-| WFTYT0 | 32   |                         |
-| WH4DIL | 26   |                         |
-| XE6XKN | 32   |                         |
-| Z5MF0B | 29   |                         |
-| ZMHGVJ | 28   |                         |
+| Neptunkód | ZH 1         |
+| --------- | ------------ |
+| A64MWU    | 35           |
+| ABXLXL    | 29           |
+| AUGBR7    | 26           |
+| BAZ7HM    | 29           |
+| BIV92L    | 19           |
+| BK3C9F    | 29           |
+| BXHYBS    | 35           |
+| BZ5462    | 29           |
+| C9VSLT    | 35           |
+| CAAU73    | 30           |
+| CDQX3M    | 33           |
+| CEUF61    | 35           |
+| COPMQY    | 19           |
+| CUE7OX    | 32           |
+| CYY6TU    | 21           |
+| CZNUFN    | 28           |
+| D41BVR    | 32           |
+| DBKR7M    | 21           |
+| DEP39C    | 35           |
+| DNNDFT    | 9            |
+| DQ4QVH    | 24           |
+| DSZ978    | 35           |
+| DTHH7J    | 29           |
+| E2KN7D    | 16           |
+| ECZI7B    | 32           |
+| EF5U80    | 30           |
+| ER51EW    | 35           |
+| F64N3I    | 35           |
+| F74YRC    | 35           |
+| F7GYL9    | 26           |
+| FBHJP7    | 32           |
+| FD0RM8    | 21           |
+| FJU9QR    | 33           |
+| FOD7WG    | 35           |
+| FXFACS    | 20           |
+| G1A0FW    | 22           |
+| G8M3AQ    | 26           |
+| GANYQK    | 29           |
+| GR5U27    | 35           |
+| GTHT0A    | 31           |
+| GXZMV8    | 33           |
+| H2OIN0    | 25           |
+| H5LLUY    | 29           |
+| HA1C6B    | 22           |
+| HBB8BO    |              |
+| HHJJF4    | 31           |
+| HPPLBL    | 24           |
+| I86RIQ    | 19           |
+| I99MRN    |              |
+| IMN7DS    | 31           |
+| IO18O1    | 35           |
+| ISJEXD    | 33           |
+| IVDE6F    | 28           |
+| IW10UI    | 30           |
+| JC5KSV    | 35           |
+| JF3ZG3    | 17           |
+| JG1IHN    | 32           |
+| JGRVIF    | 18           |
+| JK5NX9    | 35           |
+| JPLJST    |              |
+| K8J4NW    | 25           |
+| LNXALE    | 32           |
+| LS7B4H    | 32           |
+| LWTBZA    | 32           |
+| LYMYR6    | 32           |
+| LYW7WU    | 29           |
+| NELX6O    | 31           |
+| NFHAJK    | 22           |
+| NHI1BY    | 0            |
+| NIUOPT    | 21           |
+| NQDMUK    | 35           |
+| P96A8L    | 35           |
+| PMZ3I1    | 23           |
+| PR1WQ7    | 29           |
+| PS89OG    | 14           |
+| PVT0Q8    | 24           |
+| R5YBAX    | 32           |
+| R8FE3L    | 26           |
+| T1LU8O    | 35           |
+| TFKU89    | 35           |
+| TOTK2W    | 32           |
+| TSGCHU    | 8            |
+| TUGNDX    | 33           |
+| U1Q7MO    | 35           |
+| UE6FO9    | 23           |
+| UI3AF7    | 32           |
+| W1C4GQ    | 32           |
+| WCHH75    | 31           |
+| WFTYT0    | 32           |
+| WH4DIL    | 26           |
+| X61T7I    | Hibás leadás |
+| XE6XKN    | 35           |
+| Y84DWY    |              |
+| Z5MF0B    | 29           |
+| ZFTS34    | 35           |
+| ZMHGVJ    | 28           |

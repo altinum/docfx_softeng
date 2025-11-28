@@ -238,11 +238,11 @@
   items: 
   - name: "🎓 Feladatmegoldás videón"
     href: ./11_ZH2_GYAK/zh2_gyak_video.md
+  - name: "🎓 Checklist 2. ZH-hoz"
+    href: ./zh2/zh2_checklist.md
 - name: 12. hét (3. ZH)
   items:
     - name: 🎓 Cherry picking ZH
       href: ./ZH3_cherry_picking/index.md
     - name: 🎓 Pontozó lap
       href: ./ZH3_cherry_picking/pontlap_minta.md
-
-      
