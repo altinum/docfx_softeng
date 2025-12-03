@@ -1,4 +1,4 @@
-# A 2. ZH feladatai - 09:50
+# A 2. ZH feladatai - 11:20
 
 A feladatmegoldáshoz szükséges adatbázis itt érhető el: 
 
