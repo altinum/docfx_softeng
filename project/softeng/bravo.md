@@ -13,23 +13,25 @@ Scaffold-DbContext "Data Source=bit.uni-corvinus.hu;Initial Catalog=FunnyDatabas
 > A munkaidő 80 perc!
 
 ```mermaid
-HistoricalLeader {
-        int LeaderID PK
-        varchar Name
-        varchar Country
-        int ReignStart
-        int ReignEnd
-        bit IsStillAlive
-    }
+erDiagram
 
-    MythicalCreature {
-        int CreatureID PK
-        varchar Name
-        varchar Origin
-        varchar Type
-        bit IsFriendly
-        varchar Description
-    }
+    HistoricalLeader {
+        int LeaderID PK
+        varchar Name
+        varchar Country
+        int ReignStart
+        int ReignEnd
+        boolean IsStillAlive
+    }
+
+    MythicalCreature {
+        int CreatureID PK
+        varchar Name
+        varchar Origin
+        varchar Type
+        boolean IsFriendly
+        varchar Description
+    }
 ```
 
 
