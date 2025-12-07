@@ -4,7 +4,7 @@
 
 Az utolsó ZH-ra mindenki magának állít össze feladatot a kurzus során tanult megoldásokból. A feladatot elő kell készíteni otthon, de adott, hogy milyen megoldás hány pontot ér. A feladat ASP. NET illetve Forms alkalmazás építése, mely valós vagy kitalált problémára -- vagy annak egy részére nyújt megoldást. A `Scaffold-DbContect` parancsot, illetve, ha lokális "Service Based Database" használata mellett döntötök, akkor az adatbázist létrehozó SQL scriptet hozhatjátok magatokkal, de a C# projektet az utolsó gyakorlat 90 perce alatt kell felépíteni. 
 
-A feladathoz készíthettek saját adatbázist, de felhasználhatjátok a kurzus során használt adatbázisokat is. Összesen 30 pontot lehet összeszedni, de csak a működő megoldásokra kapható pont, részpontok nincsenek. A saját adatbázis 5 pontot ér, de ha egyforma hozott adatbázisokat találunk, egyikre sem adunk pontot. 
+A feladathoz készíthettek saját adatbázist, de felhasználhatjátok a kurzus során használt adatbázisokat is. A 3. ZH-n összesen 30 pontot lehet összeszedni, de csak a működő megoldásokra kapható pont, részpontok nincsenek. A maximális pontszámhoz az Árlapról 50 pontot kell összeszedni. A saját adatbázis max. 7 pontot ér, de ha egyforma hozott adatbázisokat találunk, egyikre sem adunk pontot. 
 
 Mindenki maga döntheti el, hogy mire helyezi a hangsúlyt.
 
@@ -70,9 +70,11 @@ A pontok összeadódnak.
 
 Az utolsó előtti ea-n lesz szó róla
 
-- `1x5p` Tetszőleges diagram rajzolása
+- `1x5p` Tetszőleges diagram rajzolása. A Froms-ból kivették a `Chart` controlt, de pl. a https://www.chartjs.org/ használható JS alapú diagramok készítésére.
 - `1x2p` A diagram adatforrása tetszőleges módszerrel szűrhető 
 - `1x7p` Excel munkafüzet generálása kódból, adatbázstába tartalmának megjelenítésével, legalább egy formázással
+- `1x5p` XML dokumentum generálása kódból, adatbázstába tartalmának mentésével.
+- `1x7p` XML dokumentum generálása kódból, mely hierarchiát képez le. 
 
 ### ASP .NET 
 
@@ -146,7 +148,7 @@ Itt csak azok az elemek számíthatóak be, amelyeknek meg van a ZH alatt felép
 
 2. Minden megoldásra csak egyszer kapható pont. 
 3. A feladatot GitHub-ra kell feltölteni nyilvános repository-ba, ZH végén leadandó a repo címe Moodle-ben. 
-4. Lehet a biztonságra játszani, és az maximálisan kapható 50 pontnál többet teljesíteni. Így egy-egy hibásan működő funkció esetén is kapható maximális pont. 
+4. Lehet a biztonságra játszani, és az maximálisan kapható 50 pontnál többet teljesíteni. **Az 50 pont felel meg a 3. ZH-ra kapható 30 pontnak arányosan.** Így egy-egy hibásan működő funkció esetén is kapható maximális pont. 
 5. Ennél a ZH-nál nem használható a megszokott kézzel írott A4-es segédlet. 
 
 ## A pontozás menete 
