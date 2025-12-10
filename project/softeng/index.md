@@ -10,6 +10,27 @@ A tárgy oktatója: Dr. Mohácsi László
 
 [ZH eredmények](./eredmenyek.md) **⚠️**
 
+## Hogyan érdemes kitölteni a pontozólapot?
+
+0. Ne siess! Ráérsz vasárnap estig leadni Moodle-ben. Hétfőn reggel viszont könyörtelenül elkezdem átnézni őket. Úgyis tudod ellenőrizni, hány pontot gyüjtöttél, a 2. ZH eredményeit pedig legkésőbb csütörtök reggelig kitesztem. Ez alapján el tudod dönteni, aktuális-e a jevítás.  
+1. Töltsd le a pontozólap Markdown forrását [innen]( https://raw.githubusercontent.com/altinum/docfx_softeng/refs/heads/master/project/softeng/ZH3_cherry_picking/index.md)! 
+2. Nyisd meg a kedvenc Markdown editorodban – használhatsz VS Code-ot vagy VS2022-t is pl. `Markdown Editor v2` bővítménnyel.
+3. Töröld ki a bevezető szöveget és azokat a tételeket, amiket nem csináltál meg. Csak azok a bekezdések maradjanak, amiket megcsináltál. Írd át a szorzókat, és tedd be a bekezdések alá a screenshotokat. Ne felejtsd el összeadni a pontokat a végén. A `Markdown Editor v2`-nél be is lehet húzni a képet fáljrendszerből. A markdown link előtt a `!` karakter jelzi, hogy képről van szó. Pl 
+```markdown
+![kép címe](szep_kep.jpg)
+```
+4. A screenshotok és a `pontlap.md` közös könyvtárba kerüljenek, ezt kell majd ZIP-elve Moodle-ben leadni. A fájlnév tetszőleges. 
+5. Többen jeleztétek, hogy nagyon sok ZH-tok és feladatotok van a héten. Ezért a videót nem kell elkészíteni.
+6. Kérlek Benneteket, töltsétek ki a kurzushoz tartozó MyView értékelést!
+7. Ha nem jössz javítani / pótolni, akkor Boldog Ünnepeket, és köszönöm az elmúlt két félévet :)
+
+## Jelentkezés javításra / pótlásra
+
+A vizsgaidőszak első péntekén (december 19) esedékes javító / pótló alkalom előreláthatólag a 3. és a 4. sávban lesz. A projekt ZH-t igyekszem gyorsan javítani. (Az első két sávban Statisztikából lesz pótlási lehetőség.) A jelentkezők száma dönti el, hogy hány sávra lesz szükség 😊 A TVSZ szerint gyakjegyes tárgyakból a vizsgaidőszak első hetében le kell zárni a jegyeket, ezért nem tudjuk januárra tenni. 
+A pótlásra / javításra [ezen a felületen]( https://web.teamforms.app/teams/99ecabf8-acf6-4c3b-8a18-dda6edb10891/forms/mgx571ad99lj/response?tenantId=f8dd01b8-7276-4ace-aa9d-5767f0f4a5af) tudtok jelentkezni. Ha mégsem jönnél, kérlek, töröld a jelentkezésed. Mindenkinél a legutolsó bejegyzést vesszük figyelembe. 
+Csak egy ZH-t lehet pótolni vagy javítani.
+
+
 ## A számonkérések időpontjai
 
 | Hét első napja |                         |                               |
