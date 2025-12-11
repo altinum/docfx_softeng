@@ -1,100 +1,107 @@
 # ZH eredmények
 
-| Neptunkód | ZH 1         |
-| --------- | ------------ |
-| A64MWU    | 35           |
-| ABXLXL    | 29           |
-| AUGBR7    | 26           |
-| BAZ7HM    | 29           |
-| BIV92L    | 19           |
-| BK3C9F    | 29           |
-| BXHYBS    | 35           |
-| BZ5462    | 29           |
-| C9VSLT    | 35           |
-| CAAU73    | 30           |
-| CDQX3M    | 33           |
-| CEUF61    | 35           |
-| COPMQY    | 19           |
-| CUE7OX    | 32           |
-| CYY6TU    | 21           |
-| CZNUFN    | 28           |
-| D41BVR    | 32           |
-| DBKR7M    | 21           |
-| DEP39C    | 35           |
-| DNNDFT    | 9            |
-| DQ4QVH    | 24           |
-| DSZ978    | 35           |
-| DTHH7J    | 29           |
-| E2KN7D    | 16           |
-| ECZI7B    | 32           |
-| EF5U80    | 30           |
-| ER51EW    | 35           |
-| F64N3I    | 35           |
-| F74YRC    | 35           |
-| F7GYL9    | 26           |
-| FBHJP7    | 32           |
-| FD0RM8    | 21           |
-| FJU9QR    | 33           |
-| FOD7WG    | 35           |
-| FXFACS    | 20           |
-| G1A0FW    | 22           |
-| G8M3AQ    | 26           |
-| GANYQK    | 29           |
-| GR5U27    | 35           |
-| GTHT0A    | 31           |
-| GXZMV8    | 33           |
-| H2OIN0    | 25           |
-| H5LLUY    | 29           |
-| HA1C6B    | 22           |
-| HBB8BO    |              |
-| HHJJF4    | 31           |
-| HPPLBL    | 24           |
-| I86RIQ    | 19           |
-| I99MRN    |              |
-| IMN7DS    | 31           |
-| IO18O1    | 35           |
-| ISJEXD    | 33           |
-| IVDE6F    | 28           |
-| IW10UI    | 30           |
-| JC5KSV    | 35           |
-| JF3ZG3    | 17           |
-| JG1IHN    | 32           |
-| JGRVIF    | 18           |
-| JK5NX9    | 35           |
-| JPLJST    |              |
-| K8J4NW    | 25           |
-| LNXALE    | 32           |
-| LS7B4H    | 32           |
-| LWTBZA    | 32           |
-| LYMYR6    | 32           |
-| LYW7WU    | 29           |
-| NELX6O    | 31           |
-| NFHAJK    | 22           |
-| NHI1BY    | 0            |
-| NIUOPT    | 21           |
-| NQDMUK    | 35           |
-| P96A8L    | 35           |
-| PMZ3I1    | 23           |
-| PR1WQ7    | 29           |
-| PS89OG    | 14           |
-| PVT0Q8    | 24           |
-| R5YBAX    | 32           |
-| R8FE3L    | 26           |
-| T1LU8O    | 35           |
-| TFKU89    | 35           |
-| TOTK2W    | 32           |
-| TSGCHU    | 8            |
-| TUGNDX    | 33           |
-| U1Q7MO    | 35           |
-| UE6FO9    | 23           |
-| UI3AF7    | 32           |
-| W1C4GQ    | 32           |
-| WCHH75    | 31           |
-| WFTYT0    | 32           |
-| WH4DIL    | 26           |
-| X61T7I    | Hibás leadás |
-| XE6XKN    | 35           |
-| Y84DWY    |              |
-| Z5MF0B    | 29           |
-| ZFTS34    | 35           |
-| ZMHGVJ    | 28           |
+Kedves Kollégák!
+
+A második ZH-nál fél pontot adtam egyetlen elütésből fakadó triviális hibát tartalmazó feladatra. Például a `Content-Type` helyett  `Content-type`, kis és nagybetű különbség a POST-nál a tulajdonság nevében, vagy egy lemaradt zárójel egy lambdában. Mivel a feladattípusok ismertek voltak, ennél súlyosabb hibát tartalmazó feladatra nem jár pont, kérem ezt ne is kérjétek!
+
+L.
+
+| Neptunkód | 1. ZH össz   | 2. ZH össz | ❶ GET | ❷ GET{id} | ❸ POST | ❺ DELETE | ❻ wwwroot | ❼ teljes tábla | ❽ Add | ❾ Delete | ❿ Excel | ⓫ SFD |                                                              |
+| --------- | ------------ | ---------- | ----- | --------- | ------ | -------- | --------- | -------------- | ----- | -------- | ------- | ----- | ------------------------------------------------------------ |
+|           |              |            | 2     | 2         | 3      | 2        | 2         | 6              | 6     | 4        | 5       | 3     |                                                              |
+| A64MWU    | 35           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| ABXLXL    | 29           | 23         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 0        | 0       | 0     |                                                              |
+| AUGBR7    | 26           | 22         | 1     | 1         | 1      | 1        | 1         | 0.5            | 0     | 0        | 1       | 1     | appendChild, nem appendchild                                 |
+| BAZ7HM    | 29           | 28         | 1     | 1         | 1      | 1        | 1         | 1              | 0.5   | 0        | 1       | 1     | Content-type volt hibás az Addnál                            |
+| BIV92L    | 19           | 32         | 1     | 1         | 1      | 1        | 1         | 1              | 0.5   | 1        | 1       | 1     |                                                              |
+| BK3C9F    | 29           | 22         | 1     | 1         | 1      | 1        | 1         | 0              | 0.5   | 0        | 1       | 1     |                                                              |
+| BXHYBS    | 35           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| BZ5462    | 29           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| C9VSLT    | 35           | 26.5       | 1     | 1         | 1      | 1        | 1         | 0.5            | 1     | 1        | 0.5     | 0     | Nem menti le az Excelt sehova                                |
+| CAAU73    | 30           | 27         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 0       | 0     |                                                              |
+| CDQX3M    | 33           | 14         | 1     | 1         | 1      | 1        | 1         | 0              | 0     | 0        | 0       | 1     |                                                              |
+| CEUF61    | 35           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| COPMQY    | 19           | 27         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 0       | 0     | ClosedXML nincs telepítve                                    |
+| CUE7OX    | 32           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| CYY6TU    | 21           | 21         | 1     | 1         | 1      | 1        | 0         | 1              | 1     | 0        |         |       | Ez exceles projekt nem lett leadva                           |
+| CZNUFN    | 28           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| D41BVR    | 32           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| DBKR7M    | 21           | 27         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        |         |       | Ez exceles projekt nem lett leadva                           |
+| DEP39C    | 35           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| DNNDFT    | 9            | 26         | 1     | 1         | 1      | 1        | 1         | 1              | 0     | 1        | 1       | 0     | Nem volt lezárva a hozzáadánál a JS függvény                 |
+| DQ4QVH    | 24           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| DSZ978    | 35           | 25         | 1     | 1         | 1      | 1        | 1         | 0.5            | 0.5   | 0        | 1       | 1     | id(!id)                                                      |
+| DTHH7J    | 29           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| E2KN7D    | 16           | 32         | 1     | 1         | 1      | 1        | 1         | 1              | 0.5   | 1        | 1       | 1     |                                                              |
+| ECZI7B    | 32           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| EF5U80    | 30           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| ER51EW    | 35           | 17         | 1     | 1         | 0      | 1        | 1         | 0              | 1     | 0        | 0       | 1     |                                                              |
+| F64N3I    | 35           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| F74YRC    | 35           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| F7GYL9    | 26           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| FBHJP7    | 32           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| FD0RM8    | 21           | 27         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        |         |       | Az exceles rész hiányzik a solution-ből                      |
+| FJU9QR    | 33           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| FOD7WG    | 35           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| FXFACS    | 20           | 17         | 1     | 1         | 1      | 1        | 1         | 0.5            | 0.5   | 0        | 0       | 0     |                                                              |
+| G1A0FW    | 22           | 33         | 0     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     | _context példányosítása volt a hiba                          |
+| G8M3AQ    | 26           | 24         | 0.5   | 1         | 1      | 1        | 1         | 1              | 0     | 0        | 1       | 1     |                                                              |
+| GANYQK    | 29           | 17         | 1     | 1         | 1      | 1        | 1         | 1              | 0     | 0        | 0       | 0     | hozzadogomb neve volt elírva                                 |
+| GR5U27    | 35           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| GTHT0A    | 31           | 30         | 1     | 1         | 1      | 1        | 1         | 1              | 0.5   | 0.5      | 1       | 1     |                                                              |
+| GXZMV8    | 33           | 25         | 1     | 1         | 1      | 1        | 1         | 1              | 0     | 0        | 1       | 1     |                                                              |
+| H2OIN0    | 25           | 16         | 1     | 1         | 1      | 1        | 1         | 0              | 0     | 0        | 1       | 0     |                                                              |
+| H5LLUY    | 29           |            |       |           |        |          |           |                |       |          |         |       |                                                              |
+| HA1C6B    | 22           | 4.5        | 0     | 0         | 0      | 0        | 1         | 0              | 0     | 0        | 0.5     | 0     |                                                              |
+| HBB8BO    |              |            |       |           |        |          |           |                |       |          |         |       |                                                              |
+| HHJJF4    | 31           |            |       |           |        |          |           |                |       |          |         |       |                                                              |
+| HPPLBL    | 24           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| I86RIQ    | 19           | 29         | 1     | 1         | 1      | 1        | 1         | 0.5            | 0.5   | 1        | 1       | 1     |                                                              |
+| I99MRN    |              | 0          |       |           |        |          |           |                |       |          | 0       | 0     | Nem a gyakorlation használt adatbázistáblával kellett dolgozni |
+| IMN7DS    | 31           | 18         | 1     | 1         | 1      | 1        | 0         | 0              | 0     | 1        | 1       | 0     |                                                              |
+| IO18O1    | 35           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| ISJEXD    | 33           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| IVDE6F    | 28           | 32         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 0     |                                                              |
+| IW10UI    | 30           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| JC5KSV    | 35           | 27         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 0       | 0     | Hiányzik a scaffold                                          |
+| JF3ZG3    | 17           | 16.5       | 1     | 1         | 1      | 1        | 1         | 0              | 0.5   | 0        | 0.5     | 0     |                                                              |
+| JG1IHN    | 32           | 32         | 1     | 1         | 1      | 1        | 1         | 1              | 0.5   | 1        | 1       | 1     |                                                              |
+| JGRVIF    | 18           |            |       |           |        |          |           |                |       |          |         |       |                                                              |
+| JK5NX9    | 35           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| JPLJST    |              | 30         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 0       | 1     | Excel kellett, nem csv                                       |
+| K8J4NW    | 25           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| LNXALE    | 32           | 27         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 0       | 0     |                                                              |
+| LS7B4H    | 32           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| LWTBZA    | 32           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| LYMYR6    | 32           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| LYW7WU    | 29           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| NELX6O    | 31           | 32         | 1     | 1         | 1      | 1        | 1         | 0.5            | 1     | 1        | 1       | 1     | forEach nem foreach                                          |
+| NFHAJK    | 22           | 23         | 1     | 1         | 1      | 1        | 1         | 0.5            | 1     | 0        | 0       | 1     | Nincs Scaffold az Excelnél                                   |
+| NHI1BY    | 0            | 0          | 0     | 0         | 0      | 0        | 0         | 0              | 0     | 0        | 0       | 0     |                                                              |
+| NIUOPT    | 21           | 31         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 0        | 1       | 1     |                                                              |
+| NQDMUK    | 35           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| P96A8L    | 35           | 30         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 0.5      | 1       | 0     |                                                              |
+| PMZ3I1    | 23           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| PR1WQ7    | 29           | 22         | 1     | 1         | 1      | 1        | 1         | 0.5            | 0.5   | 0        | 1       | 0     |                                                              |
+| PS89OG    | 14           | 23         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 0        | 0       | 0     | ClosedXML nincs telepítve                                    |
+| PVT0Q8    | 24           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| R5YBAX    | 32           |            |       |           |        |          |           |                |       |          |         |       | excel ok                                                     |
+| R8FE3L    | 26           | 23         | 1     | 1         | 1      | 1        | 1         | 0              | 0     | 1        | 1       | 1     |                                                              |
+| T1LU8O    | 35           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| TFKU89    | 35           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| TOTK2W    | 32           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| TSGCHU    | 8            | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| TUGNDX    | 33           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| U1Q7MO    | 35           | 31         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 0        | 1       | 1     |                                                              |
+| UE6FO9    | 23           | 31         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 0        | 1       | 1     |                                                              |
+| UI3AF7    | 32           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| W1C4GQ    | 32           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| WCHH75    | 31           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| WFTYT0    | 32           | 25         | 1     | 1         | 1      | 1        | 1         | 1              | 0     | 0        | 1       | 1     |                                                              |
+| WH4DIL    | 26           | 20         | 1     | 1         | 1      | 1        | 1         | 1              | 0.5   | 0        |         |       | Az exceles rész hiányzik a solution-ből                      |
+| X61T7I    | Hibás leadás | 21         | 1     | 1         | 1      | 1        | 1         | 0              | 1     | 1        | 0       | 0     |                                                              |
+| XE6XKN    | 35           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| Y84DWY    |              | 0          |       |           |        |          |           |                |       |          |         |       | Csak a .sln fájl lett leadva                                 |
+| Z5MF0B    | 29           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| ZFTS34    | 35           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
+| ZMHGVJ    | 28           | 35         | 1     | 1         | 1      | 1        | 1         | 1              | 1     | 1        | 1       | 1     |                                                              |
