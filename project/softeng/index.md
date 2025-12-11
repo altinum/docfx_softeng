@@ -21,13 +21,14 @@ A tárgy oktatója: Dr. Mohácsi László
 ```
 4. A screenshotok és a `pontlap.md` közös könyvtárba kerüljenek, ezt kell majd ZIP-elve Moodle-ben leadni. A fájlnév tetszőleges. 
 5. Többen jeleztétek, hogy nagyon sok ZH-tok és feladatotok van a héten. Ezért a videót nem kell elkészíteni.
-6. Kérlek Benneteket, töltsétek ki a kurzushoz tartozó MyView értékelést!
-7. Ha nem jössz javítani / pótolni, akkor Boldog Ünnepeket, és köszönöm az elmúlt két félévet :)
+6. Az SQL adatbázist védő tűzfalat nyissátok meg a Corvinus `146.110.0.0`-`146.110.255.255` IP tartományára, hogy VPN alól elérhető legyen. 
+7. Kérlek Benneteket, töltsétek ki a kurzushoz tartozó MyView értékelést!
+8. Ha nem jössz javítani / pótolni, akkor Boldog Ünnepeket, és köszönöm az elmúlt két félévet :)
 
 ## Jelentkezés javításra / pótlásra
 
 A vizsgaidőszak első péntekén (december 19) esedékes javító / pótló alkalom előreláthatólag a 3. és a 4. sávban lesz. A projekt ZH-t igyekszem gyorsan javítani. (Az első két sávban Statisztikából lesz pótlási lehetőség.) A jelentkezők száma dönti el, hogy hány sávra lesz szükség 😊 A TVSZ szerint gyakjegyes tárgyakból a vizsgaidőszak első hetében le kell zárni a jegyeket, ezért nem tudjuk januárra tenni. 
-A pótlásra / javításra [ezen a felületen]( https://web.teamforms.app/teams/99ecabf8-acf6-4c3b-8a18-dda6edb10891/forms/mgx571ad99lj/response?tenantId=f8dd01b8-7276-4ace-aa9d-5767f0f4a5af) tudtok jelentkezni. Ha mégsem jönnél, kérlek, töröld a jelentkezésed. Mindenkinél a legutolsó bejegyzést vesszük figyelembe. 
+A pótlásra / javításra webes tudtok majd jelentkezni. Ha mégsem jönnél, kérlek, töröld a jelentkezésed. Mindenkinél a legutolsó bejegyzést vesszük figyelembe. 
 Csak egy ZH-t lehet pótolni vagy javítani.
 
 
