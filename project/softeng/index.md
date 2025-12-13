@@ -28,7 +28,7 @@ A tárgy oktatója: Dr. Mohácsi László
 ## Jelentkezés javításra / pótlásra
 
 A vizsgaidőszak első péntekén (december 19) esedékes javító / pótló alkalom előreláthatólag a 3. és a 4. sávban lesz. A projekt ZH-t igyekszem gyorsan javítani. (Az első két sávban Statisztikából lesz pótlási lehetőség.) A jelentkezők száma dönti el, hogy hány sávra lesz szükség 😊 A TVSZ szerint gyakjegyes tárgyakból a vizsgaidőszak első hetében le kell zárni a jegyeket, ezért nem tudjuk januárra tenni. 
-A pótlásra / javításra webes tudtok majd jelentkezni. Ha mégsem jönnél, kérlek, töröld a jelentkezésed. Mindenkinél a legutolsó bejegyzést vesszük figyelembe. 
+A pótlásra / javításra [itt](https://teams.microsoft.com/l/entity/81fef3a6-72aa-4648-a763-de824aeafb7d/_djb2_msteams_prefix_1904826043?context={"channelId"%3A"19%3ANZ9hcU37fD58Mb3XIAzoRsQcjg-t-II7dGtdf7liZfc1@thread.tacv2"}&tenantId=f8dd01b8-7276-4ace-aa9d-5767f0f4a5af) tudtok jelentkezni. Ha mégsem jönnél, kérlek, töröld a jelentkezésed. Mindenkinél a legutolsó bejegyzést vesszük figyelembe. 
 Csak egy ZH-t lehet pótolni vagy javítani.
 
 
