@@ -27,9 +27,49 @@ A tárgy oktatója: Dr. Mohácsi László
 
 ## Jelentkezés javításra / pótlásra
 
-A vizsgaidőszak első péntekén (december 19) esedékes javító / pótló alkalom előreláthatólag a 3. és a 4. sávban lesz. A projekt ZH-t igyekszem gyorsan javítani. (Az első két sávban Statisztikából lesz pótlási lehetőség.) A jelentkezők száma dönti el, hogy hány sávra lesz szükség 😊 A TVSZ szerint gyakjegyes tárgyakból a vizsgaidőszak első hetében le kell zárni a jegyeket, ezért nem tudjuk januárra tenni. 
-A pótlásra / javításra [itt](https://teams.microsoft.com/l/entity/81fef3a6-72aa-4648-a763-de824aeafb7d/_djb2_msteams_prefix_1904826043?context={"channelId"%3A"19%3ANZ9hcU37fD58Mb3XIAzoRsQcjg-t-II7dGtdf7liZfc1@thread.tacv2"}&tenantId=f8dd01b8-7276-4ace-aa9d-5767f0f4a5af) tudtok jelentkezni. Ha mégsem jönnél, kérlek, töröld a jelentkezésed. Mindenkinél a legutolsó bejegyzést vesszük figyelembe. 
-Csak egy ZH-t lehet pótolni vagy javítani.
+A vizsgaidőszak első péntekén (december 19) esedékes javító / pótló alkalom a 3. és a 4. sávban lesz. A projekt ZH-t igyekszem gyorsan javítani. (Az első két sávban Statisztikából lesz pótlási lehetőség.) A jelentkezők száma dönti el, hogy hány sávra lesz szükség 😊 A TVSZ szerint gyakjegyes tárgyakból a vizsgaidőszak első hetében le kell zárni a jegyeket, ezért nem tudjuk januárra tenni. 
+
+
+> [!IMPORTANT]
+>
+> Lezártam a jelentkezéseket a ZH pórlásra. Ha változtatni szeretnétek, csütörtök este 8-ig jelezzétek Teams-en, utána elékszítem a beosztást. Az alábbi jelentkezéseket rögzítettem.
+
+ 
+
+| Neptun | Cél      |                |
+| ------ | -------- | -------------- |
+| CDQX3M | Javítani | A 2. ZH-t      |
+| ER51EW | Javítani | A 2. ZH-t      |
+| BK3C9F | Javítani | A 2. ZH-t      |
+| I99MRN | Javítani | A 2. ZH-t      |
+| IMN7DS | Javítani | A 2. ZH-t      |
+| H2OIN0 | Javítani | A 2. ZH-t      |
+| WFTYT0 | Javítani | A 2. ZH-t      |
+| JF3ZG3 | Javítani | A 2. ZH-t      |
+| DSZ978 | Javítani | A 2. ZH-t      |
+| GXZMV8 | Pótolni  | A projekt ZH-t |
+| EF5U80 | Pótolni  | A projekt ZH-t |
+| ECZI7B | Pótolni  | A projekt ZH-t |
+| G1A0FW | Javítani | A projekt ZH-t |
+| FXFACS | Javítani | A projekt ZH-t |
+| abxlxl | Pótolni  | A projekt ZH-t |
+| LNXALE | Pótolni  | A projekt ZH-t |
+| GANYQK | Pótolni  | A projekt ZH-t |
+| FOD7WG | Pótolni  | A projekt ZH-t |
+| E2KN7D | Javítani | Az 1. ZH-t     |
+| NFHAJK | Javítani | Az 1. ZH-t     |
+| Y84DWY | Pótolni  | Az 1. ZH-t     |
+| NIUOPT | Javítani | Az 1. ZH-t     |
+| I99MRN | Pótolni  | Az 1. ZH-t     |
+| PS89OG | Javítani | Az 1. ZH-t     |
+| COPMQY | Javítani | Az 1. ZH-t     |
+| X61T7I | Javítani | Az 1. ZH-t     |
+| DNNDFT | Javítani | Az 1. ZH-t     |
+| DBKR7M | Javítani | Az 1. ZH-t     |
+| NHI1BY | Javítani | Az 1. ZH-t     |
+| CYY6TU | Javítani | Az 1. ZH-t     |
+| TSGCHU | Javítani | Az 1. ZH-t     |
+| JPLJST | Pótolni  | Az 1. ZH-t     |
 
 
 ## A számonkérések időpontjai
