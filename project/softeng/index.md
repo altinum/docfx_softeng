@@ -32,7 +32,7 @@ A vizsgaidőszak első péntekén (december 19) esedékes javító / pótló alk
 
 > [!IMPORTANT]
 >
-> Lezártam a jelentkezéseket a ZH pórlásra. Ha változtatni szeretnétek, csütörtök este 8-ig jelezzétek Teams-en, utána elékszítem a beosztást. Az alábbi jelentkezéseket rögzítettem.
+> Lezártam a jelentkezéseket a ZH pórlásra, a listát lejjebb találjátok. A javító / pótló alkalom 11:40-kor kezdődik az E.245-ben.  
 
  
 
@@ -47,6 +47,8 @@ A vizsgaidőszak első péntekén (december 19) esedékes javító / pótló alk
 | WFTYT0 | Javítani | A 2. ZH-t      |
 | JF3ZG3 | Javítani | A 2. ZH-t      |
 | DSZ978 | Javítani | A 2. ZH-t      |
+| AUGBR7 | Javítani | A 2. ZH-t      |
+| Y84DWY | Pótolni  | A 2. ZH-t      |
 | GXZMV8 | Pótolni  | A projekt ZH-t |
 | EF5U80 | Pótolni  | A projekt ZH-t |
 | ECZI7B | Pótolni  | A projekt ZH-t |
@@ -58,9 +60,7 @@ A vizsgaidőszak első péntekén (december 19) esedékes javító / pótló alk
 | FOD7WG | Pótolni  | A projekt ZH-t |
 | E2KN7D | Javítani | Az 1. ZH-t     |
 | NFHAJK | Javítani | Az 1. ZH-t     |
-| Y84DWY | Pótolni  | Az 1. ZH-t     |
 | NIUOPT | Javítani | Az 1. ZH-t     |
-| I99MRN | Pótolni  | Az 1. ZH-t     |
 | PS89OG | Javítani | Az 1. ZH-t     |
 | COPMQY | Javítani | Az 1. ZH-t     |
 | X61T7I | Javítani | Az 1. ZH-t     |
