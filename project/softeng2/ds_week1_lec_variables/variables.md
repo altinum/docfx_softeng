@@ -56,3 +56,5 @@ s += " World"; // A new string "Hello World" is created, and 's' now references 
 ```
 
 The original `"Hello"` string still exists in memory (until garbage collection reclaims it).
+
+[lecture notes](lecture_notes.html)

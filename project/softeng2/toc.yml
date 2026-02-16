@@ -6,8 +6,10 @@
   items:
     - name: "💡 Variables"
       href: ./ds_week1_lec_variables/variables.md
-    - name: "🛠 Loan calculator"
+    - name: "🛠 Loan calculator - list"
       href: ./ds_week1_lab_loan_calculator/loan_calculator.md
+    - name: "🛠 Loan calculator - fromula"
+      href: ./ds_week1_lab_loan_calculator/loan_calculator_by_fromula.md      
 - name: Week 2
   items:
     - name: "💡 Work with classes"

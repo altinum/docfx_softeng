@@ -50,6 +50,43 @@ checkout main
 merge develop
 ```
 
+Mermaid diagram:
+
+``` mermaid
+gitGraph
+commit
+commit
+commit
+commit type:REVERSE
+commit
+branch develop
+commit
+commit
+checkout main
+commit
+checkout develop
+checkout main
+merge develop
+checkout develop
+commit
+commit
+branch feature1
+commit
+checkout develop
+commit
+commit
+checkout main
+merge develop
+```
+
+
+
+
+
+
+
+
+
 ## Joel
 
 

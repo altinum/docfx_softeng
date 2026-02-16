@@ -1,11 +1,11 @@
 ﻿---
-- name: 📖 A tárgy célja, követelmények
+- name: ⓘ A tárgy célja, követelmények
   href: kovetelmenyek\index.md
 - name: ZH eredmények 
   href: eredmenyek\index.md
 - name: Tudásbázis
   items:
-    - name: 📖 Visual Studió telepítése
+    - name: 💡 Visual Studió telepítése
       href: vsinstall\index.md
  #   - name: Útmutató projektek feltöltéséhez
  #     href: projektfeltoltes\index.md
@@ -15,44 +15,45 @@
       href: 1_bevezeto\eloadas_linkek.md
     - name: 🛠 Kamtszámítás mintafeladat
       href: 1_bevezeto\kamatszamitas.md
+    - name: 🏠 Máskfokú egyenlet 🎬
+      href: 1_bevezeto\masodfoku_egyenlet_videok.md
 - name: 2. hét
   items:
- #   - name: Linkek az előadáshoz
- #     href: git\ea_linkek.md
+    - name: 💡 Linkek az előadáshoz
+      href: git\ea_linkek.md
+    - name: 💡 Verziókövetés a gyakorlatban
+      href: git\verziokovetes_a_gyakorlatban.md
     - name: 💡 Working with classes
       href: 2_osztalyok/working_with_classes.md             
+    - name: 💡 Változók viselkedése
+      href: 2_osztalyok/valtozok_viselkedese.md             
     - name: 🛠 Fibonacci sor
       href: 2_osztalyok\fibonacci_sor.md
+    - name: 🏠 Szorzótábla 🎬
+      href: 2_osztalyok\szorzotabla.md
+    - name: 🏠 Sakktábla
+      href: 2_osztalyok\sakktabla.md
+    - name: 🏠 Pascal háromszög
+      href: 2_osztalyok\pascal_haromszog.md
 - name: 3. hét
   items:
-    - name: 🎬 Változók viselkedése
+    - name: 💡 Változók viselkedése 🎬
       href: 2_osztalyok\valtozok_viselkedese.md
     - name: "💡 Time to learn"
       href: 3_osztalyok_2\time_to_learn.md
-    - name: "🎬 Feladatok & videók"
-      href: 3_osztalyok_2\video.md
-    - name: 🎬 Szorzótábla (videók)
-      href: 2_osztalyok\szorzotabla.md
-    - name: "Gyakorló feladatok"
-      items: 
-        - name: 🛠 Feladatok         
-          href: 3_osztalyok_2\index.md
-        - name: 🛠 Sakktábla
-          href: 2_osztalyok\sakktabla.md
-        - name: 🛠 Pascal háromszög
-          href: 2_osztalyok\pascal_haromszog.md
 - name: 4. hét - 1. Géptermi ZH
   items:
-    - name: 📖 ZH Checklist
+    - name: ⓘ ZH Checklist
       href: zh_checklists\zh1_checklist.md
-    - name: 📖 ZH leadás és értékelés szabályai
+    - name: ⓘ ZH leadás és értékelés szabályai
       href: zh_checklists\zh_ertekeles_leadas.md
 - name: 5. hét
   items:
+    - name: "💡 Hajós teszt sample app"
+      href: 4_file\hajos_gyak.md
     - name: "🛠 Quiz játék"
       href: 4_file\feleletvalasztos\index.md
-#     - name: "Gyak: hajós teszt"
-#       href: 4_file\hajos_gyak.md
+
 - name: 6. hét
   items:
   - name: Kígyós játék
@@ -63,24 +64,27 @@
     href: csv_databinding\index.md
 - name: 8. hét
   items:
+  - name: "ea: Kriptográfia a gyakorlatban"
+    href: https://kzgzdiag426.blob.core.windows.net/szoft2/Kriptografia_v4.pptx
+  - name: "Minta ZH: CSV & adatkötés"
+    href: databinding_mintazh\index.md
+- name: 9. hét
+  items:
   - name: SQL adatbázis elérése, ORM
     href: 9a_gyak_tavoli_adatbazis_visual_studioban\index.md
-  - name: IFS fraktál
-    href: grafika_ifs_reszletes\index.md
 - name: 10. hét
   items:
-  - name: "Kriptográfia"
-    href: https://kzgzdiag426.blob.core.windows.net/szoft2/Kriptografia_v4.pptx
+
   - name: ZH mintafeladat
     href: hajos_bindnig\index.md
   - name: Minta ZH
     href: databinding_mintazh\index.md
 - name: 11. hét - Minta ZH-k
   items:
-  - name: "Minta ZH: CSV & adatkötés"
-    href: databinding_mintazh\index.md
-  - name: "Minta ZH: SQL & adatkötés"
+  - name: "ZH gyakorlás: SQL & adatkötés"
     href: bikestore_mintazh\index.md
+  - name: "ZH gyakorlás: bikestore adatbázis"
+    href: zh3_gyakorlas\index.md
 #- name: "11. hét - WEB"
 #  items: 
 #  - name: "🎓 Kriptográfia"
@@ -127,8 +131,7 @@
 #          href: villamkerdesek\index.md
 #        - name: Szópároztatós játék
 #          href: szoparoztatos\index.md
-#        - name: Fájlok előasára
-#          href: zh3_gyakorlas\index.md
+
 ##        - name: PixelArt
 ##          href: pixelart\index.md
 - name: 13. hét - Projektfeladat ZH
@@ -167,4 +170,9 @@
       href: mintakodok\hangman\index.md
     - name: Puzzle
       href: slide_puzzle\slide_puzzle.md
+
+
+
+   # - name: IFS fraktál
+   # href: grafika_ifs_reszletes\index.md
     

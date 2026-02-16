@@ -1,8 +1,8 @@
-### Szorzótábla
+# Szorzótábla
 
 Rakj ki a képernyőre 10x10 gombból egy szorzótáblát!
 
-(+/-) A megoldás menetét az alábbi videók mutatják be:
+A megoldás menetét az alábbi videók mutatják be. Nézd meg a videókat, és próbáld egyedül felépíteni a fealdatot!
 
 
 

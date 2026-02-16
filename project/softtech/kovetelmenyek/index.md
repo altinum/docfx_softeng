@@ -44,10 +44,6 @@ A jegyek az alábbi táblázat szerint alakulnak:
 - 80-89 jó
 - 90-101 jeles
 
-> [!IMPORTANT]
->
-> Az ZH-k a 4, 12. és a 13. héten lesznek. 
-
 ### Pótlási lehetőség
 
 **Egy meg nem írt ZH vagy projekt pótlására van lehetőség a vizsgaidőszak első péntekén.**  Egy ZH javítására vagy pótlására van lehetőség, javítani és pótolni nem lehet. A TVSZ szerint a gyakorlati jegyes tárgyakat a vizsgaidőszak első hetében le kell zárni. 

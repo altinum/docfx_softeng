@@ -1,6 +1,6 @@
 # Sakktábla
 
-(+/-) Csináljatok sakktáblát. Azaz csak minden második négyzetet jelenítsétek meg.
+Csináljatok sakktáblát. Azaz csak minden második négyzetet jelenítsétek meg. 
 
 > [!Tip]
 > A `%` (modulo) operátor az osztási maradékot képzi. Az alábbi kódrészlet eldönti egy számról, hogy páros-e:

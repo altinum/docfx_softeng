@@ -17,7 +17,9 @@ Offtopic videó arról, hogy hogy nézett ki az Apollo földreszálló egységé
 
 ### Rövid összefoglaló az elemi változókról 
 
-Ezeket érdemes megtanulni - a számtípusoknál legalább a nagyságrendeket.
+> [!IMPORTANT]
+>
+> Ezeket érdemes megtanulni - a számtípusoknál a nagyságrendeket. 
 
 | Típus     | Memóriaigény | Leírás                                                                          |
 | --------- | ------------ | ------------------------------------------------------------------------------- |
