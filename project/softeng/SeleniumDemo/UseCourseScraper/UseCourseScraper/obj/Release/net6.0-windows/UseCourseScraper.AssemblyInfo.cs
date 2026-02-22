@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UseCourseScraper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+321941676d8648d1008a926f9ad0a9c7529c0737")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d43073117d615610b2d57be3d46cfe6cc761e97")]
 [assembly: System.Reflection.AssemblyProductAttribute("UseCourseScraper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UseCourseScraper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
