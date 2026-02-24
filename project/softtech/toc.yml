@@ -19,10 +19,6 @@
       href: 1_bevezeto\masodfoku_egyenlet_videok.md
 - name: 2. hét
   items:
-    - name: 💡 Linkek az előadáshoz
-      href: git\ea_linkek.md
-    - name: 💡 Verziókövetés a gyakorlatban
-      href: git\verziokovetes_a_gyakorlatban.md
     - name: 💡 Working with classes
       href: 2_osztalyok/working_with_classes.md             
     - name: 💡 Változók viselkedése
@@ -37,23 +33,28 @@
       href: 2_osztalyok\pascal_haromszog.md
 - name: 3. hét
   items:
+    - name: 💡 Előadás jegyzetek
+      href: git\ea_linkek.md
+    - name: 💡 Verziókövetés a gyakorlatban
+      href: git\verziokovetes_a_gyakorlatban.md
     - name: 💡 Változók viselkedése 🎬
       href: 2_osztalyok\valtozok_viselkedese.md
     - name: "💡 Time to learn"
       href: 3_osztalyok_2\time_to_learn.md
+    - name: 🛠 Feladatok gyakorlatra
+      href: 3_osztalyok_2\index.md
 - name: 4. hét - 1. Géptermi ZH
   items:
     - name: ⓘ ZH Checklist
-      href: zh_checklists\zh1_checklist.md
+      href: zh_checklists\zh1checklist\zh1_checklist.md
     - name: ⓘ ZH leadás és értékelés szabályai
-      href: zh_checklists\zh_ertekeles_leadas.md
+      href: zh_checklists\zh1checklist\zh_ertekeles_leadas.md
 - name: 5. hét
   items:
     - name: "💡 Hajós teszt sample app"
       href: 4_file\hajos_gyak.md
     - name: "🛠 Quiz játék"
       href: 4_file\feleletvalasztos\index.md
-
 - name: 6. hét
   items:
   - name: Kígyós játék
