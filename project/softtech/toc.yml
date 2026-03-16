@@ -51,6 +51,8 @@
       href: zh_checklists\zh1checklist\zh_ertekeles_leadas.md
 - name: 5. hét
   items:
+    - name: "💡 Előadás jegyzet: EMOry game"
+      href: mintakodok\emory\lecture_note.md
     - name: "💡 Hajós teszt sample app"
       href: 4_file\hajos_gyak.md
     - name: "🛠 Quiz játék"
