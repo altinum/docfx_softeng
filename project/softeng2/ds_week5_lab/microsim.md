@@ -18,6 +18,14 @@ public partial class Form1 : Form
 
 ```
 
+
+
+Github repo to clone:
+
+```
+https://github.com/altinum/Microsimulation.git
+```
+
 ## Buliding the simulation
 
 ❶ Let's create two loops:

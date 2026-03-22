@@ -13,7 +13,7 @@ private void Simulation()
 
 			if (!individual.IsAlive) continue; //If the individual is dead already, we skip 
 
-			byte személyKora = (byte)(year - individual.YearOfBirth);
+			byte ageOfIndividual= (byte)(year - individual.YearOfBirth);
 			
 		}
 	}

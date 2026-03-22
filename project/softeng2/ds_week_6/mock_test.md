@@ -1,5 +1,25 @@
 # Mock test
 
+## Videos
+
+> [!Video https://storage.altinum.hu/se_mock/mock1.m4v]
+
+> [!Video https://storage.altinum.hu/se_mock/mock2.m4v]
+
+> [!Video https://storage.altinum.hu/se_mock/mock3.m4v]
+
+> [!Video https://storage.altinum.hu/se_mock/mock4.m4v]
+
+> [!Video https://storage.altinum.hu/se_mock/mock5.m4v]
+
+> [!Video https://storage.altinum.hu/se_mock/mock6.m4v]
+
+More to come soon :)
+
+
+
+## Mock test
+
 Generate a sample dataset using ChatGPT using something like the propt as follows:
 
 ```

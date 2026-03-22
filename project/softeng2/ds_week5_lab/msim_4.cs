@@ -13,11 +13,11 @@ private void Simulation()
 
 			if (!individual.IsAlive) continue; //If the individual is dead already, we skip 
 
-			byte személyKora = (byte)(year - individual.YearOfBirth);
+			byte ageOfIndividual= (byte)(year - individual.YearOfBirth);
 
 			//Handling death
 			double pDeath = (from x in pDeaths
-							 where x.Sex == individual.Sex && x.Age == személyKora + 1
+							 where x.Sex == individual.Sex && x.Age == ageOfIndividual+ 1
 							 select x.PDeath).First();
 			
 		}
