@@ -80,6 +80,10 @@
   items:
     - name: Előadás
       items:
+        - name: "💡 Előadás: IFS fraktál"
+          href: grafika_ifs_reszletes\index.md
+        - name: "💡 Előadás: Koch görbe"
+          href: grafika_ifs_reszletes\koch_gorbe.md
         - name: "🎓 Receptes mintafeladat"
           href: ./6_receptes/index.md
         - name: "🎓 előadás jegyzet"

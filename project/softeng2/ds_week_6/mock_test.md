@@ -14,7 +14,55 @@
 
 > [!Video https://storage.altinum.hu/se_mock/mock6.m4v]
 
-More to come soon :)
+LINQ solution:
+
+
+
+``` csharp
+private void QueryResults(object sender, EventArgs e)
+        {
+            keyValuePairs.Clear();
+            keyValuePairs.Add(new KeyValuePair 
+            { 
+                Key = "Total Employees",
+                Value = employees.Count.ToString() });
+ 
+            var min_age = employees.Min(emp => emp.Age);
+	        var min_age_2 = (from x in employees select x.Age).Min();  //The SQL like format
+            keyValuePairs.Add(new KeyValuePair
+            {
+                Key = "Youngest Employee Age",
+                Value = min_age.ToString()
+            });
+ 
+            var avg_age = employees.Average(emp => emp.Age);
+            var avg_age_2 = (from x in employees select x.Age).Average();
+            keyValuePairs.Add(new KeyValuePair
+            {
+                Key = "Average Employee Age",
+                Value = avg_age.ToString()
+            });
+ 
+            var emp5 = employees.Where(emp => emp.Id == 5).FirstOrDefault();
+            var emp5_2 = (from x in employees where x.Id == 5 select x).FirstOrDefault();
+            keyValuePairs.Add(new KeyValuePair
+            {
+                Key = "Employee with ID 5",
+                Value = emp5 != null ? emp5.Name : "Not Found"
+            });
+ 
+        }
+        private void HighestPaid(object sender, EventArgs e)
+        {
+            var highestSalary = employees.Max(emp => emp.Salary);
+            var highestPaidEmps = employees.Where(emp => emp.Salary == highestSalary);
+            dataGridView3.DataSource = highestPaidEmps.ToList();
+        }
+    }
+}
+```
+
+
 
 
 
