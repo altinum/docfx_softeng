@@ -63,8 +63,8 @@
     href: kigyos\index.md
 - name: 7. hét
   items:
-  - name: Adatkötés ea.
-    href: hajos_binding\index.md
+  - name: Adatkötés ea.      
+    href: hajos_bindnig\index.md
   - name: Adatkötés
     href: csv_databinding\index.md
 - name: 8. hét
