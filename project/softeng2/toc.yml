@@ -1,6 +1,6 @@
 ﻿- name: 📝 Syllabus
   href: ./syllabus/index.md
-- name: 📝 Results
+- name: 📝 Results ⚠
   href: ./results/results.md
 - name: Week 1
   items:
