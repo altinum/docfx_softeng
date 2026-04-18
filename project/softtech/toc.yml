@@ -45,7 +45,7 @@
       href: 3_osztalyok_2\index.md
 - name: 4. hét - 1. Géptermi ZH
   items:
-    - name: ⓘ ZH Checklist
+    - name: ⓘ ZH 1 Checklist
       href: zh_checklists\zh1checklist\zh1_checklist.md
     - name: ⓘ ZH leadás és értékelés szabályai
       href: zh_checklists\zh1checklist\zh_ertekeles_leadas.md
@@ -68,9 +68,11 @@
   - name: CSV állományok és adatkötés
     href: csv_databinding\index.md
 - name: 8. hét - 2. Géptermi ZH 
-  items:
+  items: 
   - name: "ea: Kriptográfia a gyakorlatban"
     href: https://kzgzdiag426.blob.core.windows.net/szoft2/Kriptografia_v4.pptx
+  - name: "ⓘ ZH 2 Checklist"
+    href: zh_checklists\zh2checklist\zh2checklist.md
   - name: "Minta ZH: CSV & adatkötés"
     href: databinding_mintazh\index.md
 - name: 9. hét
@@ -78,13 +80,7 @@
   - name: SQL adatbázis elérése, ORM
     href: 9a_gyak_tavoli_adatbazis_visual_studioban\index.md
 - name: 10. hét
-  items:
-
-  - name: ZH mintafeladat
-    href: hajos_bindnig\index.md
-  - name: Minta ZH
-    href: databinding_mintazh\index.md
-- name: 11. hét - Minta ZH-k
+- name: 11. hét - 3. Géptermi ZH
   items:
   - name: "ZH gyakorlás: SQL & adatkötés"
     href: bikestore_mintazh\index.md
