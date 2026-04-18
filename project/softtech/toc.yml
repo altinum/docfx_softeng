@@ -63,11 +63,11 @@
     href: kigyos\index.md
 - name: 7. hét
   items:
-  - name: Adatkötés ea.      
+  - name: "ea: Adatkötés: hajós példa+🎬"
     href: hajos_bindnig\index.md
-  - name: Adatkötés
+  - name: CSV állományok és adatkötés
     href: csv_databinding\index.md
-- name: 8. hét
+- name: 8. hét - 2. Géptermi ZH 
   items:
   - name: "ea: Kriptográfia a gyakorlatban"
     href: https://kzgzdiag426.blob.core.windows.net/szoft2/Kriptografia_v4.pptx
