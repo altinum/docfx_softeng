@@ -1,5 +1,3 @@
-
-
 # Software technológia
 
 Tárgykód: INSA008NMBB	
@@ -25,8 +23,8 @@ Tárgykód: INSA008NMBB
 | 2026-04-13     | 7. hét                  | **ea:** Többablakos alkalmazások, UX tervezési szempontok. Adatkötés Forms alapokon. <br />**gyak:** Adatkötés |
 | 2026-04-20     | 8. hét                  | **ea:** Kriptográfia a gyakorlatban (https, SSL, digitális aláírással ellátott dokumentumok)<br />**gyak:** <span style="color:red">2. géptermi ZH</span> (30 pont) |
 | 2026-04-27     | 9. hét                  | **ea:** SQL adatbázis elérése Entity Framework segítségével, ORM<br />**gyak:** Mintafeladat: egy adatbázistábla adatainak megjelenítése Entity Framework-ön keresztül adatkötött vezérlők segítségével. |
-| 2026-05-04     | 10. hét                 | **ea:** Többablakos alkalmazások, UX tervezési szempontok<br />**gyak:** Mintafeladat: Több táblát tartalmazó adatbázis adatainak megjelenítése Entity Framework-ön keresztül adatkötött vezérlők segítségével. Rekordok szerkesztése, új rekord rögzítése. 1:N és N:M relációkat kezelő alkalmazás építése |
-| 2026-05-11     | 11. hét                 | **ea:** Összefoglaló előadás a klasszikus aknakereső játék példáján <br />**gyak:** <span style="color:red">3. géptermi ZH</span> (30 pont) |
+| 2026-05-04     | 10. hét                 | **ea:** Összefoglaló előadás a klasszikus aknakereső játék példáján<br />**gyak:** Mintafeladat: Több táblát tartalmazó adatbázis adatainak megjelenítése Entity Framework-ön keresztül adatkötött vezérlők segítségével. Rekordok szerkesztése, új rekord rögzítése. 1:N és N:M relációkat kezelő alkalmazás építése |
+| 2026-05-11     | 11. hét                 | **ea:** Összefoglaló előadás, többablakos alkalmazások, UX tervezési szempontok<br />**gyak:** <span style="color:red">3. géptermi ZH</span> (30 pont) |
 | 2026-05-18     | 12. hét                 | **ea:** Látókörbővítő előadás: a DNS, mint programkódkeresztül.<br />**gyak:** <span style="color:red">Projekt ZH </span>(10 pont) |
 | 2026-05-25     | Vizsgaidőszak első hete | Pótlási lehetőség pénteken                                   |
 
