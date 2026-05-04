@@ -1,18 +1,10 @@
 # 2. ZH - foxtrot
 
-## 🅐 UI keret létrehozása 
+> [!NOTE]
+>
+> A **Solution neve kezdődjön a STF2 karaktersorozattal**, majd folytatódjon a NEPTUN kóddal. A teljes projekt könyvtárat Moodle-rendszeren keresztül kell beadni ZIP állományban. Javasoljuk, hogy a projektet lokális meghajtón hozd létre és ne az S: meghajtóra. A leadás egyben a jelenléti ív. Pontot csak olyan kódrészletre lehet kapni, ami megfelelően lefordul és a program futtatása során ellátja a szerepét. **A munkaidő 60 perc**.
 
-❶ Hozz létre egy "Windows Forms App" alapú alkalmazást. Az induláskor megjelenő űrlap bal oldalán helyezz el négy gombot, és egy panelt! 
-
-❷ A Panel kerete legyen vékony vonal. 
-
-❸ A Panel az űrlap átméretezésekor kövesse az űrlap méretét! 
-
-❹ Adj négy `UserControl`-t is a projekthez, elnevezésük tetszőleges! A következő feladatblokkokat ezekre a vezérlőkre kell majd megvalósítani. 
-
-❺ A gombok megnyomására töröld a panel tartalmát, és helyezd el a gombhoz tartozó `UserControl`-t úgy, hogy kitöltse a panel teljes területét átméretezéskor is. 
-
-## 🅑 UserControl1 : CSV állomány beolvasása
+## Feldolgozandó adatok
 
 A [konyv.txt](konyv.txt) fájlban található adatokat kell egy `DataGridView`-benmegjeleníteni. 
 
@@ -26,68 +18,47 @@ A fájl felépítése:
 | `KiadasEve `   | az év, amikor kiadták a könyvet |      |
 | `Oldalszam   ` | az oldalak száma a könyvben     |      |
 
-❶ A csv állományt tedd be a projektbe, és másoltasd a futtatható állomány mellé **-=VAGY=-** a fálj legyen `OpenFileDialog` segítségével kitallózható!
+## Készíts alkalmazást alábbi instrukciók szerint:
 
-❷ Adj a projekthez egy osztályt, amely leképezi az állomány egy sorát!
+❶ Hozz létre projektet az alábbi névvel: `STF2[neptun kód]`
 
-❸ A program legyen képes megnyitni az állományt, és a  ❸ sorait felolvasni egy `BindingList` típusú, `UserControl1` osztály szintjén létrehozott listába, majd ❹ ezeket megjeleníteni `BindingSource`-on keresztül egy `DataGridView`-ban. 
-❺ A lehetséges hibákat kezeld! 
+> [!IMPORTANT]
+>
+> Másképp elnevezett projekteket nem fogadunk el!
+
+❷ A csv állományt tedd be a projektbe, és másoltasd a futtatható állomány mellé!
+
+❸ Adj a projekthez egy osztályt, amely leképezi az állomány egy sorát!
+
+❹ A program legyen képes megnyitni az állományt, és a sorait felolvasni egy `BindingList` típusú, `Form1` osztály szintjén létrehozott listába, majd ezeket megjeleníteni `BindingSource`-on keresztül egy `DataGridView`-ban. A lehetséges hibákat kezeld! A betöltés művelet történjen gombnyomásra! Használhatod a CSV Helper csomagot, de megoldhatod másképp is.
 
 ![image1](image1.png)
 
+❺ Az alkalmzás legyen képes menteni a `Form1` osztályban lévő listát. A mentés helye SaveFileDialog-ban legyen kiválasztható!
 
+❻ Mentés közben kezeld a hibákat (try-catch)! 
 
-## 🅒 UserControl1 : új rekord rögzítése
+❼ Hozz létre egy gombot, melynek segítségével a rácsban az éppen kiválasztott sor törölhető. A törlés csak megerősítő kérdés után történjen meg.
+Ellenőrizd, hogy van-e kiválasztott sor!
 
-❶ Felugró ablakon keresztül legyen lehetőség új sor rögzítésére!
+❽ Felugró ablakon keresztül legyen lehetőség új sor rögzítésére!
 
 ![image6](image6.png)
 
 
 
-## 🅓 UserControl1 : LINQ lekérdezések
+Hozz létre egy gombot, amelyre felugrik egy MessageBox, ami a következő kérdésekre ad nekünk választ:
 
-Hozz létre egy 'Érekességek' gombot, amelyre felugrik egy MessageBox, ami a következő kérdésekre ad nekünk választ:
+🅐 Melyik évben lett kiadva a leghosszabb könyv?
 
-- ❶ Melyik évben lett kiadva a leghosszabb könyv?
+🅑 Átlagosan milyen hosszúak a 2000 után kiadott könyvek?
 
-- ❷ Átlagosan milyen hosszúak a 2000 után kiadott könyvek?
+🅒 Összesen hány könyv van?
+
+🅓 Hány oldalas a leghosszabb könyv?
 
 ![image7](image7.png)
 
-## 🅔 ORM osztályok készítése
-
-❶ Telepítsd a NuGet csomagokat a projektbe: 
-
-```powershell
-Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 7.0.20
-Install-Package Microsoft.EntityFrameworkCore.Tools -Version 7.0.20
-```
-
-❷ Készítsd el a Scaffold parancs segítségével az adatbázist leképező osztályokat:
-
-``` powershell
-Scaffold-DbContext "Data Source=bit.uni-corvinus.hu;Initial Catalog=se_pets;Persist Security Info=True;User ID=hallgato;Password=Password123;TrustServerCertificate=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir PetsModels
-```
-
-![image-20250513220632338](image-20250513220632338.png)
-
-## 🅕 UserControl2 : `ProcedureDone` tábla tartalmának megjelenítése
-
-❶ Jelenítsd meg a(z) **ProcedureDone** tábla tartalmát rácsban a UserControl-on.  Az idegen kulcsok helyén hivatkozott táblából a megfelelő szövegek jelenjenek meg. Jelenjen meg az állat neve és az elvégzett beavatkozás neve is, és az, hogy mikor végezték a beavatkozást! Ne jelenjenek meg a felesleges technikai mezők. 
-
-## 🅖 UserControl3: Állatok fajonként
-
-Helyezz el a UserControl-on egy `ListBox`-ot és egy `DataGridView`-t!
-
-❶ Töltsd be a **Species** tábla tartalmát a ListBox-ba úgy, hogy a **Name** mező tartalma jelenjen meg benne. 
-
-❷ A ListBox felett legyen egy TextBox, amellyel szűrni lehet a ListBox tartalmát. (Ezt a feladatrészt LINQ segítségével old meg!) 
-
-❸ A ListBox mellett legyen egy DataGridView, amiben jelenítsed meg az **Animal** tábla tartalmának azon részét, ami a ListBox-ban éppen kiválasztott elemhez tartozik. 
-
-## 🅔🅧🅣🅡🅐 UserControl4 : CSV Export 
-
-❶ A `UserControl4`-on jelenítsd meg a `Species` tábla tartalmát.
-
-❷ Gombnyomásra felugró `SaveFileDialog`-on keresztül mentsd a `Type` tábla tartalmát CSV állományba tetszőleges módszerrel!
+> [!IMPORTANT]
+>
+> Hibásan feltöltött feladatot tanszéki állásfoglalás alapján utólag nem javítunk. Ellenőrizd a feltöltést, ha bizonytalan vagy!
