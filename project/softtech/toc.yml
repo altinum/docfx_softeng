@@ -80,6 +80,9 @@
   - name: SQL adatbázis elérése, ORM
     href: 9a_gyak_tavoli_adatbazis_visual_studioban\index.md
 - name: 10. hét
+  items:
+  - name: Többtáblás adatbázisok kezelése, ORM
+    href: 11_gyak_linq_lekerdezesek_-_studies_adatb\index.md
 - name: 11. hét - 3. Géptermi ZH
   items:
   - name: "ZH gyakorlás: SQL & adatkötés"

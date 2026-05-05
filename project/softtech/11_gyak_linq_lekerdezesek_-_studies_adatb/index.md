@@ -1,4 +1,4 @@
-# 11. gyakorlati feladatsor: LINQ lekérdezések a  Studies adatbázis táblaira 
+# 10. gyakorlati feladatsor: LINQ lekérdezések a  Studies adatbázis táblaira 
 
 ## A feladat háttere
 
@@ -96,12 +96,12 @@ Fel kell tölteni adattal a `listBox1`-et az alábbiak szerint:
 ```csharp
 var ilist = from i in context.Instructors
             select i;
-listBox1.DataSource = ilist.ToList();
+instructorBindingSource.DataSource = ilist.ToList();
 ```
 (+/-) Ahhoz, hogy a `listBox1`-ben csak az oktatók neve jelenjen meg, be kell állítani a lista `DisplayMember` tulajdonságát. Ezt a kódban az alábbi utasítás végzi el:
 
 ```csharp
-listBox1.DisplayMember = "Name";
+instructorBindingSource.DisplayMember = "Name";
 ```
 
 > [!WARNING] 
@@ -114,7 +114,7 @@ A cél az, hogy ahogy a felhasználó gépel, úgy szűküljön az oktatók list
 A LINQ lekérdezésekben az SQL nyelvekhez hasonló módon lehet `WHERE` záradékokat írni. Az oktatók lekérdezéséhez használt lekérdezést az alábbi módon átalakítva a `textBox1`-be beírt szöveg alapján szűrve kerülnek az oktatók nevei az adatforrásba. Az alábbi kódrészletet a `textBox1` `TextChanged` eseményéhez létrehozott eseménykiszolgálóban célszerű elhelyezni:
 
 ```csharp
-listBox1.DataSource = (from i in context.Instructors
+instructorBindingSource.DataSource = (from i in context.Instructors
                        where i.Name.Contains(textBox1.Text)
                        select i).ToList();
 ```
@@ -122,7 +122,7 @@ listBox1.DataSource = (from i in context.Instructors
 A `Contains()` helyett használható még a `StartsWith()` metódus is, ha csak név eleji egyezésekre akarunk összpontosítani.
 
 ```csharp
-listBox1.DataSource = (from i in context.Instructors
+instructorBindingSource.DataSource = (from i in context.Instructors
                        where i.Name.StartsWith(textBox1.Text)
                        select i).ToList();
 ```
@@ -157,13 +157,13 @@ private void TextBox1_TextChanged(object sender, EventArgs e)
 (+/-) Rendelj eseménykezelőt a `listBox1` `SelectedIndexChanged` eseményéhez! Az eseménykezelőben kérdezd le egy változóba kiválasztott oktató rekordját:
 
 ```csharp
-Instructor instructor = (Instructor)listBox1.SelectedItem;
+Instructor instructor = (Instructor)instructorBindingSource.Current;
 ```
 
 vagy 
 
 ```c#
- Instructor selectedInstructor = listBox1.SelectedItem as Instructor;
+ Instructor selectedInstructor = instructorBindingSource.Current as Instructor;
 ```
 
 Mivel a `ListBox1` adatforrása `Instructor` típusú elemekből álló gyűjtemény, bisztosak lehetünk benne, hogy a kiválasztott elem is `Instructor` típusú, vagy `null`, ha épp nincs semmi kiválasztva. 
@@ -233,7 +233,7 @@ public partial class UserControl2 : UserControl
     private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
     {
         if (listBox1.SelectedItem == null) return;
-        Course course = listBox1.SelectedItem as Course;
+        Course course = instructorBindingSource.Current as Course;
 
         dataGridView1.DataSource = (from l in context.Lessons
                                     where l.CourseFk == course.CourseSk
