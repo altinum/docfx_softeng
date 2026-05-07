@@ -1,79 +1,78 @@
+# HTTP and REST - Background Material
 
-# HTTP és a REST - háttéranyag
+This document is intended to aid understanding.
 
-Ez a dokumentum a megértést szolgálja.
+## The HTTP Protocol
 
-## A HTTP protokoll
+HTTP is a protocol built on a distributed client-server structure, based on a request-response communication model. It sits at the application layer of the TCP/IP model; the transport protocol used is typically TCP, though UDP is also possible — however, UDP is not usable in browser applications. A defining characteristic of HTTP is statelessness ([idempotency](https://en.wikipedia.org/wiki/Idempotence)), meaning every request is completely independent of all preceding ones. It is often called the protocol of the World Wide Web — the web is built on it. It operates using two main objects: an HTTP request and the response it receives.
 
-A HTTP egy elosztott kliens-szerver struktúrára építő protokoll melynek alapja a kérés-válasz kommunikációs struktúra. A TCP/IP modell alkalmazási rétegén található, a szállításhoz használt protokoll általában a TCP, de lehet UDP is, bár ez böngésző alkalmazások esetén nem használható. A HTTP meghatározó tulajdonsága az állapotnélküliség ([idempotencia](https://hu.wikipedia.org/wiki/Idempotencia#Informatikai_jelent%C3%A9se)), ugyanis minden kérés teljesen független az őt megelőzőktől. Szokás a világháló protokolljának is nevezni -- a web működése erre alapul. Két fő objektum használatával működik, van egy HTTP kérés valamint egy erre érkező válasz. 
+An **HTTP request** is composed of three elements:
 
-Egy **HTTP kérés (HTTP request)** a következő három elemből tevődik össze:
-1) parancs, 
-2) kérés fejléc (request header) és az 
-3) üzenet test (message body) -- opcionális, lehet üres is 
+1. a command,
+2. a request header, and
+3. a message body — optional, may be empty
 
-A **parancs** tartalmazza a kérés típusát, ez lehet `GET`, `POST`, `HEAD`, `OPTIONS`, `PUT`, `DELETE`, `TRACE` valamint `CONNECT`. 
+The **command** contains the type of request, which can be `GET`, `POST`, `HEAD`, `OPTIONS`, `PUT`, `DELETE`, `TRACE`, or `CONNECT`.
 
-|Ige|jelentés|
-|-|-
-|`GET`|A megadott erőforrás letöltését kezdeményezi. Ez messze a leggyakrabban használt metódus.
-|`HEAD`|Ugyanazt adja vissza, mint a GET, csak magát az üzenettestet hagyja ki a válaszból. Segítségével például megtudható, hogy egy erőforrás utolsó letöltése óta változott-e.
-|`POST`|Feldolgozandó adatot küld fel a szerverre. Például  HTML űrlap tartalmát. Az adatot a message body tartalmazza.
-|`PUT`|Feltölti a megadott erőforrást.
-|`DELETE`|Törli a megadott erőforrást.
-|`TRACE`|Visszaküldi a kapott kérést. Ez akkor hasznos, ha a kliens oldal arra kíváncsi, hogy a köztes hálózati eszközök változtatnak-e, illetve mit változtatnak a kérésen. 
-|`OPTIONS`|Visszaadja a szerver által támogatott HTTP metódusok listáját.
-|`CONNECT`| Átalakítja a kérést transzparens TCP/IP tunnellé. Ezt a metódust jellemzően  SSL  kommunikáció megvalósításához használják.
+| Verb      | Meaning                                                      |
+| --------- | ------------------------------------------------------------ |
+| `GET`     | Initiates the download of the specified resource. By far the most commonly used method. |
+| `HEAD`    | Returns the same as GET, but omits the message body from the response. Useful for checking, for example, whether a resource has changed since it was last downloaded. |
+| `POST`    | Sends data to the server for processing — for example, the contents of an HTML form. The data is contained in the message body. |
+| `PUT`     | Uploads the specified resource.                              |
+| `DELETE`  | Deletes the specified resource.                              |
+| `TRACE`   | Returns the received request back to the sender. Useful when the client wants to know whether — and what — intermediate network devices modify the request. |
+| `OPTIONS` | Returns a list of HTTP methods supported by the server.      |
+| `CONNECT` | Converts the request into a transparent TCP/IP tunnel. Typically used to establish SSL communication. |
 
-A **HTTP fejléc (header)** rész a kérés paraméterezhetőségéért felel, itt különböző kulcs érték párok állíthatók be melyekkel pontosítható, hogy mit is vár el a kérést küldő fél. Az Wikipédián van egy jó összefoglaló a [HTTP fejléc kulcsairól](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields) érdekességként. A fejlécben az `user-agent string` kulcsban közli a böngésző a szerverrel a saját azonosítóját. Sajnos történelmi okokból ezt meglehetősen nehéz értelmezi, egy vicces leírást [itt](https://webaim.org/blog/user-agent-string-history/) olvashattok. 
+The **HTTP header** section is responsible for parameterizing the request. Various key-value pairs can be set here to specify exactly what the requesting party expects. Wikipedia has a good overview of [HTTP header fields](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields) as an interesting reference. In the header, the browser communicates its own identifier to the server via the `user-agent string` key. For historical reasons this is notoriously difficult to parse — a humorous account of why can be read [here](https://webaim.org/blog/user-agent-string-history/).
 
-Az **üzenet (request body)** egy opcionális rész mely az elküldendő adatokat tartalmazhatja. 
+The **message body (request body)** is an optional section that may contain the data to be sent.
 
-A **válasz (response)** hasonlóan épül fel: ebben található egy információs blokk, ezt követi a válasz fejléc (header) majd pedig az üzenet rész. Az információs rész a kérés teljesítéséről ad tájékoztatást míg a válasz header és az üzenet rész a kérésnél már leírtakkal megegyező funkciókat töltenek be.
+The **response** is structured similarly: it contains an informational block, followed by the response header, and then the message body. The informational block reports on the outcome of the request, while the response header and message body serve the same functions as their request counterparts described above.
 
-A protokoll fontos részét képezik az információs részében található státuszkódok. Minden válasz pontosan egy darab ilyen kóddal rendelkezik attól függően, hogy milyen eredményt ért el a kérés feldolgozása. Ezek a kódok 5 különböző csoportba rendezhetők: 
+An important part of the protocol is the status codes found in the informational block. Every response carries exactly one such code, depending on the outcome of processing the request. These codes are organized into five groups:
 
-- `1xx` - a szerver fogadta a kérést, információs kódok
-- `2xx` - a szerver sikeresen fogadta, feldolgozta a kérést
-- `3xx` - a szerver fogadta a kérést, de további műveletek szükségesek a végrehajtásához
-- `4xx` - kliens hiba, a kérés valamilyen okból kifolyólag nem megfelelő
-- `5xx` - szerver hiba, a szerver nem volt képes végrehajtani a kérést
+- `1xx` — the server has received the request; informational codes
+- `2xx` — the server successfully received and processed the request
+- `3xx` — the server received the request, but further action is required to fulfill it
+- `4xx` — client error; the request is invalid for some reason
+- `5xx` — server error; the server was unable to fulfill the request
 
-Minden csoportban találhatóak a protokoll által előre definiált kódok, melyeket használni kell, de adott a lehetőség újak meghatározására is. Ilyen gyakran előforduló kód például a 200, mely sikeres kérés teljesítést jelent, 404 amit abban az esetben kap a kliens ha a keresett erőforrás nem található és az 500-as kód, mely belső szerver hibáról ad tájékoztatást.
+Each group contains codes predefined by the protocol that should be used, but there is also the option to define new ones. Commonly encountered codes include `200` (successful request), `404` (the requested resource was not found), and `500` (internal server error).
 
-Aki kíváncsi a teljes listára aranyos, kutyás tálalásban az [itt](https://httpstatusdogs.com) megnézheti.
+Anyone curious about the full list presented in an adorable, dog-themed format can view it [here](https://httpstatusdogs.com/).
 
-## REST és REST API
+## REST and REST API
 
-A **REST (Representational State Transfer)** egy szoftverarchitektúra mely kifejezetten elosztott struktúrájú szoftverek kommunikációjához lett tervezve. A kifejezést Roy Fielding mutatta be a disszertációjában, melyet 2000-ben írt. A szakirodalom általában a HTTP protokollal együtt használja, így az a benyomás alakulhat ki, hogy egy REST architektúrájú szoftver kizárólag csak HTTP segítségével működhet, holott bármilyen más kommunikációs protokoll is használható abban az esetben ha az is alkalmas egy ilyen struktúra kialakításához. 
+**REST (Representational State Transfer)** is a software architecture designed specifically for communication in distributed software systems. The term was introduced by Roy Fielding in his dissertation, written in 2000. In the literature it is almost always used in conjunction with HTTP, which can create the impression that a REST-based application can only function over HTTP — but in fact, any other communication protocol can be used, as long as it is capable of supporting such a structure.
 
-Egy REST alkalmazás működése során kihasználja a HTTP protokollban definiált státuszkódokat melyek segítségével közölhető a válasz üzenetben a kérés teljesítésének az eredménye. A kérések **URI-k (Uniform Resource Identifier)** használatával valósulnak meg és a kérés típusok a HTTP metódusok alapján kerülnek elkülönítésre. Az elfogadott irányelvek szerint egy vagy több erőforrás kérése `GET`, erőforrás létrehozása `POST`, létező erőforrás módosítása `PUT/PATCH`, törlése pedig a `DELETE` metódussal történik. A `PUT` és a `PATCH` kérések közötti különbség, hogy amíg `PUT` hívás esetén az egész módosítandó objektumot át kell adni a kérést feldolgozó szoftver számára, addig `PATCH` esetben elegendő az eredeti objektumból azokat a tulajdonságok új értékét elküldeni melyek módosítása kerülnek. A legtöbb alkalmazásfejlesztési keretrendszer erre a logikára épít, illetve ez az általánosan támogatott megközelítés, így ettől eltérni csak különleges esetekben szokás. 
+A REST application makes use of the status codes defined in the HTTP protocol to communicate the outcome of a request in the response message. Requests are made using **URIs (Uniform Resource Identifiers)**, and request types are distinguished based on HTTP methods. According to accepted conventions: fetching one or more resources uses `GET`, creating a resource uses `POST`, modifying an existing resource uses `PUT` or `PATCH`, and deleting one uses `DELETE`. The difference between `PUT` and `PATCH` is that a `PUT` call requires passing the entire modified object to the server, whereas `PATCH` only requires sending the new values of the properties that are being changed. Most application development frameworks are built around this logic, and it is the broadly accepted approach — deviating from it is unusual except in special cases.
 
-Az URI-k tervezésénél fontos kritérium, hogy könnyen felismerhető legyen, hogy az adott útvonal milyen funkciót lát el. A szakirodalom sokféle megközelítést alkalmaz de, általánosságban a `kiszolgáló/erőforrás(ok)/azonosító` kialakítást szokás követni. 
+When designing URIs, it is important that the function of a given path is easy to recognise. The literature discusses many approaches, but the general convention is to follow a `server/resource(s)/identifier` structure.
 
-Az **API (Application Programming Interface)** megnevezés egy olyan alkalmazás interfészt takar melyen keresztül kívülről kommunikálni lehet a szoftverrel, utasításokat adni neki anélkül, hogy a belső működésről rendelkezne információval az utasítást indító fél. Mindig az interfész működéséhez és elvárásaihoz kell alkalmazkodni és úgy kell kialakítani az ezzel kommunikáló rendszert, hogy az megfeleljen az interfész kommunikációs szabályainak. Nevéből adódóan a REST API egy olyan interfész mely az előzőekben bemutatott REST tervezési mintára épít. Minden URI egy külön **API végpont**ot reprezentál, illetve eltérő feladat végrehajtására lett tervezve. Általában erőforrás csoportok köré lehet őket csoportosítani. Egy teoretikus példa a hajós feladatnál maradva valahogy így nézne ki:
+The term **API (Application Programming Interface)** refers to an application interface through which external parties can communicate with a piece of software and issue instructions without needing to know its internal workings. One must always adapt to the interface's specifications and design any communicating system to comply with its communication rules. As its name suggests, a REST API is an interface built on the REST design pattern described above. Each URI represents a separate **API endpoint**, designed to perform a distinct task. They can generally be grouped around sets of resources. A theoretical example — using a quiz-app scenario — might look like this:
 
-|||
-|-|-|
-|`GET https://testurl.hu/kerdesek` | az összes kérdés objektum listázása `GET` metódussal
-|`GET https://testurl.hu/kerdesek/22` | megadott azonosítóval rendelkező kérdés objektum lekérése `GET` metódussal
-| `POST https://testurl.hu/kerdesek` | új kérdés objektum létrehozása `POST` metódussal
-| `PATCH https://testurl.hu/kerdesek/22` | megadott azonosítóval rendelkező kérdés objektum módosítása `PATCH` metódussal. (Pl. helyes válasz megváltoztatása.)
-| `DELETE https://testurl.hu/kerdesek/22` | megadott azonosítóval rendelkező kérdés objektum törlése `DELETE` metódussal
+|                                           |                                                              |
+| ----------------------------------------- | ------------------------------------------------------------ |
+| `GET https://testurl.com/questions`       | list all question objects using the `GET` method             |
+| `GET https://testurl.com/questions/22`    | retrieve the question object with the given ID using the `GET` method |
+| `POST https://testurl.com/questions`      | create a new question object using the `POST` method         |
+| `PATCH https://testurl.com/questions/22`  | modify the question object with the given ID using the `PATCH` method (e.g. changing the correct answer) |
+| `DELETE https://testurl.com/questions/22` | delete the question object with the given ID using the `DELETE` method |
 
-Ebben a példában az kérdések erőforrás köré lettek tervezve a végpontok amik eleget tesznek a **CRUD (Create, Read, Update, Delete)** műveleti elvárásoknak, hiszen mind a négy alapművelet végrehajtható a segítségükkel. A HTTP üzenetekben továbbított és fogadott adatok (jelen példában az kérdés objektumok) az üzenet törzs (body) részében találhatóak, és REST API esetén jellemzően egy elterjedt, illetve jól értelmezhető szabvány formátumban szokás leírni azokat. Ilyen szabvány lehet például az XML vagy a JSON. A JSON formátummal már találkoztatok.
+In this example, the endpoints are designed around the questions resource and satisfy the **CRUD (Create, Read, Update, Delete)** operational requirements, since all four basic operations can be performed through them. The data transmitted and received in HTTP messages (in this example, question objects) are contained in the message body, and in the case of a REST API they are typically serialized in a widely used, human-readable standard format. Examples of such formats include XML and JSON — you have already encountered JSON.
 
-Aki szeretne egy gyors példát látni a `GET`-re és paraméterekre vicceket olvasva, [ezen](https://jokeapi.dev) az oldalon legörgetve megteheti.
+Anyone who wants to see a quick live example of `GET` requests and parameters while reading jokes can do so [on this page](https://jokeapi.dev/) by scrolling down.
 
-## HTTP forgalom követése
+## Monitoring HTTP Traffic
 
-Érdemes telepíteni a [RestMan](https://chrome.google.com/webstore/detail/restman/ihgpcfpkpmdcghlnaofdmjkoemnlijdi) bővítményt Chrome alá, mert segítségével könnyű vadászni a hibákat! 
+It is worth installing the [RestMan](https://chrome.google.com/webstore/detail/restman/ihgpcfpkpmdcghlnaofdmjkoemnlijdi) extension for Chrome — it makes hunting down bugs much easier!
 
-[HTTP kérés vizsgálata Chrome Dev Tools alatt](Http1.m4v)
+[Inspecting an HTTP request in Chrome Dev Tools](https://claude.ai/chat/Http1.m4v)
 
-Az alábbi screenshot az uni-corvinus.hu szerver `GET` kérésre adott válaszát mutatja RestMan-nal nézve. Az információs rész (STATUS 200, stb) alatt ellenőrizhető a válasz header-je és a body is:
+The screenshot below shows the response from the uni-corvinus.hu server to a `GET` request, viewed in RestMan. Below the informational section (STATUS 200, etc.) you can inspect both the response header and the body:
 
-![1618339014570.png](1618339014570.png)
+![1618339014570.png](https://claude.ai/chat/1618339014570.png)
 
-Aki szeretne jobban elmélyedni az REST API-ok világában, annak érdemes lehet letölteni a [PostMan](https://www.postman.com)-t.
-
+Anyone who wants to explore the world of REST APIs more deeply may find it worth downloading [Postman](https://www.postman.com/).

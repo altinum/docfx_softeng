@@ -10,7 +10,7 @@ For the final project, each student assembles their own task using solutions and
 >
 > The C# project must be built during the **2x90-minute** sessions of the labs.
 
-You can use your own database or databases from the course. You can collect up to **30 points in total**, but only working solutions earn points — no partial credit is given. A custom database earns 5 points, but if we find identical databases submitted, neither will receive points.
+You can use your own database or databases from the course. You can collect up to **30 points in total**, but only working solutions earn points — no partial credit is given. A custom database earns 7 points, but if we find identical databases submitted, neither will receive points.
 
 > [!NOTE]
 >
@@ -32,7 +32,7 @@ You will have 6 minutes to earn a point on average - 6x30=2x90. If you design yo
 
 The database has to be built and hosted in advance preferably in Azure. If Azure for  Students credits have expired, contact instructor at the lab for a DB account on bit.uni-corvinus.hu.  The DB has to have at least one many-to-many relation - in other words two constraints. 
 
-- `6x1p` One point per table used in the app.
+- `6x1p` One point per table used in the app. 
 - `1x1p` Mermaid `erDiagram` of the DB. Can be uploaded to Moodle separately. 
 
 Fill the DB with some sample records to prove the functionality.
@@ -151,9 +151,15 @@ Only parts tied to built API endpoints can be scored. JavaScript must load data 
 
 ## Scoring Procedure
 
-**After the submission**, each student must create Markdown file as well within until the last lab. More on markdown later. It must include screenshots demonstrating the implemented features. Copy this Price List, delete irrelevant items, and insert screenshots under each relevant section. At the last labs we discuss the solutions one-to-one. 
+**After the submission**, each student must create Markdown file at home as well. The deadnie is the fist day of the exam periad. More on markdown later. It must include screenshots demonstrating the implemented features. Copy this Price List, delete irrelevant items, and insert screenshots under each relevant section. 
+
+We will discuss the solutions one-to-one. 
 
 We recommend [https://www.screentogif.com/](https://www.screentogif.com/) for creating animated GIFs of your solutions.
 
 If you list a feature that’s missing or broken and fail to describe the issue, **you lose three times the points** for that item.
+
+
+
+
 

@@ -38,6 +38,10 @@
 
 ## Bulding blocks
 
+### Misc
+
+[GIT Essentials](../building_blocks/git_essentials/index.md) - Essential knowledge on GIT
+
 ### Working with Excel
 
 [Excel DNA](../building_blocks/excel_automation/Excel_DNA.md) - The prefered way to create an Excel plugin in C# with custom functions, ribbon bars and more. 
@@ -51,3 +55,20 @@
 ### Creating diagrams
 
 https://scottplot.net/ - Check out this, as it was inspired by matplotlib. 
+
+### ASP .NET & Web developmnet
+
+Individually processable and learnable material that is very valuable for the project exam.
+
+[The HTTP protocol and the REST API](../10_elm_http_REST/index.md) - Some basics on the "protocol of the Web"
+
+[ASP .NET intro](../9a_gyak_asp_net_intro/asp_net_azure.md) - Create your first ASP .NET Web Application and deploy it to Azure
+
+[Browsers for Developers](../9_elm_browsers_for_devs/index.md) - Supplementary material
+
+
+
+
+
+
+
