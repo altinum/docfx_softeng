@@ -1,5 +1,11 @@
 # Syllabus
 
+## News
+
+> [!TIP]
+>
+> Guide for Azure DBs added to the bottom of this page. (8th May)
+
 ## Weekly breakdown
 
 > [!IMPORTANT]
@@ -40,7 +46,15 @@
 
 ### Misc
 
+[Azure for Students](../building_blocks/azure/register_renew_azure.md) - Register and renew your Azure for Students subscription
+
+[Azure SQL database](../building_blocks/azure/create_azure_db.md) - Create and configure a SQL database in azure
+
 [GIT Essentials](../building_blocks/git_essentials/index.md) - Essential knowledge on GIT
+
+>  [!IMPORTANT]
+>
+> It's extremely important to configure the firewall to make your database accessible from the lab computers during the project exam. See doc above.
 
 ### Working with Excel
 
