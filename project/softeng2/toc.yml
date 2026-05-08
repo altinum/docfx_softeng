@@ -68,15 +68,15 @@
   items:
     - name: "🛠 Code Samples - Chinook DB"
       href: ./ds_week9_lab/index.md   
-    - name: "💡 Midterm exam checklist"
-      href: ./ds_zh2_checklist/index.md
+    - name: "🛠 Chinook DB - videos 1."
+      href: ./chinook_ui/part1.md   
     - name: "💡 DB link"
       href: ./ds_week9_midterm/index.md
 - name: Week 10
   items:
     - name: "🛠 Code Samples - Value at Risk"
       href: ./ds_week_10/var.md   
-- name: Week 11 Project midterm
+- name: Week 11 - Project midterm
   items:
     - name: "💡 WEB API #1"
       href: ./9a_gyak_asp_net_intro/asp_net_azure.md
@@ -84,11 +84,10 @@
       href: ./9b_gyak_crude_viccek/index.md
     - name: "💡 Project Description & Price List"
       href: ./ds_week11_cherry_picking/pricelist.md
-- name: Week 12 Project presentations
+- name: Week 12 - 2nd lab midterm 
   items:
-    - name: "💡 Timetable"
-      href: ./ds_week12_presentations/
-
+    - name: "💡 Midterm exam checklist"
+      href: ./ds_zh2_checklist/index.md   
 #- name: 3. hét
 #  items:
 #    - name: 📝 TreeView feltöltése

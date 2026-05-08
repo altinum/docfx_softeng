@@ -3,8 +3,8 @@
 A `Microsoft.EntityFrameworkCore.Tools` és a `Microsoft.EntityFrameworkCore.SqlServer` a NuGet konzolán keresztül ezzel a két paranccsal is hozzáadható a projekthez:
 
 ```powershell
-Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 7.0.20
-Install-Package Microsoft.EntityFrameworkCore.Tools -Version 7.0.20
+Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 8.0.26
+Install-Package Microsoft.EntityFrameworkCore.Tools -Version 8.0.26
 ```
 
 
@@ -57,36 +57,36 @@ Scaffold-DbContext "Data Source=bit.uni-corvinus.hu;Initial Catalog=se_bikestore
 
 (!Vid) 1. videó
 
-> [!Video https://storage.altinum.hu/bike/bike_1.m4v]
+> [!Video https://storage.altinum.hu/se_bike/bike_1.m4v]
 
 (!Vid) 2. videó
 
-> [!Video https://storage.altinum.hu/bike/bike_2.m4v]
+> [!Video https://storage.altinum.hu/se_bike/bike_2.m4v]
 
 (!Vid) 3. videó
 
-> [!Video https://storage.altinum.hu/bike/bike_3.m4v]
+> [!Video https://storage.altinum.hu/se_bike/bike_3.m4v]
 
 (!Vid) 4. videó
 
-> [!Video https://storage.altinum.hu/bike/bike_4.m4v]
+> [!Video https://storage.altinum.hu/se_bike/bike_4.m4v]
 
 (!Vid) 5. videó
 
-> [!Video https://storage.altinum.hu/bike/bike_5.m4v]
+> [!Video https://storage.altinum.hu/se_bike/bike_5.m4v]
 
 (!Vid) 6. videó
 
-> [!Video https://storage.altinum.hu/bike/bike_6.m4v]
+> [!Video https://storage.altinum.hu/se_bike/bike_6.m4v]
 
 (!Vid) 7. videó
 
-> [!Video https://storage.altinum.hu/bike/bike_7.m4v]
+> [!Video https://storage.altinum.hu/se_bike/bike_7.m4v]
 
 (!Vid) 7. videó
 
-> [!Video https://storage.altinum.hu/bike/bike_8.m4v]
+> [!Video https://storage.altinum.hu/se_bike/bike_8.m4v]
 
 (!Vid) 7. videó
 
-> [!Video https://storage.altinum.hu/bike/bike_9.m4v]
+> [!Video https://storage.altinum.hu/se_bike/bike_9.m4v]

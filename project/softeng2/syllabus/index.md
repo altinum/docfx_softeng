@@ -52,8 +52,7 @@
 
 [GIT Essentials](../building_blocks/git_essentials/index.md) - Essential knowledge on GIT
 
->  [!IMPORTANT]
->
+> [!IMPORTANT]
 > It's extremely important to configure the firewall to make your database accessible from the lab computers during the project exam. See doc above.
 
 ### Working with Excel

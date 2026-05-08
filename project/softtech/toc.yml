@@ -87,8 +87,6 @@
   items:
   - name: "ZH gyakorlás: SQL & adatkötés"
     href: bikestore_mintazh\index.md
-  - name: "ZH gyakorlás: bikestore adatbázis"
-    href: zh3_gyakorlas\index.md
 #- name: "11. hét - WEB"
 #  items: 
 #  - name: "🎓 Kriptográfia"
