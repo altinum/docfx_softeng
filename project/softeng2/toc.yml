@@ -70,6 +70,8 @@
       href: ./ds_week9_lab/index.md   
     - name: "🛠 Chinook DB - videos 1."
       href: ./chinook_ui/part1.md   
+    - name: "🛠 Chinook DB - videos 2."
+      href: ./chinook_ui/part2.md   
     - name: "💡 DB link"
       href: ./ds_week9_midterm/index.md
 - name: Week 10

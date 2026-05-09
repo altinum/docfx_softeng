@@ -29,23 +29,35 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            buttonAlbums = new Button();
             panelRight = new Panel();
             menuStrip1 = new MenuStrip();
             fileToolStripMenuItem = new ToolStripMenuItem();
             quitToolStripMenuItem = new ToolStripMenuItem();
-            buttonAlbums = new Button();
+            buttonCustomers = new Button();
             panel1.SuspendLayout();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.Controls.Add(buttonCustomers);
             panel1.Controls.Add(buttonAlbums);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 38);
             panel1.Name = "panel1";
             panel1.Size = new Size(227, 646);
             panel1.TabIndex = 0;
+            // 
+            // buttonAlbums
+            // 
+            buttonAlbums.Location = new Point(12, 13);
+            buttonAlbums.Name = "buttonAlbums";
+            buttonAlbums.Size = new Size(198, 40);
+            buttonAlbums.TabIndex = 0;
+            buttonAlbums.Text = "Albums";
+            buttonAlbums.UseVisualStyleBackColor = true;
+            buttonAlbums.Click += buttonAlbums_Click;
             // 
             // panelRight
             // 
@@ -75,18 +87,18 @@
             // quitToolStripMenuItem
             // 
             quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            quitToolStripMenuItem.Size = new Size(315, 40);
+            quitToolStripMenuItem.Size = new Size(171, 40);
             quitToolStripMenuItem.Text = "&Quit";
             // 
-            // buttonAlbums
+            // buttonCustomers
             // 
-            buttonAlbums.Location = new Point(12, 13);
-            buttonAlbums.Name = "buttonAlbums";
-            buttonAlbums.Size = new Size(198, 40);
-            buttonAlbums.TabIndex = 0;
-            buttonAlbums.Text = "Albums";
-            buttonAlbums.UseVisualStyleBackColor = true;
-            buttonAlbums.Click += buttonAlbums_Click;
+            buttonCustomers.Location = new Point(12, 59);
+            buttonCustomers.Name = "buttonCustomers";
+            buttonCustomers.Size = new Size(198, 40);
+            buttonCustomers.TabIndex = 1;
+            buttonCustomers.Text = "Customers";
+            buttonCustomers.UseVisualStyleBackColor = true;
+            buttonCustomers.Click += buttonCustomers_Click;
             // 
             // Form1
             // 
@@ -114,5 +126,6 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem fileToolStripMenuItem;
         private ToolStripMenuItem quitToolStripMenuItem;
+        private Button buttonCustomers;
     }
 }

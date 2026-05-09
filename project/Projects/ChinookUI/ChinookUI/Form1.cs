@@ -16,5 +16,13 @@ namespace ChinookUI
 
 
         }
+
+        private void buttonCustomers_Click(object sender, EventArgs e)
+        {
+            UserControlCustomers ccc = new UserControlCustomers();
+            panelRight.Controls.Clear();
+            panelRight.Controls.Add(ccc);
+            ccc.Dock = DockStyle.Fill;
+        }
     }
 }

@@ -4,7 +4,11 @@
 
 > [!TIP]
 >
-> Guide for Azure DBs added to the bottom of this page. (8th May)
+> Chinook videos part 2 uploaded to week 9 (May 9th)
+>
+> Project exam description updated, blank self eval sheet added. (May 9th)
+>
+> Guide for Azure DBs added to the bottom of this page. (May 8th)
 
 ## Weekly breakdown
 
