@@ -84,6 +84,9 @@
       href: ./9b_gyak_crude_viccek/index.md
     - name: "💡 Project Description & Price List"
       href: ./ds_week11_cherry_picking/pricelist.md
+    - name: "📝 Blank self eval sheet"
+      href: ./ds_week11_cherry_picking/blank_self_eval.md
+      
 - name: Week 12 - 2nd lab midterm 
   items:
     - name: "💡 Midterm exam checklist"

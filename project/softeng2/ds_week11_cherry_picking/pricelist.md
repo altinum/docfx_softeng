@@ -1,6 +1,4 @@
-# Final Project
-
-## Cherry Picking
+# Final Project - Cherry Picking Exam
 
 For the final project, each student assembles their own task using solutions and building blocks learned during the course. The **project must be prepared at home**, and the point value of each feature is predetermined according to the **"Pricing Table"** below. The task involves building an ASP.NET and Windows Forms application that provides a solution (or partial solution) to a real or fictional problem. You may bring the `Scaffold-DbContext` command or, if you're using a local Service-Based Database, the SQL script that creates the database. 
 
@@ -8,13 +6,29 @@ For the final project, each student assembles their own task using solutions and
 
 > [!IMPORTANT]
 >
-> The C# project must be built during the **2x90-minute** sessions of the labs.
+> The C# project must be built during the **2x90-minute** sessions of the labs. **We will not have a break between the timeslots.**
 
 You can use your own database or databases from the course. You can collect up to **30 points in total**, but only working solutions earn points — no partial credit is given. A custom database earns 7 points, but if we find identical databases submitted, neither will receive points.
 
 > [!NOTE]
 >
 > We recommend to start with planning! Draw your concept on a sheet and calculate the point values using the [Pricing Table](#pricing-table). Preparing the project is an individual task — we don’t want to see identical solutions. Be creative 🙂!
+
+## Milesotones of the final project
+
+❶ Find out the topic of the project. You don't have to overcomplicate it 🙂.
+
+❷ Design the database schema and set up the database in Azure. You will find information on [renewing your Azure subscription](https://b37ab76e7f975484ddcb88481f0ee515.claudemcpcontent.com/building_blocks/azure/register_renew_azure.md) and [setting up a database](https://b37ab76e7f975484ddcb88481f0ee515.claudemcpcontent.com/building_blocks/azure/create_azure_db.md) on this page. Fill the database with some sample data. You can use AI to fill the database. Only sample records are needed to prove that your concept works.
+
+❸ Build your C# project at home. Then check whether your project meets the required complexity using the [Pricing Table](https://b37ab76e7f975484ddcb88481f0ee515.claudemcpcontent.com/mcp_apps?connect-src=https%3A%2F%2Fesm.sh+https%3A%2F%2Fcdnjs.cloudflare.com+https%3A%2F%2Fcdn.jsdelivr.net+https%3A%2F%2Funpkg.com&resource-src=https%3A%2F%2Fesm.sh+https%3A%2F%2Fcdnjs.cloudflare.com+https%3A%2F%2Fcdn.jsdelivr.net+https%3A%2F%2Funpkg.com+https%3A%2F%2Fassets.claude.ai&dev=true#pricing-table). You can take handwritten notes on the steps and make sketches of the user interface.
+
+❹ Check whether your database is accessible from the lab computers. Connect to the Corvinus VPN and try to run your project.
+
+❺ Upload your Scaffold DB context command to [Moodle](https://moodle.uni-corvinus.hu/mod/quiz/view.php?id=1650961) so you don't have to struggle with building it during the exam.
+
+❻ In the eleventh week you will have to build your project using the lab computers. You may bring your notes and sketches, and you can print the database schema, but your notes must not include any code. Your work will have to be submitted to Moodle.
+
+❼ The self-evaluation markdown document has to be prepared at home after the exam. You can download your work from Moodle. A sample **self eval. sheet** is included [here](blank_self_eval.md). I suggest you remove the irrelevant lines and adjust the multipliers for the relevant lines. You can present the database schema in Mermaid format in this document. Please don't forget to sum up your points.
 
 ## Background
 
@@ -33,7 +47,7 @@ You will have 6 minutes to earn a point on average - 6x30=2x90. If you design yo
 The database has to be built and hosted in advance preferably in Azure. If Azure for  Students credits have expired, contact instructor at the lab for a DB account on bit.uni-corvinus.hu.  The DB has to have at least one many-to-many relation - in other words two constraints. 
 
 - `6x1p` One point per table used in the app. 
-- `1x1p` Mermaid `erDiagram` of the DB. Can be uploaded to Moodle separately. 
+- `1x1p` Mermaid `erDiagram` of the DB. Can be included in the self eval. sheet later. 
 
 Fill the DB with some sample records to prove the functionality.
 
