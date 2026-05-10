@@ -18,7 +18,7 @@ You can use your own database or databases from the course. You can collect up t
 
 ❶ Find out the topic of the project. You don't have to overcomplicate it 🙂.
 
-❷ Design the database schema and set up the database in Azure. You will find information on [renewing your Azure subscription](https://b37ab76e7f975484ddcb88481f0ee515.claudemcpcontent.com/building_blocks/azure/register_renew_azure.md) and [setting up a database](https://b37ab76e7f975484ddcb88481f0ee515.claudemcpcontent.com/building_blocks/azure/create_azure_db.md) on this page. Fill the database with some sample data. You can use AI to fill the database. Only sample records are needed to prove that your concept works.
+❷ Design the database schema and set up the database in Azure. You will find information on [renewing your Azure subscription](../building_blocks/azure/register_renew_azure.md) and [setting up a database](../building_blocks/azure/create_azure_db.md) on this page. Fill the database with some sample data. You can use AI to fill the database. Only sample records are needed to prove that your concept works.
 
 ❸ Build your C# project at home. Then check whether your project meets the required complexity using the [Pricing Table](https://b37ab76e7f975484ddcb88481f0ee515.claudemcpcontent.com/mcp_apps?connect-src=https%3A%2F%2Fesm.sh+https%3A%2F%2Fcdnjs.cloudflare.com+https%3A%2F%2Fcdn.jsdelivr.net+https%3A%2F%2Funpkg.com&resource-src=https%3A%2F%2Fesm.sh+https%3A%2F%2Fcdnjs.cloudflare.com+https%3A%2F%2Fcdn.jsdelivr.net+https%3A%2F%2Funpkg.com+https%3A%2F%2Fassets.claude.ai&dev=true#pricing-table). You can take handwritten notes on the steps and make sketches of the user interface.
 
