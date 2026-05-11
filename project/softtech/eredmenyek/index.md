@@ -1,101 +1,105 @@
 # Eredmények
 
-| Neptun | ZH1  | ZH2  |
-| ------ | ---- | ---- |
-| A2WX42 | 26   | 29   |
-| AASPJY | 28   | 30   |
-| AD4DNR | 0    | 28   |
-| ADK907 | 30   | 29   |
-| AFESQW | 30   | 18   |
-| AHIB49 | 30   | 30   |
-| ANXBWQ | 29   | 0    |
-| APMADC | 30   | 20   |
-| AV4WBT | 30   | 30   |
-| AXAD1B | 30   | 30   |
-| B0GR3H | 30   | 26   |
-| BMOWG0 | 28   | 30   |
-| BV9E0X | 0    | 28   |
-| BWN2IZ | 26   | 30   |
-| BYXIA9 | 0    | 30   |
-| C5UJSL | 30   | 30   |
-| CAD2GN | 30   | 30   |
-| CDDT81 | 30   | 30   |
-| CGJJPN | 30   | 21   |
-| CHFZGD | 23   | 20   |
-| CIME6P | 0    | 30   |
-| CTCGJY | 30   | 26   |
-| CTHRXS | 30   | 27   |
-| D1BET6 | 11   | 30   |
-| D3M4BC | 30   | 20   |
-| DCBKHB | 28   | 24   |
-| DMZ1G1 | 30   | 17   |
-| DSVTY6 | 30   | 28   |
-| E02AAX | 0    | 23   |
-| E4XDHO | 30   | 19   |
-| EOCBAV | 28   | 24   |
-| EXJZZD | 30   | 30   |
-| EXNGOK | 30   | 0    |
-| F1CLE1 | 30   | 28   |
-| F84Y19 | 30   | 30   |
-| FII4HQ | 30   | 22   |
-| FJJJJT | 30   | 22   |
-| FS59SV | 30   | 25   |
-| FSQXFX | 30   | 29   |
-| FXHJ1E | 30   | 17   |
-| G0T857 | 30   | 28   |
-| G2PNLR | 7    | 30   |
-| G5UGGC | 30   | 0    |
-| GFESA9 | 0    | 27   |
-| GFRYGO | 30   | 30   |
-| GPYOKM | 29   | 30   |
-| GTVMK5 | 30   | 25   |
-| H9QROU | 24   | 30   |
-| HDS6EP | 30   | 20   |
-| HGW16P | 23   | 28   |
-| HUBM02 | 30   | 16.5 |
-| I5DV78 | 30   | 29   |
-| IMW2Z2 | 13   | 27   |
-| IS9ORB | 0    | 30   |
-| IUS0PL | 30   | 30   |
-| J84IEZ | 24   | 16   |
-| JKBHQV | 30   | 27   |
-| JM4ERP | 30   | 25   |
-| JNQQL0 | 30   | 30   |
-| K4T8NZ | 30   | 30   |
-| KR81D3 | 3    | 30   |
-| L51FA5 | 30   | 21   |
-| LP64XK | 30   | 29   |
-| M0CGJM | 26   | 30   |
-| M4D0VY | 29   | 0    |
-| M7WXJ6 | 30   |      |
-| MFUFV4 | 28   | 30   |
-| MJEPX5 | 22   | 0    |
-| MMM0NJ | 30   | 30   |
-| MUEXNL | 30   | 30   |
-| MVK7AY | 12   | 0    |
-| NMZ1DJ | 30   | 30   |
-| NQ5PT2 | 30   | 30   |
-| OBLY0B | 24   | 30   |
-| OQE7DV | 28   | 0    |
-| OUUQCI | 30   | 30   |
-| OYR6UB | 30   | 0    |
-| PEQFYG | 0    | 0    |
-| PIKKJ2 | 24   | 30   |
-| R1E4BW | 30   | 30   |
-| RFGXRQ | 30   | 30   |
-| RGZ33P | 30   | 14   |
-| S5PP98 | 30   | 30   |
-| SBTWR3 | 30   | 24.5 |
-| TG1HES | 30   | 22   |
-| VSAZH6 | 20   | 30   |
-| VTZBU1 | 30   | 30   |
-| VXGITJ | 0    | 30   |
-| XDSD4B | 30   | 18   |
-| XUWARV | 30   | 0    |
-| XVGMGD | 24   | 29   |
-| Y5S27Q | 28   | 30   |
-| YNPCU4 | 13   | 28   |
-| Z1FW2A | 30   | 30   |
-| Z4K7QE | 30   | 16   |
-| ZCBITN | 11   | 29   |
-| ZXYUK9 | 22   | 22   |
+> [!WARNING]
+>
+> Eredmények hibásan jelenhettek meg, javítás alatt.
+
+| Neptun | ZH1  |
+| ------ | ---- |
+| A2WX42 | 26   |
+| AASPJY | 28   |
+| AD4DNR | 0    |
+| ADK907 | 30   |
+| AFESQW | 30   |
+| AHIB49 | 30   |
+| ANXBWQ | 29   |
+| APMADC | 30   |
+| AV4WBT | 30   |
+| AXAD1B | 30   |
+| B0GR3H | 30   |
+| BMOWG0 | 28   |
+| BV9E0X | 0    |
+| BWN2IZ | 26   |
+| BYXIA9 | 0    |
+| C5UJSL | 30   |
+| CAD2GN | 30   |
+| CDDT81 | 30   |
+| CGJJPN | 30   |
+| CHFZGD | 23   |
+| CIME6P | 0    |
+| CTCGJY | 30   |
+| CTHRXS | 30   |
+| D1BET6 | 11   |
+| D3M4BC | 30   |
+| DCBKHB | 28   |
+| DMZ1G1 | 30   |
+| DSVTY6 | 30   |
+| E02AAX | 0    |
+| E4XDHO | 30   |
+| EOCBAV | 28   |
+| EXJZZD | 30   |
+| EXNGOK | 30   |
+| F1CLE1 | 30   |
+| F84Y19 | 30   |
+| FII4HQ | 30   |
+| FJJJJT | 30   |
+| FS59SV | 30   |
+| FSQXFX | 30   |
+| FXHJ1E | 30   |
+| G0T857 | 30   |
+| G2PNLR | 7    |
+| G5UGGC | 30   |
+| GFESA9 | 0    |
+| GFRYGO | 30   |
+| GPYOKM | 29   |
+| GTVMK5 | 30   |
+| H9QROU | 24   |
+| HDS6EP | 30   |
+| HGW16P | 23   |
+| HUBM02 | 30   |
+| I5DV78 | 30   |
+| IMW2Z2 | 13   |
+| IS9ORB | 0    |
+| IUS0PL | 30   |
+| J84IEZ | 24   |
+| JKBHQV | 30   |
+| JM4ERP | 30   |
+| JNQQL0 | 30   |
+| K4T8NZ | 30   |
+| KR81D3 | 3    |
+| L51FA5 | 30   |
+| LP64XK | 30   |
+| M0CGJM | 26   |
+| M4D0VY | 29   |
+| M7WXJ6 | 30   |
+| MFUFV4 | 28   |
+| MJEPX5 | 22   |
+| MMM0NJ | 30   |
+| MUEXNL | 30   |
+| MVK7AY | 12   |
+| NMZ1DJ | 30   |
+| NQ5PT2 | 30   |
+| OBLY0B | 24   |
+| OQE7DV | 28   |
+| OUUQCI | 30   |
+| OYR6UB | 30   |
+| PEQFYG | 0    |
+| PIKKJ2 | 24   |
+| R1E4BW | 30   |
+| RFGXRQ | 30   |
+| RGZ33P | 30   |
+| S5PP98 | 30   |
+| SBTWR3 | 30   |
+| TG1HES | 30   |
+| VSAZH6 | 20   |
+| VTZBU1 | 30   |
+| VXGITJ | 0    |
+| XDSD4B | 30   |
+| XUWARV | 30   |
+| XVGMGD | 24   |
+| Y5S27Q | 28   |
+| YNPCU4 | 13   |
+| Z1FW2A | 30   |
+| Z4K7QE | 30   |
+| ZCBITN | 11   |
+| ZXYUK9 | 22   |
