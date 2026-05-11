@@ -30,7 +30,7 @@
 | 2026-04-20            | 8. week                   | **Lab:** Calculating Value at Risk using EF                  |
 | 2026-04-27            | 9. week                   | **Lecture:** Develop a plugin with custom functions for Excel<br /><br />**Labs:** UI for the Chinook DB I. - displaying data |
 | 2026-05-04            | 10. week                  | **Lab:** UI for the Chinook DB II. - manipulating data       |
-| 2026-05-11            | 11. week                  | **Lecture:** <br />**Labs:** <span style="color:red">Project exam </span> (30 points - 180 min) |
+| 2026-05-11            | 11. week                  | **Lecture:** Make a DB accessible via AI using ASP .NET and OpenClaw<br />**Labs:** <span style="color:red">Project exam </span> (30 points - 180 min) |
 | 2026-05-18            | 12. week                  | **Lab:** <span style="color:red">Midterm #2 </span>(35 points - 80 min) |
 | 2026-05-25            | First week of exam period | Make-up opportunity for a written exam on friday             |
 

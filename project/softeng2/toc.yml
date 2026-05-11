@@ -92,7 +92,14 @@
 - name: Week 12 - 2nd lab midterm 
   items:
     - name: "💡 Midterm exam checklist"
-      href: ./ds_zh2_checklist/index.md   
+      href: ./ds_zh2_checklist/index.md  
+- name: OpenClaw - lecture notes
+  items:  
+    - name: "💡 Made Northwind accessible via AI"
+      href: ./openclaw/openclaw.md
+    - name: "💡 SQLite schema"
+      href: ./openclaw/openclaw_database.md
+
 #- name: 3. hét
 #  items:
 #    - name: 📝 TreeView feltöltése
