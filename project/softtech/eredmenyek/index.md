@@ -2,7 +2,112 @@
 
 > [!WARNING]
 >
-> Eredmények hibásan jelenhettek meg, javítás alatt.
+> Eredmények hibásan jelenhettek meg, alant a helyes verzió.
+
+## Zh2
+
+| A2WX42 | 25                                                           |
+| ------ | ------------------------------------------------------------ |
+| AASPJY | 29                                                           |
+| AD4DNR | 25                                                           |
+| ADK907 | 30                                                           |
+| AFESQW | 0                                                            |
+| AHIB49 | 30                                                           |
+| ANXBWQ | 30                                                           |
+| APMADC | 28                                                           |
+| AV4WBT | 30                                                           |
+| AXAD1B | 30                                                           |
+| B0GR3H | 28                                                           |
+| BMOWG0 | 23                                                           |
+| BV9E0X | 0                                                            |
+| BWN2IZ | 29                                                           |
+| BYXIA9 | 30                                                           |
+| C5UJSL | 30                                                           |
+| CAD2GN | 30                                                           |
+| CDDT81 | 27                                                           |
+| CGJJPN | 30                                                           |
+| CHFZGD | 18                                                           |
+| CIME6P | 28                                                           |
+| CTCGJY | 19                                                           |
+| CTHRXS | 30                                                           |
+| D1BET6 | 17                                                           |
+| D3M4BC | 30                                                           |
+| DCBKHB | 28                                                           |
+| DMZ1G1 | 20                                                           |
+| DSVTY6 | 25                                                           |
+| E02AAX | 20                                                           |
+| E4XDHO | 30                                                           |
+| EOCBAV | 29                                                           |
+| EXJZZD | 22                                                           |
+| EXNGOK | 21                                                           |
+| F1CLE1 | 29                                                           |
+| F84Y19 | 28                                                           |
+| FII4HQ | 30                                                           |
+| FJJJJT | 30                                                           |
+| FS59SV | 29                                                           |
+| FSQXFX | 30                                                           |
+| FXHJ1E | 30                                                           |
+| G0T857 | 30                                                           |
+| G2PNLR | 16                                                           |
+| G5UGGC | 28                                                           |
+| GFESA9 | 0                                                            |
+| GFRYGO | 30                                                           |
+| GPYOKM | 24.5                                                         |
+| GTVMK5 | 30                                                           |
+| H9QROU | 24                                                           |
+| HDS6EP | 30                                                           |
+| HGW16P | 14                                                           |
+| HUBM02 | 0                                                            |
+| I5DV78 | 29                                                           |
+| IMW2Z2 | 24                                                           |
+| IS9ORB | 30                                                           |
+| IUS0PL | 22                                                           |
+| J84IEZ | 29                                                           |
+| JKBHQV | 22                                                           |
+| JM4ERP | 30                                                           |
+| JNQQL0 | 20                                                           |
+| K4T8NZ | 0                                                            |
+| KR81D3 | 0                                                            |
+| L51FA5 | 30                                                           |
+| LP64XK | 30                                                           |
+| M0CGJM | 28                                                           |
+| M4D0VY | 30                                                           |
+| M7WXJ6 | 30                                                           |
+| MFUFV4 | 16.5                                                         |
+| MJEPX5 | 18                                                           |
+| MMM0NJ | 30                                                           |
+| MUEXNL | 30                                                           |
+| MVK7AY | StreamReader sr = new  StreamReader("hajozasi_szabalyzat_coma.txt"); |
+| NMZ1DJ | 27                                                           |
+| NQ5PT2 | 30                                                           |
+| OBLY0B | 30                                                           |
+| OQE7DV | 16                                                           |
+| OUUQCI | 30                                                           |
+| OYR6UB | 30                                                           |
+| PEQFYG | 0                                                            |
+| PIKKJ2 | 17                                                           |
+| R1E4BW | 30                                                           |
+| RFGXRQ | 27                                                           |
+| RGZ33P | 26                                                           |
+| S5PP98 | 30                                                           |
+| SBTWR3 | 27                                                           |
+| TG1HES | 30                                                           |
+| VSAZH6 | 22                                                           |
+| VTZBU1 | 30                                                           |
+| VXGITJ | 0                                                            |
+| XDSD4B | 30                                                           |
+| XUWARV | 0                                                            |
+| XVGMGD | 21                                                           |
+| Y5S27Q | 30                                                           |
+| YNPCU4 | 30                                                           |
+| Z1FW2A | 0                                                            |
+| Z4K7QE | 30                                                           |
+| ZCBITN | 20                                                           |
+| ZXYUK9 | 26                                                           |
+
+
+
+## Zh1
 
 | Neptun | ZH1  |
 | ------ | ---- |
