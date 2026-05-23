@@ -2,26 +2,18 @@
 
 ## News
 
-> [!TIP]
->
-> Chinook videos part 2 uploaded to week 9 (May 9th)
->
-> Project exam description updated, blank self eval sheet added. (May 9th)
->
-> Guide for Azure DBs added to the bottom of this page. (May 8th)
-
-## Weekly breakdown
-
 > [!IMPORTANT]
 >
-> The second midterm has been moved to the 12th week. 
+> [On this link]([Fill | Exam Make-up / Retake 2026](https://teams.microsoft.com/l/entity/81fef3a6-72aa-4648-a763-de824aeafb7d/_djb2_msteams_prefix_2882594839?context={"channelId"%3A"19%3AK4gKZRSSHH--Tiy6J63SQhejRvDyBti-R-3gSA0Z24E1@thread.tacv2"}&tenantId=f8dd01b8-7276-4ace-aa9d-5767f0f4a5af)) or in Teams, in the top horizontal menu of the lecture Team, a "ZH Make-up / Retake 2026" form has been added. This is where you can sign up for the make-up / retake session. Those who change their minds are asked to cancel their registration by filling out the form again. The form can be submitted until Wednesday midnight; the schedule will be prepared on Thursday. The last submission will be taken into account. 
+
+## Weekly breakdown
 
 | First day of the week |                           |                                                              |
 | --------------------- | ------------------------- | ------------------------------------------------------------ |
 | 2026-02-16            | 1. week                   | **Lecture:** Intro to .NET, Meaning of Bytes<br />**Labs:**  Intro to VS, Loan calculator sample app |
 | 2026-02-23            | 2. week                   | **Lab:**  Work with classes                                  |
 | 2026-03-02            | 3. week                   | **Lecture:** Type conversions; Version control using GIT<br />**Labs:** Sanke game sample app |
-| 2026-03-09            | 4. week                   | **Lab:** Processing text files; Windows Forms Databindign    |
+| 2026-03-09            | 4. week                   | **Lab:** Processing text files; Windows Forms Databinding    |
 | 2026-03-16            | 5. week                   | **Lecture:** LINQ by examples<br />**Labs:** Microsimulation |
 | 2026-03-23            | 6. week                   | **Lab:** <span style="color:red">Midterm #1 </span>(35 points - 80 min) |
 | 2026-03-30            | Project week              |                                                              |

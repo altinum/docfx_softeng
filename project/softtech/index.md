@@ -4,6 +4,12 @@ Tárgykód: INSA008NMBB
 
 [Követelmények részletes leírása, ponthatárok](./kovetelmenyek/)
 
+> [!IMPORTANT]
+>
+> [Ezen a linken]([Fill | ZH pótlás / javítás jelentkezés 2026](https://teams.microsoft.com/l/entity/81fef3a6-72aa-4648-a763-de824aeafb7d/_djb2_msteams_prefix_4119799958?context={"channelId"%3A"19%3ABh_pNisSQkRNNWwGaiJIgc2scUMLkqWvljfCpGJ6JHU1@thread.tacv2"}&tenantId=f8dd01b8-7276-4ace-aa9d-5767f0f4a5af)) vagy Teams-ben az előadás Team-ben a felső vízszintes menübe felkerült egy "ZH pótlás / javítás 2026" űrlap. Itt lehet jelentkezni a javító / pótló alkalomra. Azokat, akik esetleg meggondolják magukat, kérem, töröljék a jelentkezést az űrlap ismételt kitöltésével. Az űrlap szerda éjfélig tölthető ki, csütörökön készül el az időbeosztás. **A határidő után jelentkezést nem fogadunk!**
+
+
+
 ## Tematika heti beosztása
 
 > [!IMPORTANT]

@@ -2,9 +2,7 @@
 
 > [!TIP]
 >
-> A kurzusadatlapon nem szerepel minimum követelmény egyik ZH-hoz sem, így azok a kollégák, akik jól írták meg az ZH-kat, mentesülhetnek a projektfeladat leadása alól. Mindazonáltal azt javaslom, hogy készítsétek el a projektet, és írjátok meg a ZH-t tét nélkül, mert akkor érti meg igazán a dolgokat, amikor saját projekten dolgozik. 
-
-Sajnálom, hogy nem került ki pénteken, beragadt a GitHub action, ami kitette volna automatizálan. Ilyet még nem csinált :(
+> A projektvideók feltöltésének határideje hétfő éjfél (május 25), a projektek ellenőrzése kedd reggel keződik. A határidőn túli feltöltések nem kerülnek értékelésre. 
 
 
 
