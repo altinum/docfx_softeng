@@ -1,72 +1,78 @@
 # Grades and results
 
-| Neptun | Midterm #1 | Group |
-| ------ | ---------- | ----- |
-| ACVSC1 | 35         | C     |
-| AEKROE |            |       |
-| ALMM2M | 35         | E     |
-| AM3IBZ | 35         | B     |
-| ANJG0Z |            |       |
-| C1D2HR | 35         | B     |
-| C1OENQ | 35         | A     |
-| C7L18J | 3          | D     |
-| CH3PNO | 35         | C     |
-| DJETOL | 35         | A     |
-| DNTAP1 | 35         | B     |
-| DTDX6S | 35         | B     |
-| E77RFJ |            |       |
-| EF4PB8 | 35         | C     |
-| EH4MJ9 | 35         | B     |
-| EQ2IH4 | 31         | C     |
-| EYJ3CY | 25         | B     |
-| EYSGUS | 34         | C     |
-| F2RO8K | 35         | C     |
-| FATHD3 | 25         | A     |
-| FHYQO4 | 35         | A     |
-| FRB2G1 | 35         | E     |
-| GFNG33 | 3          | A     |
-| GN0SWW | 35         | D     |
-| GY86QK | 35         | D     |
-| H1UEFL | 35         | E     |
-| HGKC4Q | 35         | C     |
-| HHJ9MH | 35         | E     |
-| HLQXWW | 35         | E     |
-| HQQ3EK | 35         | B     |
-| HSQ94I | 34         | B     |
-| HW2NIJ | 35         | C     |
-| J1A14W | 35         | A     |
-| JA363R | 35         | C     |
-| K8C31E | 32         | A     |
-| KJMZCU | 35         | D     |
-| KKJIFC | 35         | C     |
-| KTCEYY |            |       |
-| LXFM9N | 27         | B     |
-| M8II0D | 35         | E     |
-| NEC5K3 | 35         | C     |
-| NWOV8M | 34         | A     |
-| NWSBY8 | 35         | E     |
-| O29CTJ | 35         | B     |
-| O95MZR | 35         | B     |
-| OV5QBX | 35         | A     |
-| ROQBZ5 | 30         | D     |
-| S1W44H | 35         | D     |
-| S2F7WB | 35         | E     |
-| SRUD1X | 35         | A     |
-| SSKLGJ | 35         | B     |
-| SSR97A | 34         | A     |
-| TDUPTS | 35         | D     |
-| TICZWX | 28         | E     |
-| TZ2I9V | 35         | D     |
-| UFPHTO | 35         | A     |
-| UNP7SJ | 17         | D     |
-| V8BV28 | 35         | C     |
-| W03RYP | 35         | E     |
-| WD1O7A | 33         | E     |
-| WJOU6U | 35         | E     |
-| XGUIXX | 35         | A     |
-| XRIH6B | 35         | A     |
-| XYB1KH | 32         | A     |
-| Y97VP0 | 35         | E     |
-| YPBDW5 | 35         | D     |
-| ZGPQVJ | 19         | C     |
-| ZK7J0J | 35         | D     |
+> [!IMPORTANT]
+>
+> Project evaluations are in progress.  Grades are calculated without the project points. 
+
+
+
+| Neptun | Midterm #1 | Midterm #2 | Project | Sum  | Grade |
+| ------ | ---------- | ---------- | ------- | ---- | ----- |
+| ACVSC1 | 35         | 35         |         | 70   | 3     |
+| AEKROE | 0          | 32         |         | 32   | 1     |
+| ALMM2M | 35         | 33         |         | 68   | 3     |
+| AM3IBZ | 35         | 32         |         | 67   | 3     |
+| ANJG0Z | 0          | 32         |         | 32   | 1     |
+| C1D2HR | 35         | 35         |         | 70   | 3     |
+| C1OENQ | 35         | 35         |         | 70   | 3     |
+| C7L18J | 3          | 0          |         | 3    | 1     |
+| CH3PNO | 35         | 0          |         | 35   | 1     |
+| DJETOL | 35         | 35         |         | 70   | 3     |
+| DNTAP1 | 35         | 35         |         | 70   | 3     |
+| DTDX6S | 35         | 35         |         | 70   | 3     |
+| E77RFJ | 0          | 0          |         | 0    | 1     |
+| EF4PB8 | 35         | 35         |         | 70   | 3     |
+| EH4MJ9 | 35         | 35         |         | 70   | 3     |
+| EQ2IH4 | 31         | 28         |         | 59   | 2     |
+| EYJ3CY | 25         | 34         |         | 59   | 2     |
+| EYSGUS | 34         | 32         |         | 66   | 2     |
+| F2RO8K | 35         | 35         |         | 70   | 3     |
+| FATHD3 | 25         | 31         |         | 56   | 2     |
+| FHYQO4 | 35         | 35         |         | 70   | 3     |
+| FRB2G1 | 35         | 0          |         | 35   | 1     |
+| GFNG33 | 3          | 12         |         | 15   | 1     |
+| GN0SWW | 35         | 31         |         | 66   | 2     |
+| GY86QK | 35         | 31         |         | 66   | 2     |
+| H1UEFL | 35         | 28         |         | 63   | 2     |
+| HGKC4Q | 35         | 35         |         | 70   | 3     |
+| HHJ9MH | 35         | 0          |         | 35   | 1     |
+| HLQXWW | 35         | 35         |         | 70   | 3     |
+| HQQ3EK | 35         | 29         |         | 64   | 2     |
+| HSQ94I | 34         | 35         |         | 69   | 3     |
+| HW2NIJ | 35         | 35         |         | 70   | 3     |
+| J1A14W | 35         | 35         |         | 70   | 3     |
+| JA363R | 35         | 35         |         | 70   | 3     |
+| K8C31E | 32         | 32         |         | 64   | 2     |
+| KJMZCU | 35         | 19         |         | 54   | 2     |
+| KKJIFC | 35         | 35         |         | 70   | 3     |
+| KTCEYY | 35         | 34         |         | 69   | 3     |
+| LXFM9N | 27         | 19         |         | 46   | 1     |
+| M8II0D | 35         | 12         |         | 47   | 1     |
+| NEC5K3 | 35         | 35         |         | 70   | 3     |
+| NWOV8M | 34         | 35         |         | 69   | 3     |
+| NWSBY8 | 35         | 32         |         | 67   | 3     |
+| O29CTJ | 35         | 22         |         | 57   | 2     |
+| O95MZR | 35         | 35         |         | 70   | 3     |
+| OV5QBX | 35         | 32         |         | 67   | 3     |
+| ROQBZ5 | 30         | 35         |         | 65   | 2     |
+| S1W44H | 35         | 0          |         | 35   | 1     |
+| S2F7WB | 35         | 32         |         | 67   | 3     |
+| SRUD1X | 35         | 35         |         | 70   | 3     |
+| SSKLGJ | 35         | 25         |         | 60   | 2     |
+| SSR97A | 34         | 35         |         | 69   | 3     |
+| TDUPTS | 35         | 35         |         | 70   | 3     |
+| TICZWX | 28         | 32         |         | 60   | 2     |
+| TZ2I9V | 35         | 35         |         | 70   | 3     |
+| UFPHTO | 35         | 35         |         | 70   | 3     |
+| UNP7SJ | 17         | 31         |         | 48   | 1     |
+| V8BV28 | 35         | 35         |         | 70   | 3     |
+| W03RYP | 35         | 29         |         | 64   | 2     |
+| WD1O7A | 33         | 31         |         | 64   | 2     |
+| WJOU6U | 35         | 0          |         | 35   | 1     |
+| XGUIXX | 35         | 35         |         | 70   | 3     |
+| XRIH6B | 35         | 35         |         | 70   | 3     |
+| XYB1KH | 32         | 35         |         | 67   | 3     |
+| Y97VP0 | 35         | 32         |         | 67   | 3     |
+| YPBDW5 | 35         | 32         |         | 67   | 3     |
+| ZGPQVJ | 19         | 35         |         | 54   | 2     |
+| ZK7J0J | 35         | 0          |         | 35   | 1     |
