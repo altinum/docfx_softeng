@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Kígyós játék</title>
+    <link href="../styles.css" rel="stylesheet" />
+    <link href="../fa/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <h2>Kígyós játék</h2>
+
+    <h3>
+        Videók és handout    
+    </h3>
+    
+
+    <p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <i class="fa fa-film"></i>
+                    </td>
+                    <td>
+                        <a href="http://web.uni-corvinus.hu/~lmohacs/szoft/Video/Kigyo/KIGYO_1.html">Kígyó 1.</a>
+                    </td>
+                    <td>
+                        9:00
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa fa-film"></i>
+                    </td>
+                    <td>
+                        <a href="http://web.uni-corvinus.hu/~lmohacs/szoft/Video/Kigyo/KIGYO_2.html">Kígyó 2</a>
+                    </td>
+                    <td>
+                        9:55
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa fa-film"></i>
+                    </td>
+                    <td>
+                        <a href="http://web.uni-corvinus.hu/~lmohacs/szoft/Video/Kigyo/KIGYO_3.html">Kígyó 3.</a>
+                    </td>
+                    <td>
+                        4:36
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa fa-film"></i>
+                    </td>
+                    <td>
+                        <a href="http://web.uni-corvinus.hu/~lmohacs/szoft/Video/Kigyo/KIGYO_4.html">Kígyó 4.</a>
+                    </td>
+                    <td>
+                        5:29
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa fa-film"></i>
+                    </td>
+                    <td>
+                        <a href="http://web.uni-corvinus.hu/~lmohacs/szoft/Video/Kigyo/KIGYO_5.html">Kígyó 5.</a>
+                    </td>
+                    <td>
+                        3:18
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa fa-film"></i>
+                    </td>
+                    <td>
+                        <a href="http://web.uni-corvinus.hu/~lmohacs/szoft/Video/Kigyo/KIGYO_6.html">Kígyó 6.</a>
+                    </td>
+                    <td>
+                        2:12
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa fa-film"></i>
+                    </td>
+                    <td>
+                        <a href="http://web.uni-corvinus.hu/~lmohacs/szoft/Video/Kigyo/KIGYO_7.html">Kígyó 7.</a>
+                    </td>
+                    <td>
+                        1:58
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa fa-film"></i>
+                    </td>
+                    <td>
+                        <a href="http://web.uni-corvinus.hu/~lmohacs/szoft/Video/Kigyo/KIGYO_8.html">Kígyó 8.</a>
+                    </td>
+                    <td>
+                        2:10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa fa-film"></i>
+                    </td>
+                    <td>
+                        <a href="http://web.uni-corvinus.hu/~lmohacs/szoft/Video/Kigyo/KIGYO_9.html">Kígyó 9.</a>
+                    </td>
+                    <td>
+                        5:43
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-file-word"></i></td>
+                    <td><a href="Handout/kígyó%20handout.docx">kígyó handout.docx</a> </td>
+                    <td>(néhány lépésben egyszerűbb, mint a videón szereplő megoldás.)</td>
+                </tr>
+            </tbody>
+        </table>
+
+    <p>
+
+    </p>
+    <p>
+        Aki nem tudott bemenni az előadásra, kérem nézze meg a videókat! Gyakorlaton
+        egyénileg építsétek fel a játékot az alábbi útmutató alapján!
+    </p>
+
+    <h3>Lépések a kígyós játék felépítéséhez</h3>
+
+    <ol>
+        <li>Származtass a Button osztálytól egy új osztályt KígyóElem néven! </li>
+        <li>
+            A KígyóElem osztályt bővítsd egy méret statikus egész konstanssal, melynek értéke legyen
+            20.
+        </li>
+        <li>A KígyóElem osztályt bővítsd konstruktorral, melyben az a fenti konstansnak megfelelően 20x20 képpontosra méretezi magát. </li>
+        <li>
+            A Form1 osztályt bővítsd fejX és fejY változókkal, melyekben az utoljára
+            kirakott kígyófej koordinátáit tárolod! Állíts be értelemszerű kezdőéréket!
+            (Pl. 100, 100)
+        </li>
+        <li>
+            A Form1 osztályt bővítsd irányX és irányY változókkal, melyekben kígyó haladási
+            irályát tárolod! (-1,0,1 értékeket vehet fel.) Állíts be kezdőértéket!
+        </li>
+        <li>A Form1 osztályt bővítsd sorszám nevű, 0 kezdőértékű változóval! </li>
+        <li>
+            A Form1-en helyezz el egy engedélyezett számlálót fél másodperces
+            intervallummal, majd rendelj a Tick eseményéhez esemény-kiszolgáló függvényt!
+        </li>
+        <li>
+            Az esemény-kiszolgálóban hozz létre egy új példányt a KígyóElem osztályból, majd
+            az iránynak és a méretnek megfelelően változtasd a fejX és fejY változók
+            értékeit! Ezután már mozogni kell a kígyóknak.
+        </li>
+        <li>
+            &nbsp;Rendelj
+            esemény-kiszolgálót az űrlap KeyDown eseményhez.&nbsp;
+        </li>
+        <li>
+            Változtasd a kígyó irányát az esemény-kiszolgáló paramétereként kapott
+            e.KeyValue (vagy KeyCode) értéke alapján!
+        </li>
+        <li>
+            Valósítsd meg az ütközésvizsgálatot! Járd be az űrlap Controls listáját foreach
+            ciklussal, és vizsgálj meg minden KígyóElemet ke néven. Ha van olyan, melynek
+            Top illetve Left tulajdonságai megegyeznek a fejY illetve fejX változók
+            értékeivel, a kígyó farkába harapott.
+        </li>
+        <li>
+            Rövidüljön a kígyó. Ehhez először bővítsd egy hossz nevő változóval az osztályt,
+            melyben a kígyó aktuális hosszát tárolod! Ha az űrlapon lévő vezérlől száma
+            meghaladja a hossz változó értékét, vedd ki az űrlap Controls listájának
+            nulladik elemét!
+        </li>
+        <li>
+            A kígyóelem konstruktorában páros és a páratlan sorszámú kígyóelemeket színezd
+            eltérően!
+        </li>
+    </ol>
+    <h3>Ellenőrző kérdések</h3>
+    <ol>
+        <li>
+            Egy űrlapon csak a Button osztály példányai vannak. Írd le azt a foreach ciklust, mely bejárja az űrlap Controls listáját és minden
+            gomb Visible tulajdonságát hamis értékűre állítja!
+        </li>
+        <li>
+            Hogyan lehet az űrlap Contrlos listájának egy meghatároztt sorszámú elemét
+            törölni?
+        </li>
+        <li>Hogyan lehet megtudni, hogy egy lista hány elemet tartalmaz?</li>
+        <li>Írd le azt a kódrészletet, mely egy számról eldönti, hogy páros-e!</li>
+        <li>
+            Származtass egy osztályt a Button osztályból, mely automatikusan átmétetezi
+            magát 30x30 pixelesre!
+        </li>
+    </ol>
+
+</body>
+</html>

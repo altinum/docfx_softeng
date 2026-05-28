@@ -4,10 +4,60 @@ Tárgykód: INSA008NMBB
 
 [Követelmények részletes leírása, ponthatárok](./kovetelmenyek/)
 
+<!--
+
 > [!IMPORTANT]
 >
 > [Ezen a linken]([Fill | ZH pótlás / javítás jelentkezés 2026](https://teams.microsoft.com/l/entity/81fef3a6-72aa-4648-a763-de824aeafb7d/_djb2_msteams_prefix_4119799958?context={"channelId"%3A"19%3ABh_pNisSQkRNNWwGaiJIgc2scUMLkqWvljfCpGJ6JHU1@thread.tacv2"}&tenantId=f8dd01b8-7276-4ace-aa9d-5767f0f4a5af)) vagy Teams-ben az előadás Team-ben a felső vízszintes menübe felkerült egy "ZH pótlás / javítás 2026" űrlap. Itt lehet jelentkezni a javító / pótló alkalomra. Azokat, akik esetleg meggondolják magukat, kérem, töröljék a jelentkezést az űrlap ismételt kitöltésével. Az űrlap szerda éjfélig tölthető ki, csütörökön készül el az időbeosztás. **A határidő után jelentkezést nem fogadunk!**
+-->
 
+>  [!IMPORTANT]
+>
+> A jelentkezések lezárása után elkészült a javító és pótló alkalom időbeosztása. Az E245-ös terembe gyertek!
+
+| Neptun |          |                | Időpont |
+| ------ | -------- | -------------- | ------- |
+| M0CGJM | Javítani | A 3. ZH-t      | 10:15   |
+| BYXIA9 | Javítani | Az 1. ZH-t     | 08:30   |
+| YNPCU4 | Javítani | Az 1. ZH-t     | 08:30   |
+| AFESQW | Javítani | A 2. ZH-t      | 08:30   |
+| nq5pt2 | Javítani | A 3. ZH-t      | 10:15   |
+| EXJZZD | Javítani | A 3. ZH-t      | 10:15   |
+| LP64XK | Javítani | A 3. ZH-t      | 10:15   |
+| EXNGOK | Javítani | A 3. ZH-t      | 10:15   |
+| D3M4BC | Javítani | A 3. ZH-t      | 10:15   |
+| CDDT81 | Javítani | A 3. ZH-t      | 10:15   |
+| E02AAX | Javítani | Az 1. ZH-t     | 08:30   |
+| ZXYUK9 | Javítani | A 3. ZH-t      | 10:15   |
+| CIME6P | Javítani | Az 1. ZH-t     | 08:30   |
+| D1BET6 | Javítani | Az 1. ZH-t     | 08:30   |
+| CHFZGD | Javítani | A 2. ZH-t      | 08:30   |
+| NMZ1DJ | Javítani | A 3. ZH-t      | 10:15   |
+| I5DV78 | Pótolni  | A projekt ZH-t | 10:15   |
+| F1CLE1 | Pótolni  | A projekt ZH-t | 10:15   |
+| G2PNLR | Javítani | Az 1. ZH-t     | 08:30   |
+| MFUFV4 | Javítani | A 3. ZH-t      | 10:15   |
+| VSAZH6 | Javítani | A 3. ZH-t      | 10:15   |
+| HUBM02 | Pótolni  | A 2. ZH-t      | 08:30   |
+| ZCBITN | Javítani | Az 1. ZH-t     | 08:30   |
+| HWG16P | Javítani | A 3. ZH-t      | 10:15   |
+| MVK7AY | Javítani | A 3. ZH-t      | 10:15   |
+| YNPCU4 | Javítani | Az 1. ZH-t     | 08:30   |
+| XUWARV | Pótolni  | A 2. ZH-t      | 08:30   |
+| K4T8NZ | Pótolni  | A 2. ZH-t      | 08:30   |
+| AD4DNR | Pótolni  | Az 1. ZH-t     | 08:30   |
+| MJEPX5 | Javítani | A 2. ZH-t      | 08:30   |
+| DMZ1G1 | Javítani | A 3. ZH-t      | 10:15   |
+| peqfyg | Pótolni  | Az 1. ZH-t     | 08:30   |
+| Pikkj2 | Javítani | A 3. ZH-t      | 10:15   |
+| GPYOKM | Javítani | A 2. ZH-t      | 08:30   |
+| SBTWR3 | Javítani | A 3. ZH-t      | 10:15   |
+| IMW2Z2 | Javítani | Az 1. ZH-t     | 08:30   |
+| J84IEZ | Javítani | A 3. ZH-t      | 10:15   |
+| Z1FW2A | Pótolni  | A 2. ZH-t      | 08:30   |
+| XVGMGD | Javítani | A 2. ZH-t      | 08:30   |
+| RFGXRQ | Pótolni  | A 3. ZH-t      | 10:15   |
+| OQE7DV | Javítani | A 2. ZH-t      | 08:30   |
 
 
 ## Tematika heti beosztása

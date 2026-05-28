@@ -1,10 +1,24 @@
 # Syllabus
 
 ## News
-
+<!--
 > [!IMPORTANT]
 >
 > [On this link]([Fill | Exam Make-up / Retake 2026](https://teams.microsoft.com/l/entity/81fef3a6-72aa-4648-a763-de824aeafb7d/_djb2_msteams_prefix_2882594839?context={"channelId"%3A"19%3AK4gKZRSSHH--Tiy6J63SQhejRvDyBti-R-3gSA0Z24E1@thread.tacv2"}&tenantId=f8dd01b8-7276-4ace-aa9d-5767f0f4a5af)) or in Teams, in the top horizontal menu of the lecture Team, a "ZH Make-up / Retake 2026" form has been added. This is where you can sign up for the make-up / retake session. Those who change their minds are asked to cancel their registration by filling out the form again. The form can be submitted until Wednesday midnight; the schedule will be prepared on Thursday. The last submission will be taken into account. 
+-->
+> [!IMPORTANT]
+> After the deadline for applications, the schedule for the make-up and retake session has been finalized. **Come to room E245, Pest Campus!**
+
+| Neptun |                                   |                    |       |
+| ------ | --------------------------------- | ------------------ | ----- |
+| KJMZCU | Retake an exam (to improve grade) | The second midterm | 10:15 |
+| EQ2IH4 | Retake an exam (to improve grade) | The project        | 10:15 |
+| ANJG0Z | Take a make-up exam (missed exam) | The first midterm  | 08:30 |
+| o29ctj | Retake an exam (to improve grade) | The second midterm | 10:15 |
+| AEKROE | Take a make-up exam (missed exam) | The first midterm  | 08:30 |
+| C7L18J | Retake an exam (to improve grade) | The first midterm  | 08:30 |
+| LXFM9N | Retake an exam (to improve grade) | The second midterm | 10:15 |
+| K8C31E | Retake an exam (to improve grade) | The project        | 10:15 |
 
 ## Weekly breakdown
 
